@@ -3,11 +3,11 @@
 
 | Alan | Detay |
 |------|-------|
-| **Rapor Versiyonu** | 1.0 |
-| **Tarih** | 2026-02-09 |
+| **Rapor Versiyonu** | 1.1 (düzeltilmiş) |
+| **Tarih** | 2026-02-10 (v1.0: 2026-02-09) |
 | **Proje** | Apartman (çalışma adı) |
 | **Hazırlayan** | Proje Ekibi |
-| **Durum** | Taslak — Karar bekleniyor |
+| **Durum** | Taslak v1.1 — Metodoloji düzeltmeleri uygulandı, karar bekleniyor |
 
 ---
 
@@ -75,17 +75,23 @@ Bu raporda satış tahminleri için **Boxleiter Yöntemi** kullanılmıştır:
 | **Beholder 2** | 1,015 | %82 Very Positive | $14.99 | ~36K | Devlet binası gözetimi | [Steam](https://store.steampowered.com/app/761620/Beholder_2/) |
 | **Beholder 3** | 406 | %68 Mixed | $14.99 | ~14K | Seri devamı (düşüş) | [Steam](https://store.steampowered.com/app/1570070/Beholder_3/) |
 
-### 2B. Fantezi / Canavar Tema — Yönetim Oyunları
+### 2B. Fantezi / Benzersiz Tema — Yönetim Oyunları
 
 | Oyun | Review | Rating | Fiyat | Tahmini Satış | Tema Detayı | Steam Linki |
 |------|--------|--------|-------|---------------|-------------|-------------|
-| **Lobotomy Corporation** | 46,349 | %94 Overwhelmingly Positive | $24.99 | ~1.6M | SCP-tarzı canavar yönetim tesisi | [Steam](https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/) |
-| **Against the Storm** | 17,915 | %95 Overwhelmingly Positive | $29.99 | ~627K | Fantezi şehir yönetimi (kunduz, kertenkele, insan) | [Steam](https://store.steampowered.com/app/1336490/Against_the_Storm/) |
+| **Lobotomy Corporation** | 46,349 | %94 Overwhelmingly Positive | $24.99 | ~1.6M ² | SCP-tarzı canavar yönetim tesisi | [Steam](https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/) |
+| **Against the Storm** | 17,915 | %95 Overwhelmingly Positive | $29.99 | ~627K ×35 tahmini ¹ | Fantezi şehir yönetimi (kunduz, kertenkele, insan) | [Steam](https://store.steampowered.com/app/1336490/Against_the_Storm/) |
 | **Unholy Heights** | 1,573 | %90 Very Positive | $3.99 | ~55K | Şeytan'ın canavar apartmanı (**en yakın rakip**) | [Steam](https://store.steampowered.com/app/249330/Unholy_Heights/) |
 | **War for the Overworld** | 6,265 | %85 Very Positive | $29.99 | ~219K | Dungeon Keeper varisi | [Steam](https://store.steampowered.com/app/230190/War_for_the_Overworld/) |
 | **Dungeon Inn** | ~500+ | %92 Very Positive | EA | ~18K | Zindan ağzında han yönetimi | [Steam](https://store.steampowered.com/app/2552310/Dungeon_Inn/) |
 | **Bloody Hell Hotel** | — | — (henüz çıkmadı) | TBD | — | Vampir otel yönetimi | [Steam](https://store.steampowered.com/app/2055770/Bloody_Hell_Hotel/) |
 | **Drosoph Hotel** | az | — | $7.99 | <1K | Korku oteli yönetimi (terk edilmiş) | [Steam](https://store.steampowered.com/app/717020/Drosoph_Hotel/) |
+
+> **¹ Against the Storm dipnotu:** ×35 Boxleiter tahmini ~627K veriyor, ancak VGChartz'a göre gerçek satış **1M+ kopya** olarak raporlanmıştır ([kaynak](https://www.vgchartz.com/article/460494/against-the-storm-sales-top-1-million-units-on-steam/)). Bu, oyunun gerçek review-to-sales çarpanının ~56 olduğunu gösterir (viral oyun aralığı: 50-70). ×35 tahmini bu oyun için düşük kalmaktadır.
+>
+> **² Lobotomy Corporation dipnotu:** ×35 Boxleiter tahmini ~1.62M kopya × $24.99 = **~$40.5M brüt gelir** verir. Ancak Steam Revenue Calculator'ın tahmini **~$49.1M**'dır. Bu fark (~%21), farklı tahmin yöntemlerinden, bölgesel fiyatlandırmadan ve olası DLC gelirinden kaynaklanıyor olabilir. Bu raporda her iki rakam da belirtilmiştir; okuyucu aralık olarak değerlendirmelidir.
+>
+> **⚠️ Metodoloji notu:** Bu tablodaki oyunlar farklı alt türleri kapsar (canavar yönetimi, fantezi şehir yönetimi, zindan yönetimi). Doğrudan "apartman yönetimi" olan tek oyun Unholy Heights'tır. Karşılaştırmalar bu farkı göz önünde bulundurarak okunmalıdır.
 
 ### 2C. Tema Komedisiyle Öne Çıkan Yönetim Oyunları (Referans)
 
@@ -100,13 +106,15 @@ Bu raporda satış tahminleri için **Boxleiter Yöntemi** kullanılmıştır:
 
 ### Sayısal Karşılaştırma
 
-| Metrik | Gerçekçi Tema (8 oyun) | Fantezi/Canavar Tema (6 oyun) |
-|--------|------------------------|-------------------------------|
-| **Toplam oyun sayısı** | 8+ (doygun) | 6 (az, özellikle apartman nişinde 1) |
-| **Ortalama review sayısı** | ~2,385 | ~12,100 |
-| **Ortalama rating** | %78 | %91 |
-| **En yüksek tahmini satış** | ~258K (The Tenants) | ~1.6M (Lobotomy Corp) |
-| **En yüksek tahmini gelir** | ~$5M (The Tenants) | ~$49M (Lobotomy Corp) |
+> **⚠️ Metodoloji uyarısı:** Aşağıdaki karşılaştırma eşit olmayan gruplar arasındadır. Gerçekçi gruptaki 8 oyun hep spesifik olarak apartman/bina yönetimi oyunlarıdır. Fantezi grubundaki 6 oyun ise farklı alt türleri kapsar (canavar tesisi, fantezi şehir, zindan yönetimi vb.) ve yalnızca 1 tanesi (Unholy Heights) doğrudan "apartman yönetimi"dir. Ayrıca gerçekçi grupta başarısız oyunlar (Landlord Simulator, %20 rating) dahilken, fantezi grupta başarısız örnekler neredeyse hiç yoktur (hayatta kalma yanlılığı). Ortalamalar bu asimetriyi yansıtır; dikkatli yorumlanmalıdır.
+
+| Metrik | Gerçekçi Tema (8 oyun) | Fantezi/Benzersiz Tema (6 oyun) | Not |
+|--------|------------------------|-------------------------------|-----|
+| **Toplam oyun sayısı** | 8 + 3 Beholder serisi = 11 | 6 (az, özellikle apartman nişinde 1) | Beholder serisi distopik varyant olarak ayrı tutulmuştur |
+| **Ortalama review sayısı** | ~2,385 (Beholder hariç) / ~2,178 (Beholder dahil) | ~12,100 | Fantezi grubun ortalamasını Lobotomy Corp (46K review) tek başına yukarı çekiyor |
+| **Ortalama rating** | %78 (Beholder hariç) / %79 (Beholder dahil) | %91 | Gerçekçi grupta Landlord Simulator (%20) ortalamayı aşağı çekiyor |
+| **En yüksek tahmini satış** | ~258K (The Tenants) | ~1.6M (Lobotomy Corp) | Lobotomy Corp apartman oyunu değil, SCP-tarzı tesis yönetimi |
+| **En yüksek tahmini gelir** | ~$5M (The Tenants) | ~$40.5M-$49M (Lobotomy Corp) | Aralık: ×35 tahmini vs Steam Revenue Calculator tahmini |
 
 ### Pazar Doygunluğu
 
@@ -126,7 +134,13 @@ Canavar Yönetimi (genel):
 
 ### Kritik Bulgu
 
-**"Canavar apartman yönetimi" nişinde yalnızca 1 oyun var: Unholy Heights (2013).** Bu oyun $3.99 fiyat noktasında, ~5 saatlik bir oyun ve %90 pozitif review'a sahip. Modern üretim değerleriyle bu nişe giren büyük bir rakip bulunmuyor. Bu, klasik bir **mavi okyanus** fırsatıdır.
+**"Canavar apartman yönetimi" nişinde yalnızca 1 oyun var: Unholy Heights (2013).** Bu oyun $3.99 fiyat noktasında, ~5 saatlik bir oyun ve %90 pozitif review'a sahip. Modern üretim değerleriyle bu nişe giren büyük bir rakip bulunmuyor. Bu bir **potansiyel mavi okyanus** fırsatıdır.
+
+> **⚠️ Alternatif açıklama:** Boş bir niş her zaman "fırsat" anlamına gelmez — bazen yeterli talep olmadığını da gösterebilir. "Canavar apartman" nişinin neden 2013'ten beri boş kaldığını değerlendirirken iki olasılık göz önünde bulundurulmalıdır:
+> 1. **Fırsat tezi:** Konsept kanıtlanmış (%90 review) ama hiç kimse modern bir yapımla deneyimlememiş — gerçek bir boşluk.
+> 2. **Düşük talep tezi:** Konsept niş kalmaya mahkum olabilir — Unholy Heights'ın düşük satışları ($3.99'da bile ~55K) talebin sınırlı olduğuna işaret edebilir.
+>
+> Unholy Heights'ın düşük fiyatı, kısa süresi ve 2013 yapımı olması düşük satışı açıklayabilir, bu yüzden fırsat tezi daha olası görünüyor — ancak kesinlik yoktur.
 
 ---
 
@@ -173,14 +187,14 @@ Canavar Yönetimi (genel):
 
 ---
 
-### Vaka 3: Lobotomy Corporation — Canavar Yönetiminin $49M Potansiyeli
+### Vaka 3: Lobotomy Corporation — Canavar Yönetiminin Potansiyeli
 
 | Alan | Detay |
 |------|-------|
 | **Oyun** | Lobotomy Corporation |
 | **Tema** | SCP-tarzı canavar yönetim tesisi |
 | **Satış** | 1M+ kopya (Ocak 2023 itibarıyla) |
-| **Gelir** | ~$49.1M brüt tahmin ([Steam Revenue Calculator](https://steam-revenue-calculator.com/app/568220/lobotomy-corporation-or-monster-management-simulation)) |
+| **Gelir** | ~$40.5M (×35 Boxleiter tahmini) — ~$49.1M (Steam Revenue Calculator tahmini) |
 | **Franchise** | Library of Ruina, Limbus Company (franchise doğurdu) |
 | **Rating** | %94 Overwhelmingly Positive |
 
@@ -191,7 +205,7 @@ Canavar Yönetimi (genel):
 - Her canavarın benzersiz hikayesi → lore derinliği
 - Tehlike ve gizem → oyuncu bağlılığı
 
-**Ders:** "Canavar yönetimi" konsepti tek başına $49M gelir ve bir franchise yaratabilir — **doğru uygulandığında**.
+**Ders:** "Canavar yönetimi" konsepti ~$40-49M gelir ve bir franchise yaratabilir — **ancak** bu başarıda temanın yanı sıra SCP fandom'u, benzersiz gameplay tasarımı ve franchise stratejisi de belirleyici rol oynamıştır. Tema tek başına yeterli değildir, doğru uygulama şarttır.
 
 **Kaynak:** [Lobotomy Corporation — Steam](https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/)
 
@@ -229,7 +243,7 @@ Canavar Yönetimi (genel):
 |------|-------|
 | **Oyun** | Against the Storm |
 | **Tema** | Fantezi şehir yönetimi — sürekli yağmur dünyası, kunduzlar + kertenkeleler + insanlar |
-| **Satış** | 1M+ kopya Steam'de ([VGChartz](https://www.vgchartz.com/article/460494/against-the-storm-sales-top-1-million-units-on-steam/)) |
+| **Satış** | 1M+ kopya Steam'de ([VGChartz](https://www.vgchartz.com/article/460494/against-the-storm-sales-top-1-million-units-on-steam/)) — ×35 Boxleiter tahmini ~627K'da kalır, gerçek çarpan ~56 (viral aralık) |
 | **Rating** | %95 Overwhelmingly Positive |
 | **Ödüller** | Taipei Game Show Best Design 2024, DICE nomination |
 
@@ -325,8 +339,8 @@ Her kriter 1-10 arasında puanlanmıştır. Puanların gerekçeleri aşağıda a
 | Kriter | Ağırlık | Gerçekçi İnsan | Gerekçe (Gerçekçi) | Fantezi Canavar | Gerekçe (Fantezi) |
 |--------|---------|----------------|---------------------|-----------------|---------------------|
 | **Pazar boşluğu** | %25 | 3/10 | 8+ gerçekçi rakip var (The Tenants, Project Highrise vb.) | 9/10 | Yalnızca 1 rakip (Unholy Heights, 2013) — neredeyse boş pazar |
-| **Oyuncu tercihi** | %20 | 6/10 | Kanıtlanmış talep var ama "wow" etkisi yok | 8/10 | Unholy Heights %90 review, Lobotomy Corp %94 — canavar yönetimi sevilir |
-| **Rakip performansı** | %20 | 5/10 | En iyi rakip ~$5M (The Tenants) — orta tavan | 9/10 | Lobotomy Corp ~$49M, Against the Storm 1M+ satış — çok yüksek tavan |
+| **Oyuncu tercihi** | %20 | 6/10 | Kanıtlanmış talep var ama "wow" etkisi yok | 7/10 | Unholy Heights %90 review ile konsept kanıtlanmış; ancak tek direkt veri noktası bu (Lobotomy Corp farklı alt tür) |
+| **Rakip performansı** | %20 | 5/10 | En iyi rakip ~$5M (The Tenants) — orta tavan | 7/10 | Direkt rakip (Unholy Heights) düşük gelirli (~$220K), ama düşük fiyat/süre ile sınırlı; geniş fantezi yönetim oyunları yüksek tavanlı ama farklı alt türler |
 | **Üretim fizibilitesi** | %15 | 8/10 | Referans bol, asset üretimi hızlı | 5/10 | Her canavar sıfırdan tasarlanmalı, daha fazla sanat çalışması |
 | **Farklılaşma gücü** | %10 | 3/10 | "Bir apartman yönetim oyunu daha" riski | 9/10 | "Canavar apartman yönetimi" — benzersiz, akılda kalıcı pitch |
 | **Trend yönü** | %10 | 6/10 | İş simülasyonu trendi destekler | 8/10 | "Cozy + quirky" management trend, benzersiz tema Steam'de öne çıkar |
@@ -336,14 +350,18 @@ Her kriter 1-10 arasında puanlanmıştır. Puanların gerekçeleri aşağıda a
 **Gerçekçi İnsan Evreni:**
 (3×0.25) + (6×0.20) + (5×0.20) + (8×0.15) + (3×0.10) + (6×0.10) = 0.75 + 1.20 + 1.00 + 1.20 + 0.30 + 0.60 = **5.05 / 10**
 
-**Fantezi Canavar Evreni:**
-(9×0.25) + (8×0.20) + (9×0.20) + (5×0.15) + (9×0.10) + (8×0.10) = 2.25 + 1.60 + 1.80 + 0.75 + 0.90 + 0.80 = **8.10 / 10**
+**Fantezi Canavar Evreni (düzeltilmiş):**
+(9×0.25) + (7×0.20) + (7×0.20) + (5×0.15) + (9×0.10) + (8×0.10) = 2.25 + 1.40 + 1.40 + 0.75 + 0.90 + 0.80 = **7.50 / 10**
+
+> **Not:** Önceki versiyonda fantezi temasının "Oyuncu tercihi" (8→7) ve "Rakip performansı" (9→7) puanları, farklı alt türlerden (Lobotomy Corp, Against the Storm) elde edilen verilere dayanarak aşırı yüksek tutulmuştu. Düzeltilmiş puanlar, yalnızca doğrudan karşılaştırılabilir verilere (Unholy Heights) ağırlık vererek hesaplanmıştır.
 
 ```
 Gerçekçi İnsan:  ██████████░░░░░░░░░░  5.05/10
-Fantezi Canavar:  ████████████████████  8.10/10
-                                        △ +3.05 fark
+Fantezi Canavar:  ███████████████░░░░░  7.50/10
+                                        △ +2.45 fark
 ```
+
+Fark hâlâ fantezi lehine anlamlıdır (+2.45), ancak ilk hesaptaki kadar abartılı değildir (+3.05).
 
 ---
 
@@ -361,18 +379,20 @@ Fantezi Canavar:  ████████████████████  
 
 ---
 
-#### Bulgu 2: Fantezi/benzersiz temalar yönetim simülasyonlarında daha yüksek gelir tavanı yaratır
+#### Bulgu 2: Fantezi/benzersiz temalar yönetim simülasyonlarında daha yüksek gelir tavanıyla **korelasyon** gösterir
 
 **Veri:**
-- Lobotomy Corporation (canavar yönetimi): ~$49M gelir
+- Lobotomy Corporation (canavar yönetimi): ~$40.5M-$49M gelir (yöntemlere göre değişir)
 - Two Point Hospital (absürd karikatür): ~$9.4M gelir
-- Against the Storm (fantezi şehir): 1M+ satış
+- Against the Storm (fantezi şehir): 1M+ satış (gerçek raporlanan rakam)
 - Project Highrise (gerçekçi bina): ~$4-10M gelir (tahmin)
 - The Tenants (gerçekçi apartman): ~$5M gelir (tahmin)
 
-**Neden bu önemli:** Fantezi/benzersiz temalı oyunların gelir tavanı, gerçekçi temalı oyunlara kıyasla **5-10x daha yüksek**. Bu fark, oyun kalitesi dışında doğrudan tema seçimiyle açıklanabilir.
+**Neden bu önemli:** Fantezi/benzersiz temalı oyunların gelir tavanı, gerçekçi temalı oyunlara kıyasla **daha yüksek görünmektedir**. Ancak bu farkı yalnızca tema seçimine bağlamak yanıltıcı olur.
 
-**Nedensellik:** Benzersiz tema → Sosyal medyada paylaşılabilirlik → Viral büyüme potansiyeli → Daha geniş kitleye ulaşım → Daha yüksek toplam gelir. Gerçekçi tema ise doğası gereği "screenshot'lanabilir" değildir — bir apartman screenshot'ı viral olmaz, ama "3 boynuzlu bir canavar kiracının mutfak sorunu" viral olur.
+**Korelasyon vs. Nedensellik uyarısı:** Lobotomy Corp'un ~$40-49M başarısı tema dışında birçok faktöre dayanır: SCP fandom etkisi, benzersiz gameplay döngüsü, franchise büyümesi (Library of Ruina, Limbus Company), ve çok yüksek oyun kalitesi (%94 rating). Benzer şekilde The Tenants'ın daha düşük geliri yalnızca gerçekçi tema yüzünden değil, daha düşük oyun kalitesi (%79 rating) ile de açıklanabilir. **Tema tek başına başarıyı belirlemez; iyi bir temayı iyi bir uygulama tamamlamalıdır.**
+
+**Olası mekanizma (nedensellik değil, hipotez):** Benzersiz tema → Sosyal medyada paylaşılabilirlik → Viral büyüme potansiyeli → Daha geniş kitleye ulaşım → Daha yüksek toplam gelir. Bu mekanizma mantıklıdır ama yukarıdaki verilerden kesin nedensellik çıkarılamaz.
 
 ---
 
@@ -438,10 +458,10 @@ Bu hibrit yaklaşım:
 **Fantezi canavar evreni (tercihen hibrit yaklaşımla) önerilir.**
 
 Gerekçe özeti:
-1. Karar matrisinde **8.10 vs 5.05** — net fark
-2. Pazar **neredeyse boş** — 2013'ten beri ciddi rakip yok
-3. Gelir tavanı **5-10x daha yüksek** (vaka çalışmaları kanıtı)
-4. Konsept **%90 pozitif review** ile oyuncu tarafından kanıtlanmış
+1. Karar matrisinde **7.50 vs 5.05** — anlamlı fark (düzeltilmiş skorlar)
+2. Pazar **neredeyse boş** — 2013'ten beri ciddi rakip yok (ancak bunun düşük talep ihtimali de göz önünde bulundurulmalı)
+3. Geniş fantezi yönetim türü **daha yüksek gelir tavanı** gösteriyor (korelasyon, kesin nedensellik değil)
+4. Konsept **%90 pozitif review** ile oyuncu tarafından kanıtlanmış (Unholy Heights)
 5. Cartoon sanat stiliyle **doğal uyum**
 6. Hibrit yaklaşım, İlkkan'ın hikayesini korurken tüm avantajları kazandırır
 
@@ -538,4 +558,18 @@ Gerekçe özeti:
 
 ---
 
-*Rapor Sonu — Apartman Projesi, Evren Seçimi Araştırması v1.0*
+*Rapor Sonu — Apartman Projesi, Evren Seçimi Araştırması v1.1 (düzeltilmiş)*
+
+### v1.1 Değişiklik Günlüğü (2026-02-10)
+
+| Düzeltme | Açıklama |
+|----------|----------|
+| Kategori adı | "Fantezi / Canavar Tema" → "Fantezi / Benzersiz Tema" (tüm oyunlar canavar oyunu değil) |
+| Against the Storm satış tutarsızlığı | Tablo (×35: ~627K) vs gerçek raporlanan satış (1M+) farkı dipnotla belirtildi |
+| Lobotomy Corp gelir tutarsızlığı | ×35 tahmini (~$40.5M) vs Steam Revenue Calculator (~$49.1M) farkı her iki yerde belirtildi |
+| Karşılaştırma metodolojisi | Eşit olmayan gruplar ve hayatta kalma yanlılığı uyarısı eklendi |
+| Beholder serisi | 11 oyunluk gerçek toplam ve Beholder dahil/hariç ortalamaları belirtildi |
+| Korelasyon vs nedensellik | Bulgu 2'deki nedensellik iddiası "korelasyon/hipotez" olarak yumuşatıldı |
+| Mavi okyanus iddiası | "Düşük talep" alternatif açıklaması eklendi |
+| Karar matrisi | Oyuncu tercihi (8→7) ve Rakip performansı (9→7) puanları düzeltildi; toplam: 8.10→7.50 |
+| Vaka 3 (Lobotomy Corp) | Tema dışı başarı faktörleri (SCP fandom, gameplay, franchise) açıkça belirtildi |
