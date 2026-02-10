@@ -3,11 +3,11 @@
 
 | Alan | Detay |
 |------|-------|
-| **Rapor Versiyonu** | 1.1 (düzeltilmiş) |
-| **Tarih** | 2026-02-10 (v1.0: 2026-02-09) |
+| **Rapor Versiyonu** | 2.0 |
+| **Tarih** | 2026-02-10 |
 | **Proje** | Apartman (çalışma adı) |
 | **Hazırlayan** | Proje Ekibi |
-| **Durum** | Taslak v1.1 — Metodoloji düzeltmeleri uygulandı, karar bekleniyor |
+| **Durum** | Taslak — Karar bekleniyor |
 
 ---
 
@@ -67,80 +67,125 @@ Bu raporda satış tahminleri için **Boxleiter Yöntemi** kullanılmıştır:
 | **Constructor Plus** | 424 | %89 Very Positive | $14.99 | ~15K | Mülk inşa + rakip yarışı | [Steam](https://store.steampowered.com/app/898800/Constructor_Plus/) |
 | **Landlord Simulator** | 10 | %20 Mostly Negative | $4.99 | <1K | Temel kiracı yönetimi (başarısız) | [Steam](https://store.steampowered.com/app/803310/Landlord_Simulator/) |
 
+**Mülk Yenileme / Otel Yönetimi:**
+
+| Oyun | Review | Rating | Fiyat | Tahmini Satış | Tema Detayı | Steam Linki |
+|------|--------|--------|-------|---------------|-------------|-------------|
+| **House Flipper** | 44,765 | %94 Very Positive | $24.99 | ~1.6M | Ev satın al, tamir et, döşe, sat — casual mülk yenileme | [Steam](https://store.steampowered.com/app/613100/House_Flipper/) |
+| **House Flipper 2** | 8,312 | %86 Very Positive | $39.99 | ~291K | Devam oyunu, co-op destekli | [Steam](https://store.steampowered.com/app/1190970/House_Flipper_2/) |
+| **Hotel Architect** | ~891 | %94 Very Positive | $19.99 EA | ~31K | Otel tasarla, inşa et, yönet (Prison Architect tarzı) | [Steam](https://store.steampowered.com/app/1602000/Hotel_Architect/) |
+
 **Distopik Varyant:**
 
 | Oyun | Review | Rating | Fiyat | Tahmini Satış | Tema Detayı | Steam Linki |
 |------|--------|--------|-------|---------------|-------------|-------------|
-| **Beholder** | 2,995 | %81 Very Positive | $9.99 | ~105K | Totaliter rejimde apartman gözetimi | [Steam](https://store.steampowered.com/app/475550/Beholder/) |
-| **Beholder 2** | 1,015 | %82 Very Positive | $14.99 | ~36K | Devlet binası gözetimi | [Steam](https://store.steampowered.com/app/761620/Beholder_2/) |
-| **Beholder 3** | 406 | %68 Mixed | $14.99 | ~14K | Seri devamı (düşüş) | [Steam](https://store.steampowered.com/app/1570070/Beholder_3/) |
+| **Beholder** | 29,160 | %92 Very Positive | $9.99 | ~1M | Totaliter rejimde apartman gözetimi | [Steam](https://store.steampowered.com/app/475550/Beholder/) |
+| **Beholder 2** | 7,767 | %87 Very Positive | $17.99 | ~272K | Devlet binası gözetimi | [Steam](https://store.steampowered.com/app/761620/Beholder_2/) |
+| **Beholder 3** | 2,108 | %65 Mixed | $17.99 | ~74K | Seri devamı (düşüş) | [Steam](https://store.steampowered.com/app/1570070/Beholder_3/) |
 
 ### 2B. Fantezi / Benzersiz Tema — Yönetim Oyunları
 
-| Oyun | Review | Rating | Fiyat | Tahmini Satış | Tema Detayı | Steam Linki |
-|------|--------|--------|-------|---------------|-------------|-------------|
-| **Lobotomy Corporation** | 46,349 | %94 Overwhelmingly Positive | $24.99 | ~1.6M ² | SCP-tarzı canavar yönetim tesisi | [Steam](https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/) |
-| **Against the Storm** | 17,915 | %95 Overwhelmingly Positive | $29.99 | ~627K ×35 tahmini ¹ | Fantezi şehir yönetimi (kunduz, kertenkele, insan) | [Steam](https://store.steampowered.com/app/1336490/Against_the_Storm/) |
-| **Unholy Heights** | 1,573 | %90 Very Positive | $3.99 | ~55K | Şeytan'ın canavar apartmanı (**en yakın rakip**) | [Steam](https://store.steampowered.com/app/249330/Unholy_Heights/) |
-| **War for the Overworld** | 6,265 | %85 Very Positive | $29.99 | ~219K | Dungeon Keeper varisi | [Steam](https://store.steampowered.com/app/230190/War_for_the_Overworld/) |
-| **Dungeon Inn** | ~500+ | %92 Very Positive | EA | ~18K | Zindan ağzında han yönetimi | [Steam](https://store.steampowered.com/app/2552310/Dungeon_Inn/) |
-| **Bloody Hell Hotel** | — | — (henüz çıkmadı) | TBD | — | Vampir otel yönetimi | [Steam](https://store.steampowered.com/app/2055770/Bloody_Hell_Hotel/) |
-| **Drosoph Hotel** | az | — | $7.99 | <1K | Korku oteli yönetimi (terk edilmiş) | [Steam](https://store.steampowered.com/app/717020/Drosoph_Hotel/) |
+**Kompleks / Hardcore Fantezi Yönetim:**
 
-> **¹ Against the Storm dipnotu:** ×35 Boxleiter tahmini ~627K veriyor, ancak VGChartz'a göre gerçek satış **1M+ kopya** olarak raporlanmıştır ([kaynak](https://www.vgchartz.com/article/460494/against-the-storm-sales-top-1-million-units-on-steam/)). Bu, oyunun gerçek review-to-sales çarpanının ~56 olduğunu gösterir (viral oyun aralığı: 50-70). ×35 tahmini bu oyun için düşük kalmaktadır.
->
-> **² Lobotomy Corporation dipnotu:** ×35 Boxleiter tahmini ~1.62M kopya × $24.99 = **~$40.5M brüt gelir** verir. Ancak Steam Revenue Calculator'ın tahmini **~$49.1M**'dır. Bu fark (~%21), farklı tahmin yöntemlerinden, bölgesel fiyatlandırmadan ve olası DLC gelirinden kaynaklanıyor olabilir. Bu raporda her iki rakam da belirtilmiştir; okuyucu aralık olarak değerlendirmelidir.
->
-> **⚠️ Metodoloji notu:** Bu tablodaki oyunlar farklı alt türleri kapsar (canavar yönetimi, fantezi şehir yönetimi, zindan yönetimi). Doğrudan "apartman yönetimi" olan tek oyun Unholy Heights'tır. Karşılaştırmalar bu farkı göz önünde bulundurarak okunmalıdır.
+| Oyun | Review | Rating | Fiyat | Tahmini Satış | Kompleksite | Tema Detayı | Steam Linki |
+|------|--------|--------|-------|---------------|-------------|-------------|-------------|
+| **Lobotomy Corporation** | 46,349 | %94 Overwhelmingly Positive | $24.99 | ~1.6M ¹ | Kompleks | SCP-tarzı canavar yönetim tesisi | [Steam](https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/) |
+| **Against the Storm** | 17,915 | %95 Overwhelmingly Positive | $29.99 | ~627K ×35 / 1M+ gerçek ² | Kompleks | Fantezi şehir yönetimi + roguelite (kunduz, kertenkele, insan) | [Steam](https://store.steampowered.com/app/1336490/Against_the_Storm/) |
+| **War for the Overworld** | 6,265 | %85 Very Positive | $29.99 | ~219K | Kompleks | Dungeon Keeper varisi, RTS mekanikli | [Steam](https://store.steampowered.com/app/230190/War_for_the_Overworld/) |
 
-### 2C. Tema Komedisiyle Öne Çıkan Yönetim Oyunları (Referans)
+> **¹** ×35 Boxleiter tahmini ~1.62M kopya × $24.99 = ~$40.5M brüt gelir verir. Steam Revenue Calculator tahmini ~$49.1M'dır. Fark, farklı tahmin yöntemleri ve bölgesel fiyatlandırmadan kaynaklanabilir.
+> **²** ×35 tahmini ~627K veriyor, VGChartz gerçek satışı 1M+ olarak raporlamıştır. Gerçek çarpan ~56 (viral aralık).
 
-| Oyun | Review | Rating | Tahmini Satış | Tema Detayı | Steam Linki |
-|------|--------|--------|---------------|-------------|-------------|
-| **Two Point Hospital** | 30,000+ | %90 Very Positive | ~1M+ | Komik kurgusal hastalıklar + hastane | [Steam](https://store.steampowered.com/app/535930/Two_Point_Hospital/) |
-| **Prison Architect** | 40,000+ | %90 Very Positive | ~4M+ | Stilize hapishane yönetimi | [Steam](https://store.steampowered.com/app/233450/Prison_Architect/) |
+> **⚠️ Kompleksite uyarısı:** Yukarıdaki oyunlar **hardcore strateji** oyunlarıdır. Lobotomy Corporation SCP-fandom'una dayanan derin bir tesis simülasyonu, Against the Storm roguelite döngüsü olan bir şehir yönetimi, War for the Overworld ise bir RTS'dir. Bu oyunların yüksek puanları büyük ölçüde **derinlik ve kompleksitelerinden** kaynaklanır — yalnızca fantezi temalarına atfedilemez. Casual bir apartman simülasyonu için doğrudan karşılaştırma referansı olarak kullanılmamalıdır.
+
+**Casual / Erişilebilir Fantezi Yönetim:**
+
+| Oyun | Review | Rating | Fiyat | Tahmini Satış | Kompleksite | Tema Detayı | Steam Linki |
+|------|--------|--------|-------|---------------|-------------|-------------|-------------|
+| **Spiritfarer** | 18,185 | %95 Overwhelmingly Positive | $24.99 | ~637K | Casual | Ruhları ağırlayan yüzen apartman — cozy yönetim | [Steam](https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/) |
+| **Bear and Breakfast** | 3,251 | %90 Very Positive | $19.99 | ~114K | Casual | Ayı olarak pansiyon yönetimi — cozy | [Steam](https://store.steampowered.com/app/1136370/Bear_and_Breakfast/) |
+| **Unholy Heights** | 1,573 | %90 Very Positive | $3.99 | ~55K | Casual | Şeytan'ın canavar apartmanı (**en yakın rakip**) | [Steam](https://store.steampowered.com/app/249330/Unholy_Heights/) |
+| **Dungeon Inn** | ~552 | %92 Very Positive | $12.99 EA | ~19K | Casual-Orta | Zindan ağzında han yönetimi | [Steam](https://store.steampowered.com/app/2552310/Dungeon_Inn/) |
+| **Monster Care Simulator** | ~549 | %93 Very Positive | $12.99 EA | ~19K | Casual | Canavar bakım merkezi yönetimi (2025) | [Steam](https://store.steampowered.com/app/3288270/Monster_Care_Simulator/) |
+| **Spirittea** | 645 | %85 Very Positive | $19.99 | ~23K | Casual | Ruhlar için hamam yönetimi (Spirited Away tarzı) | [Steam](https://store.steampowered.com/app/1931060/Spirittea/) |
+| **Travellers Rest** | 7,517 | %89 Very Positive | $17.99 | ~263K | Casual-Orta | Fantezi han/taverna yönetimi | [Steam](https://store.steampowered.com/app/1139980/Travellers_Rest/) |
+
+**Yaklaşan / Niş Referans:**
+
+| Oyun | Durum | Tema Detayı | Steam Linki |
+|------|-------|-------------|-------------|
+| **Bloody Hell Hotel** | Henüz çıkmadı (2026 hedefi) | Vampir otel yönetimi | [Steam](https://store.steampowered.com/app/2055770/Bloody_Hell_Hotel/) |
+| **Fantastic Haven** | Henüz çıkmadı (2026 hedefi) | Fantezi yaratık barınağı | [Steam](https://store.steampowered.com/app/2556470/Fantastic_Haven/) |
+| **Yokai Landlord** | Çıktı (~101 review, %83) | Apartmandaki yokai kiracıları bulma (sosyal dedüksiyon, yönetim sim değil) | [Steam](https://store.steampowered.com/app/3193560/Yokai_Landlord_Monster_Mystery/) |
+
+> **Niş hareketliliği:** 2025-2026 döneminde "fantezi yaratık barınağı/yönetimi" konseptine yönelen birden fazla proje gözlemlenmektedir (Monster Care Simulator, Yokai Landlord, Bloody Hell Hotel, Fantastic Haven). Bu, geliştirici camiasının da aynı pazar boşluğunu fark ettiğini gösterir — fırsat penceresi daralıyor olabilir.
+
+### 2C. Referans Yönetim Oyunları (Tema ve Ölçek Karşılaştırması)
+
+| Oyun | Review | Rating | Tahmini Satış | Kompleksite | Tema Detayı | Steam Linki |
+|------|--------|--------|---------------|-------------|-------------|-------------|
+| **Cult of the Lamb** | 117,766 | %96 Overwhelmingly Positive | 4.5M+ | Orta (roguelike + yönetim) | Fantezi kült yönetimi — yaratık takipçilerle yerleşim kur | [Steam](https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/) |
+| **Two Point Hospital** | 34,214 | %92 Very Positive | ~1M+ | Casual-Orta | Komik kurgusal hastalıklar + hastane | [Steam](https://store.steampowered.com/app/535930/Two_Point_Hospital/) |
+| **Prison Architect** | 72,927 | %89 Very Positive | ~4M+ | Orta-Kompleks | Stilize hapishane yönetimi | [Steam](https://store.steampowered.com/app/233450/Prison_Architect/) |
+| **Slime Rancher** | 63,716 | %98 Overwhelmingly Positive | 2M-5M+ | Casual | Alien gezegende slime çiftliği — casual yaratık bakımı | [Steam](https://store.steampowered.com/app/433340/Slime_Rancher/) |
+| **House Flipper** | 44,765 | %94 Very Positive | ~1.6M | Casual | Ev satın al, tamir et, döşe, sat | [Steam](https://store.steampowered.com/app/613100/House_Flipper/) |
 
 ---
 
 ## 3. Tema Bazlı Karşılaştırma
 
-### Sayısal Karşılaştırma
+### 3A. Tüm Oyunlar — Genel Karşılaştırma
 
-> **⚠️ Metodoloji uyarısı:** Aşağıdaki karşılaştırma eşit olmayan gruplar arasındadır. Gerçekçi gruptaki 8 oyun hep spesifik olarak apartman/bina yönetimi oyunlarıdır. Fantezi grubundaki 6 oyun ise farklı alt türleri kapsar (canavar tesisi, fantezi şehir, zindan yönetimi vb.) ve yalnızca 1 tanesi (Unholy Heights) doğrudan "apartman yönetimi"dir. Ayrıca gerçekçi grupta başarısız oyunlar (Landlord Simulator, %20 rating) dahilken, fantezi grupta başarısız örnekler neredeyse hiç yoktur (hayatta kalma yanlılığı). Ortalamalar bu asimetriyi yansıtır; dikkatli yorumlanmalıdır.
+| Metrik | Gerçekçi Tema | Fantezi/Benzersiz Tema | Not |
+|--------|---------------|------------------------|-----|
+| **Toplam oyun sayısı** | 14 (8 apartman/bina + 3 mülk yenileme + 3 Beholder) | 10 (3 kompleks + 7 casual) | Gerçekçi kategori, mülk yenileme dahil |
+| **En yüksek review** | 44,765 (House Flipper) / 29,160 (Beholder) | 46,349 (Lobotomy Corp) / 18,185 (Spiritfarer, casual) | Beholder ve House Flipper gerçekçi tavanı yükseltiyor |
+| **En yüksek tahmini satış** | ~1.6M (House Flipper) / ~1M (Beholder) | ~1.6M (Lobotomy Corp) / ~637K (Spiritfarer, casual) | Doğrudan apartman yönetiminde: The Tenants ~258K |
+| **Doğrudan apartman nişi** | 8+ oyun — doygun | 1 oyun (Unholy Heights, 2013) — neredeyse boş | Beholder distopik, House Flipper yenileme odaklı |
 
-| Metrik | Gerçekçi Tema (8 oyun) | Fantezi/Benzersiz Tema (6 oyun) | Not |
-|--------|------------------------|-------------------------------|-----|
-| **Toplam oyun sayısı** | 8 + 3 Beholder serisi = 11 | 6 (az, özellikle apartman nişinde 1) | Beholder serisi distopik varyant olarak ayrı tutulmuştur |
-| **Ortalama review sayısı** | ~2,385 (Beholder hariç) / ~2,178 (Beholder dahil) | ~12,100 | Fantezi grubun ortalamasını Lobotomy Corp (46K review) tek başına yukarı çekiyor |
-| **Ortalama rating** | %78 (Beholder hariç) / %79 (Beholder dahil) | %91 | Gerçekçi grupta Landlord Simulator (%20) ortalamayı aşağı çekiyor |
-| **En yüksek tahmini satış** | ~258K (The Tenants) | ~1.6M (Lobotomy Corp) | Lobotomy Corp apartman oyunu değil, SCP-tarzı tesis yönetimi |
-| **En yüksek tahmini gelir** | ~$5M (The Tenants) | ~$40.5M-$49M (Lobotomy Corp) | Aralık: ×35 tahmini vs Steam Revenue Calculator tahmini |
+### 3B. Casual Oyunlar — Proje İçin Doğru Karşılaştırma
 
-### Pazar Doygunluğu
+Apartman projesi **basit strateji, casual-friendly bir simülasyon** olacağı için, yalnızca benzer kompleksite seviyesindeki oyunlarla karşılaştırma yapılmalıdır. Lobotomy Corporation, Against the Storm, Prison Architect gibi kompleks oyunlar referans listesinde kalır ancak doğrudan karşılaştırma grubundan çıkarılmıştır.
+
+| Metrik | Casual Gerçekçi | Casual Fantezi | Not |
+|--------|----------------|----------------|-----|
+| **Oyunlar** | The Tenants, Landlord's Super, Small Spaces, House Flipper, House Flipper 2 | Spiritfarer, Bear and Breakfast, Unholy Heights, Dungeon Inn, Monster Care Sim, Spirittea, Travellers Rest | Yalnızca casual/erişilebilir oyunlar |
+| **Ortalama rating** | %86 | %91 | Fantezi casual'da daha yüksek taban kalitesi |
+| **Medyan rating** | %86 | %90 | Fantezi lehine tutarlı fark |
+| **En düşük rating** | %79 (The Tenants) | %85 (Spirittea) | Fanteziinin "taban"ı daha yüksek |
+| **En yüksek rating** | %94 (House Flipper) | %95 (Spiritfarer) | Tavan yaklaşık eşit |
+| **En yüksek tahmini satış** | ~1.6M (House Flipper) | ~637K (Spiritfarer) | House Flipper devasa; ama yenileme sim, kiracı yönetimi değil |
+| **Doğrudan apartman rakibi** | The Tenants (%79, ~258K) | Unholy Heights (%90, ~55K) | Her iki niş de "breakout hit" üretmemiş |
+
+### 3C. Pazar Doygunluğu
 
 ```
 Gerçekçi Apartman/Bina Yönetimi:
-████████████████████ 8+ oyun — DOYGUN
+████████████████████████ 11+ oyun — ÇOK DOYGUN
 
-Fantezi Bina/Apartman Yönetimi:
-██                   1 oyun (Unholy Heights, 2013) — NEREDEYSE BOŞ
+Gerçekçi Mülk Yenileme:
+████████████           3+ oyun — ORTA-DOYGUN (House Flipper dominant)
 
-Fantezi Otel/Han Yönetimi:
-██████               3-4 oyun — ORTA
+Fantezi Apartman/Bina Yönetimi:
+██                     1 çıkmış oyun (Unholy Heights, 2013) — NEREDEYSE BOŞ
+                       +2-3 yaklaşan proje (Bloody Hell Hotel, Fantastic Haven, Yokai Landlord)
 
-Canavar Yönetimi (genel):
-████████             3-4 oyun — ORTA
+Casual Fantezi Otel/Han Yönetimi:
+████████████           5-6 oyun — ORTA (Bear & Breakfast, Dungeon Inn, Travellers Rest vb.)
+
+Casual Fantezi Yaratık Bakımı:
+████████               3-4 oyun — ORTA (Monster Care Sim, Spirittea, Slime Rancher)
 ```
 
-### Kritik Bulgu
+### 3D. Kritik Bulgular
 
-**"Canavar apartman yönetimi" nişinde yalnızca 1 oyun var: Unholy Heights (2013).** Bu oyun $3.99 fiyat noktasında, ~5 saatlik bir oyun ve %90 pozitif review'a sahip. Modern üretim değerleriyle bu nişe giren büyük bir rakip bulunmuyor. Bu bir **potansiyel mavi okyanus** fırsatıdır.
+**Bulgu 1:** "Canavar apartman yönetimi" nişinde hâlâ yalnızca 1 çıkmış oyun var (Unholy Heights, 2013). Ancak 2025-2026'da birden fazla geliştirici bu nişe yöneliyor (Bloody Hell Hotel, Fantastic Haven, Yokai Landlord). Bu, hem talebin varlığına hem de fırsat penceresinin daralmasına işaret eder.
 
-> **⚠️ Alternatif açıklama:** Boş bir niş her zaman "fırsat" anlamına gelmez — bazen yeterli talep olmadığını da gösterebilir. "Canavar apartman" nişinin neden 2013'ten beri boş kaldığını değerlendirirken iki olasılık göz önünde bulundurulmalıdır:
-> 1. **Fırsat tezi:** Konsept kanıtlanmış (%90 review) ama hiç kimse modern bir yapımla deneyimlememiş — gerçek bir boşluk.
-> 2. **Düşük talep tezi:** Konsept niş kalmaya mahkum olabilir — Unholy Heights'ın düşük satışları ($3.99'da bile ~55K) talebin sınırlı olduğuna işaret edebilir.
->
-> Unholy Heights'ın düşük fiyatı, kısa süresi ve 2013 yapımı olması düşük satışı açıklayabilir, bu yüzden fırsat tezi daha olası görünüyor — ancak kesinlik yoktur.
+**Bulgu 2:** Casual segmentte fantezi tema, gerçekçi temaya kıyasla **tutarlı bir rating avantajı** gösterir (ortalama %91 vs %86). Bu fark, kompleks oyunlardaki kadar dramatik değildir ancak anlamlıdır. Fantezi temanın "charm buffer" etkisi casual oyunlarda da geçerlidir.
+
+**Bulgu 3:** Gerçekçi mülk yönetimi pazarının tavanı düşünülenden yüksektir. Beholder serisi (~29K review, ~1M satış) ve House Flipper (~45K review, ~1.6M satış) gerçekçi temanın da büyük kitlelere ulaşabildiğini gösterir — **doğru uygulama ve farklılaştırma ile**.
+
+**Bulgu 4:** Boş bir niş her zaman "fırsat" anlamına gelmez — bazen talebin sınırlı olduğunu da gösterebilir. Ancak Unholy Heights'ın %90 pozitif review'ı, Bear and Breakfast'in %90 review'ı ve Spiritfarer'ın %95 review'ı, casual oyuncuların "fantezi yaratıklarla birlikte yaşama/yönetme" konseptini sevdiğini kanıtlar. Ayrıca 2025-2026'da nişe yönelen yeni projeler talebin varlığına işaret eder.
 
 ---
 
@@ -207,6 +252,8 @@ Canavar Yönetimi (genel):
 
 **Ders:** "Canavar yönetimi" konsepti ~$40-49M gelir ve bir franchise yaratabilir — **ancak** bu başarıda temanın yanı sıra SCP fandom'u, benzersiz gameplay tasarımı ve franchise stratejisi de belirleyici rol oynamıştır. Tema tek başına yeterli değildir, doğru uygulama şarttır.
 
+**⚠️ Karşılaştırılabilirlik notu:** Lobotomy Corporation **hardcore bir strateji oyunudur** — yüksek zorluk, permadeath mekanikleri, derin lore. Casual bir apartman simülasyonu için doğrudan gelir tavanı referansı olarak kullanılmamalıdır. Bu vaka çalışması, "canavar yönetimi" konseptinin ticari kanıtı olarak değerlidir, ancak casual segmentteki beklentiler farklıdır (bkz. Spiritfarer: casual canavar/ruh yönetimi, ~$16M tahmini gelir).
+
 **Kaynak:** [Lobotomy Corporation — Steam](https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/)
 
 ---
@@ -255,7 +302,54 @@ Canavar Yönetimi (genel):
 
 **Ders:** Yönetim simülasyonlarında benzersiz bir fantezi açısı, kalabalık bir türde bile 1M+ satışa ulaşabilir. Anahtar: "Generic fantezi" değil, **spesifik ve alışılmadık fantezi**.
 
+**⚠️ Karşılaştırılabilirlik notu:** Against the Storm **kompleks bir roguelite + şehir yönetimi** oyunudur. Casual bir apartman simülasyonu ile doğrudan karşılaştırılmamalıdır. Bu vaka çalışması, "benzersiz fantezi açısı" stratejisinin geçerliliğini göstermek amacıyla dahil edilmiştir.
+
 **Kaynak:** [Against the Storm — Steam](https://store.steampowered.com/app/1336490/Against_the_Storm/)
+
+---
+
+### Vaka 6: Spiritfarer — Casual Fantezi Yönetimin Referans Noktası
+
+| Alan | Detay |
+|------|-------|
+| **Oyun** | Spiritfarer: Farewell Edition |
+| **Tema** | Cozy yönetim — ruhları ağırlayan yüzen bir "apartman" |
+| **Satış** | ~637K kopya tahmini (×35) |
+| **Gelir** | ~$16M brüt tahmin |
+| **Rating** | %95 Overwhelmingly Positive |
+| **Kompleksite** | Casual — stres yok, fail state yok |
+
+**Ne oldu:** Thunder Lotus Games'in indie oyunu. Ölüm sonrası ruhları taşıyan bir teknede yaşıyorsunuz. Her ruh için özel odalar inşa ediyorsunuz (küçük bir yüzen apartman gibi), onların ihtiyaçlarını karşılıyorsunuz — yemek yapıyorsunuz, çiftçilik yapıyorsunuz, hikayelerini dinliyorsunuz. Sonra onları "öte tarafa" gönderiyorsunuz.
+
+**Tema etkisi:** Oyunun çekirdeği aslında **kiracı yönetimi** — ama kiracılar ruhlar, bina ise bir tekne. Fantezi teması 3 avantaj sağladı:
+1. **Duygusal derinlik** — Gerçekçi bir apartmanda "kiracınız taşınıyor" sıradan, ama "ruhunuzu öte tarafa uğurluyorsunuz" duygusal
+2. **Görsel kimlik** — Hand-drawn sanat + fantezi yaratıklar = anında tanınabilir marka
+3. **Mekanik özgürlük** — Her ruhun farklı ihtiyaçları, farklı oda tasarımları
+
+**Ders:** Casual segmentte fantezi temalı "yaratıkları barındırma/yönetme" konsepti, **%95 review ve ~$16M gelir** üretebilir. Bu, Apartman projesi için Lobotomy Corporation'dan çok daha gerçekçi bir referans noktasıdır.
+
+**Kaynak:** [Spiritfarer — Steam](https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/)
+
+---
+
+### Vaka 7: Bear and Breakfast — Casual Fantezi Konaklama Yönetimi
+
+| Alan | Detay |
+|------|-------|
+| **Oyun** | Bear and Breakfast |
+| **Tema** | Ayı olarak pansiyon yönetimi |
+| **Satış** | ~114K kopya tahmini (×35) |
+| **Gelir** | ~$2.3M brüt tahmin |
+| **Rating** | %90 Very Positive |
+| **Kompleksite** | Casual — rahat tempo, başarısızlık yok |
+
+**Ne oldu:** Gummy Cat stüdyosunun indie oyunu. Bir ayı olarak ormandaki terk edilmiş binaları pansiyona dönüştürüyorsunuz. Odaları dekore ediyorsunuz, misafirlerin ihtiyaçlarını karşılıyorsunuz, hikaye görevlerini tamamlıyorsunuz.
+
+**Tema etkisi:** "Ayı olarak B&B yönetimi" pitch'i doğal bir komedi kaynağı ve anında akılda kalıcı bir konsept. Gerçekçi bir pansiyon oyunu olsaydı, House Flipper'ın gölgesinde kalırdı. Fantezi açısı sayesinde **tamamen ayrı bir kitleye** hitap etti.
+
+**Ders:** Casual fantezi konaklama yönetimi %90 review ile kanıtlanmış bir konsepttir. Oyunun mütevazı satışları (~114K), küçük ekip büyüklüğü ve sınırlı pazarlama bütçesiyle açıklanır — konseptin kendisi güçlüdür.
+
+**Kaynak:** [Bear and Breakfast — Steam](https://store.steampowered.com/app/1136370/Bear_and_Breakfast/)
 
 ---
 
@@ -334,34 +428,32 @@ Canavar Yönetimi (genel):
 
 ## 7. Karar Matrisi
 
-Her kriter 1-10 arasında puanlanmıştır. Puanların gerekçeleri aşağıda açıklanmıştır.
+Her kriter 1-10 arasında puanlanmıştır. Puanlama, yalnızca **casual/erişilebilir yönetim oyunları** referans alınarak yapılmıştır. Kompleks/hardcore oyunlar (Lobotomy Corp, Against the Storm, Prison Architect) ölçek referansı olarak kullanılmış ancak doğrudan puanlama girdisi olarak alınmamıştır.
 
 | Kriter | Ağırlık | Gerçekçi İnsan | Gerekçe (Gerçekçi) | Fantezi Canavar | Gerekçe (Fantezi) |
 |--------|---------|----------------|---------------------|-----------------|---------------------|
-| **Pazar boşluğu** | %25 | 3/10 | 8+ gerçekçi rakip var (The Tenants, Project Highrise vb.) | 9/10 | Yalnızca 1 rakip (Unholy Heights, 2013) — neredeyse boş pazar |
-| **Oyuncu tercihi** | %20 | 6/10 | Kanıtlanmış talep var ama "wow" etkisi yok | 7/10 | Unholy Heights %90 review ile konsept kanıtlanmış; ancak tek direkt veri noktası bu (Lobotomy Corp farklı alt tür) |
-| **Rakip performansı** | %20 | 5/10 | En iyi rakip ~$5M (The Tenants) — orta tavan | 7/10 | Direkt rakip (Unholy Heights) düşük gelirli (~$220K), ama düşük fiyat/süre ile sınırlı; geniş fantezi yönetim oyunları yüksek tavanlı ama farklı alt türler |
+| **Pazar boşluğu** | %25 | 3/10 | 11+ gerçekçi rakip (The Tenants, Project Highrise, House Flipper, Beholder, Hotel Architect vb.) | 8/10 | Casual canavar apartman nişinde 1 eski oyun (Unholy Heights), ama 2025-2026'da nişe yönelen 3-4 yeni proje var |
+| **Oyuncu tercihi** | %20 | 6/10 | Kanıtlanmış talep var (House Flipper %94, Beholder %92), "wow" etkisi düşük | 7/10 | Unholy Heights %90, Spiritfarer %95, Bear and Breakfast %90 — casual fantezi yönetimi tutarlı %90+ |
+| **Rakip performansı** | %20 | 6/10 | House Flipper ~$40M, Beholder ~$10M — gerçekçi tavan düşünülenden yüksek | 7/10 | Casual referanslar: Spiritfarer ~$16M, Bear and Breakfast ~$2.3M; direkt rakip Unholy Heights ~$220K (düşük fiyat/süre sınırlı) |
 | **Üretim fizibilitesi** | %15 | 8/10 | Referans bol, asset üretimi hızlı | 5/10 | Her canavar sıfırdan tasarlanmalı, daha fazla sanat çalışması |
-| **Farklılaşma gücü** | %10 | 3/10 | "Bir apartman yönetim oyunu daha" riski | 9/10 | "Canavar apartman yönetimi" — benzersiz, akılda kalıcı pitch |
+| **Farklılaşma gücü** | %10 | 3/10 | "Bir apartman yönetim oyunu daha" riski yüksek, kalabalık pazarda kaybolma tehlikesi | 9/10 | "Canavar apartman yönetimi" — benzersiz, akılda kalıcı pitch |
 | **Trend yönü** | %10 | 6/10 | İş simülasyonu trendi destekler | 8/10 | "Cozy + quirky" management trend, benzersiz tema Steam'de öne çıkar |
 
 ### Toplam Ağırlıklı Skor
 
 **Gerçekçi İnsan Evreni:**
-(3×0.25) + (6×0.20) + (5×0.20) + (8×0.15) + (3×0.10) + (6×0.10) = 0.75 + 1.20 + 1.00 + 1.20 + 0.30 + 0.60 = **5.05 / 10**
+(3×0.25) + (6×0.20) + (6×0.20) + (8×0.15) + (3×0.10) + (6×0.10) = 0.75 + 1.20 + 1.20 + 1.20 + 0.30 + 0.60 = **5.25 / 10**
 
-**Fantezi Canavar Evreni (düzeltilmiş):**
-(9×0.25) + (7×0.20) + (7×0.20) + (5×0.15) + (9×0.10) + (8×0.10) = 2.25 + 1.40 + 1.40 + 0.75 + 0.90 + 0.80 = **7.50 / 10**
-
-> **Not:** Önceki versiyonda fantezi temasının "Oyuncu tercihi" (8→7) ve "Rakip performansı" (9→7) puanları, farklı alt türlerden (Lobotomy Corp, Against the Storm) elde edilen verilere dayanarak aşırı yüksek tutulmuştu. Düzeltilmiş puanlar, yalnızca doğrudan karşılaştırılabilir verilere (Unholy Heights) ağırlık vererek hesaplanmıştır.
+**Fantezi Canavar Evreni:**
+(8×0.25) + (7×0.20) + (7×0.20) + (5×0.15) + (9×0.10) + (8×0.10) = 2.00 + 1.40 + 1.40 + 0.75 + 0.90 + 0.80 = **7.25 / 10**
 
 ```
-Gerçekçi İnsan:  ██████████░░░░░░░░░░  5.05/10
-Fantezi Canavar:  ███████████████░░░░░  7.50/10
-                                        △ +2.45 fark
+Gerçekçi İnsan:  ██████████░░░░░░░░░░  5.25/10
+Fantezi Canavar:  ██████████████░░░░░░  7.25/10
+                                        △ +2.00 fark
 ```
 
-Fark hâlâ fantezi lehine anlamlıdır (+2.45), ancak ilk hesaptaki kadar abartılı değildir (+3.05).
+Fark fantezi lehine anlamlıdır (+2.00). Gerçekçi temanın en güçlü yönü üretim fizibilitesi (%8/10), fantezi temanın en güçlü yönleri pazar boşluğu ve farklılaşma gücüdür.
 
 ---
 
@@ -371,7 +463,7 @@ Fark hâlâ fantezi lehine anlamlıdır (+2.45), ancak ilk hesaptaki kadar abart
 
 #### Bulgu 1: Fantezi canavar evreni pazar boşluğu açısından çok üstün
 
-**Veri:** Gerçekçi apartman/bina yönetim nişinde 8+ aktif oyun varken, canavar apartman yönetimi nişinde yalnızca 1 oyun (Unholy Heights, 2013) var.
+**Veri:** Gerçekçi apartman/bina/mülk yönetim nişinde 14+ aktif oyun varken (8 apartman/bina + 3 mülk yenileme + 3 Beholder), canavar apartman yönetimi nişinde yalnızca 1 çıkmış oyun (Unholy Heights, 2013) var. 2025-2026'da nişe yönelen birkaç yeni proje gözlemlenmektedir (Bloody Hell Hotel, Fantastic Haven, Yokai Landlord).
 
 **Neden bu önemli:** Bir pazarda rakip sayısı arttıkça, yeni girenin dikkat çekme maliyeti üstel olarak artar. 8 rakipli bir pazarda öne çıkmak, 1 rakipli bir pazara kıyasla çok daha fazla pazarlama bütçesi ve kalite gerektirir. Kalabalık bir pazarda "ortalama" bir oyun kaybolurken, boş bir pazarda "iyi" bir oyun doğal keşfedilebilirlik kazanır.
 
@@ -379,20 +471,25 @@ Fark hâlâ fantezi lehine anlamlıdır (+2.45), ancak ilk hesaptaki kadar abart
 
 ---
 
-#### Bulgu 2: Fantezi/benzersiz temalar yönetim simülasyonlarında daha yüksek gelir tavanıyla **korelasyon** gösterir
+#### Bulgu 2: Casual segmentte fantezi tema, tutarlı bir kalite avantajı gösterir
 
-**Veri:**
-- Lobotomy Corporation (canavar yönetimi): ~$40.5M-$49M gelir (yöntemlere göre değişir)
-- Two Point Hospital (absürd karikatür): ~$9.4M gelir
-- Against the Storm (fantezi şehir): 1M+ satış (gerçek raporlanan rakam)
-- Project Highrise (gerçekçi bina): ~$4-10M gelir (tahmin)
-- The Tenants (gerçekçi apartman): ~$5M gelir (tahmin)
+**Veri (casual oyunlar, doğrudan karşılaştırılabilir):**
+- Spiritfarer (fantezi ruh yönetimi, casual): %95 review, ~$16M gelir
+- Bear and Breakfast (fantezi pansiyon, casual): %90 review, ~$2.3M gelir
+- Unholy Heights (fantezi canavar apartman, casual): %90 review, ~$220K gelir
+- House Flipper (gerçekçi mülk yenileme, casual): %94 review, ~$40M gelir
+- The Tenants (gerçekçi apartman yönetimi, orta): %79 review, ~$5M gelir
 
-**Neden bu önemli:** Fantezi/benzersiz temalı oyunların gelir tavanı, gerçekçi temalı oyunlara kıyasla **daha yüksek görünmektedir**. Ancak bu farkı yalnızca tema seçimine bağlamak yanıltıcı olur.
+**Veri (kompleks oyunlar, dolaylı referans):**
+- Lobotomy Corporation (fantezi, kompleks): %94 review, ~$40-49M gelir
+- Against the Storm (fantezi, kompleks): %95 review, 1M+ satış
+- Beholder (gerçekçi distopik, orta): %92 review, ~$10M gelir
 
-**Korelasyon vs. Nedensellik uyarısı:** Lobotomy Corp'un ~$40-49M başarısı tema dışında birçok faktöre dayanır: SCP fandom etkisi, benzersiz gameplay döngüsü, franchise büyümesi (Library of Ruina, Limbus Company), ve çok yüksek oyun kalitesi (%94 rating). Benzer şekilde The Tenants'ın daha düşük geliri yalnızca gerçekçi tema yüzünden değil, daha düşük oyun kalitesi (%79 rating) ile de açıklanabilir. **Tema tek başına başarıyı belirlemez; iyi bir temayı iyi bir uygulama tamamlamalıdır.**
+**Analiz:** Casual segmentte fantezi temalı oyunlar tutarlı biçimde **%85-95 aralığında** rating alırken, gerçekçi casual oyunlar **%79-94 aralığında** daha geniş bir yelpaze gösterir. Fantezi temanın "taban" kalitesi daha yüksektir.
 
-**Olası mekanizma (nedensellik değil, hipotez):** Benzersiz tema → Sosyal medyada paylaşılabilirlik → Viral büyüme potansiyeli → Daha geniş kitleye ulaşım → Daha yüksek toplam gelir. Bu mekanizma mantıklıdır ama yukarıdaki verilerden kesin nedensellik çıkarılamaz.
+Ancak **House Flipper (%94, ~$40M) gerçekçi temanın da devasa ticari başarıya ulaşabildiğini kanıtlar** — doğru uygulama ve farklılaştırma ile. Beholder serisi de bunu destekler (~29K review, %92, ~$10M). Gerçekçi tema doğru niş ve uygulamayla yüksek tavana ulaşabilir.
+
+**Tema tek başına başarıyı belirlemez.** House Flipper gerçekçi temada %94 ve $40M'a ulaştıysa, tema seçiminden çok **uygulama kalitesi ve farklılaştırma** belirleyicidir. Fantezi temanın avantajı, farklılaşmayı **daha kolay** sağlamasıdır — gerçekçi temada farklılaşmak daha zordur ama imkansız değildir.
 
 ---
 
@@ -431,11 +528,12 @@ Fark hâlâ fantezi lehine anlamlıdır (+2.45), ancak ilk hesaptaki kadar abart
 
 | Risk | Gerçekçi Tema | Fantezi Tema |
 |------|--------------|--------------|
-| **Pazarda kaybolma** | YÜKSEK — 8+ rakip arasında görünmezlik | DÜŞÜK — benzersiz konsept |
+| **Pazarda kaybolma** | YÜKSEK — 11+ rakip arasında görünmezlik riski | DÜŞÜK — benzersiz konsept, ancak 2025-2026'da yeni rakipler beliriyor |
 | **Hikayenin zayıflaması** | DÜŞÜK — İlkkan'ın hikayesi gerçekçi evrene uygun | ORTA — hikayeyi fantezi evrene adapte etmek gerekir |
 | **Üretim gecikmesi** | DÜŞÜK — referans bol | ORTA — canavar tasarımları zaman alır |
-| **Gelir beklentisini karşılayamama** | ORTA — tavan ~$5M civarı | DÜŞÜK — tavan çok daha yüksek, boş niş |
-| **Oyuncu beklentisi uyumsuzluğu** | DÜŞÜK — bilinen format | DÜŞÜK — Unholy Heights %90 ile konsepti kanıtlamış |
+| **Gelir beklentisini karşılayamama** | ORTA — gerçekçi tavan düşünülenden yüksek (Beholder ~$10M, House Flipper ~$40M), ancak bu oyunlar farklı alt türler | ORTA — casual fantezi referansı Spiritfarer ~$16M, ama direkt rakip verisi yetersiz |
+| **Oyuncu beklentisi uyumsuzluğu** | DÜŞÜK — bilinen format | DÜŞÜK — Unholy Heights %90, Spiritfarer %95, Bear and Breakfast %90 |
+| **Fırsat penceresi kapanması** | DÜŞÜK — doygun pazar zaten rekabetçi | ORTA — Bloody Hell Hotel, Fantastic Haven gibi projeler aynı nişe yöneliyor |
 
 ---
 
@@ -458,14 +556,17 @@ Bu hibrit yaklaşım:
 **Fantezi canavar evreni (tercihen hibrit yaklaşımla) önerilir.**
 
 Gerekçe özeti:
-1. Karar matrisinde **7.50 vs 5.05** — anlamlı fark (düzeltilmiş skorlar)
-2. Pazar **neredeyse boş** — 2013'ten beri ciddi rakip yok (ancak bunun düşük talep ihtimali de göz önünde bulundurulmalı)
-3. Geniş fantezi yönetim türü **daha yüksek gelir tavanı** gösteriyor (korelasyon, kesin nedensellik değil)
-4. Konsept **%90 pozitif review** ile oyuncu tarafından kanıtlanmış (Unholy Heights)
-5. Cartoon sanat stiliyle **doğal uyum**
-6. Hibrit yaklaşım, İlkkan'ın hikayesini korurken tüm avantajları kazandırır
+1. Karar matrisinde **7.25 vs 5.25** — anlamlı fark (+2.00), casual referanslarla hesaplanmış
+2. "Canavar apartman" nişi **hâlâ neredeyse boş** — Unholy Heights (2013) tek çıkmış rakip, ama fırsat penceresi daralıyor (2025-2026'da yeni projeler beliriyor)
+3. Casual fantezi yönetim oyunları tutarlı %90+ rating alıyor — Spiritfarer %95, Bear and Breakfast %90, Unholy Heights %90
+4. Gerçekçi temanın tavanı düşünülenden yüksek (House Flipper ~$40M, Beholder ~$10M), **ancak** bu oyunlar farklı alt türler ve 11+ rakipli doygun bir pazarda farklılaşmak çok daha zor
+5. Cartoon sanat stiliyle **doğal uyum** — Spiritfarer, Bear and Breakfast gibi başarılı casual fantezi oyunları hep stilize sanata sahip
+6. Hibrit yaklaşım, İlkkan'ın hikayesini korurken fantezi avantajlarını kazandırır
 
-**Tek koşul:** Generic "orta çağ fantezisi" tuzağına düşmemek. Tema **spesifik ve alışılmadık** olmalı: "Bir apartmanda canavarlarla birlikte yaşamak" — bu kadar özgün olması yeterli.
+**Koşullar:**
+- Generic "orta çağ fantezisi" tuzağına düşmemek — tema **spesifik ve alışılmadık** olmalı
+- Kompleks/hardcore oyunları (Lobotomy Corp, Against the Storm) değil, **casual/cozy oyunları** (Spiritfarer, Bear and Breakfast, Two Point Hospital) model almak
+- Fırsat penceresi kapanmadan önce hareket etmek — Bloody Hell Hotel ve Fantastic Haven 2026'da çıkmayı hedefliyor
 
 ---
 
@@ -495,6 +596,17 @@ Gerekçe özeti:
 | Two Point Hospital | [store.steampowered.com/app/535930](https://store.steampowered.com/app/535930/Two_Point_Hospital/) |
 | Prison Architect | [store.steampowered.com/app/233450](https://store.steampowered.com/app/233450/Prison_Architect/) |
 | Monster Care Simulator | [store.steampowered.com/app/3288270](https://store.steampowered.com/app/3288270/Monster_Care_Simulator/) |
+| House Flipper | [store.steampowered.com/app/613100](https://store.steampowered.com/app/613100/House_Flipper/) |
+| House Flipper 2 | [store.steampowered.com/app/1190970](https://store.steampowered.com/app/1190970/House_Flipper_2/) |
+| Hotel Architect | [store.steampowered.com/app/1602000](https://store.steampowered.com/app/1602000/Hotel_Architect/) |
+| Spiritfarer | [store.steampowered.com/app/972660](https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/) |
+| Bear and Breakfast | [store.steampowered.com/app/1136370](https://store.steampowered.com/app/1136370/Bear_and_Breakfast/) |
+| Spirittea | [store.steampowered.com/app/1931060](https://store.steampowered.com/app/1931060/Spirittea/) |
+| Travellers Rest | [store.steampowered.com/app/1139980](https://store.steampowered.com/app/1139980/Travellers_Rest/) |
+| Cult of the Lamb | [store.steampowered.com/app/1313140](https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/) |
+| Slime Rancher | [store.steampowered.com/app/433340](https://store.steampowered.com/app/433340/Slime_Rancher/) |
+| Fantastic Haven | [store.steampowered.com/app/2556470](https://store.steampowered.com/app/2556470/Fantastic_Haven/) |
+| Yokai Landlord | [store.steampowered.com/app/3193560](https://store.steampowered.com/app/3193560/Yokai_Landlord_Monster_Mystery/) |
 
 ### Veri Araçları
 
@@ -558,18 +670,4 @@ Gerekçe özeti:
 
 ---
 
-*Rapor Sonu — Apartman Projesi, Evren Seçimi Araştırması v1.1 (düzeltilmiş)*
-
-### v1.1 Değişiklik Günlüğü (2026-02-10)
-
-| Düzeltme | Açıklama |
-|----------|----------|
-| Kategori adı | "Fantezi / Canavar Tema" → "Fantezi / Benzersiz Tema" (tüm oyunlar canavar oyunu değil) |
-| Against the Storm satış tutarsızlığı | Tablo (×35: ~627K) vs gerçek raporlanan satış (1M+) farkı dipnotla belirtildi |
-| Lobotomy Corp gelir tutarsızlığı | ×35 tahmini (~$40.5M) vs Steam Revenue Calculator (~$49.1M) farkı her iki yerde belirtildi |
-| Karşılaştırma metodolojisi | Eşit olmayan gruplar ve hayatta kalma yanlılığı uyarısı eklendi |
-| Beholder serisi | 11 oyunluk gerçek toplam ve Beholder dahil/hariç ortalamaları belirtildi |
-| Korelasyon vs nedensellik | Bulgu 2'deki nedensellik iddiası "korelasyon/hipotez" olarak yumuşatıldı |
-| Mavi okyanus iddiası | "Düşük talep" alternatif açıklaması eklendi |
-| Karar matrisi | Oyuncu tercihi (8→7) ve Rakip performansı (9→7) puanları düzeltildi; toplam: 8.10→7.50 |
-| Vaka 3 (Lobotomy Corp) | Tema dışı başarı faktörleri (SCP fandom, gameplay, franchise) açıkça belirtildi |
+*Rapor Sonu — Apartman Projesi, Evren Seçimi Araştırması v2.0*
