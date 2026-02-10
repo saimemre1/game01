@@ -59,15 +59,28 @@ Temel çekim gücü: **Kaynak yönetimi ve inşa etme hissi.** Oyuncu her gün k
 
 ## 2. Konsept ve Hikaye
 
-### Kısa Hikaye
+### Hikaye (Minimal — Sadece Giriş & Arka Plan)
 
-Bir baltaya sap olamayan **İlkkan**, bir gün telefonla aranır. Arayan bir avukattır. Yıllardır görüşmediği babaannesi vefat etmiştir. Vasiyet olarak İlkkan'a eski aile apartmanını bırakmıştır — apartmanı işletmesi ve **asla satmaması** şartıyla.
+Bir baltaya sap olamayan, babaannesini yıllardır aramayan, hayattan bir beklentisi kalmamış tembel ve karikatürize bir tip: **İlkkan.** Bir gün telefonla aranır. Arayan bir avukattır. Babaannesi vefat etmiştir. Vasiyet olarak İlkkan'a eski aile apartmanını bırakmıştır — apartmanı işletmesi ve **asla satmaması** şartıyla.
 
-Etrafta tüm arsalar satılmış, gökdelenler yükselmiştir. Ama bu sıcak ve eski apartmanı tekrar adam etmek çok zordur. İlkkan hayatında yeni bir amaç bulmuştur.
+Bu sıcak ve eski apartmanı tekrar adam etmek çok zordur. İlkkan hayatında yeni bir amaç bulmuştur. Ama bir apartman yönetmek kolay görünse de, başına geleceklerden habersizdir...
 
-Bir apartman yönetmek kolay görünse de, başına geleceklerden habersizdir. Ve olaylar gelişir...
+> **Hikaye yaklaşımı:** Hikaye sadece oyunun başlangıcında kısa bir sahne olarak anlatılır. Sonrasında oyunda aktif bir hikaye akışı yoktur. Oyuncu kendi hikayesini gameplay ile yaratır. İlkkan oyun içinde görünür bir karakter değildir — **oyuncu = İlkkan.**
 
-> **Not:** Hikaye destekleyici bir rol oynar. Oyunun merkezinde core gameplay ve kaynak yönetimi vardır. Hikaye, oyuncuya bağlam ve motivasyon sağlar ama oyun akışını domine etmez.
+### Kaybetme Koşulu (Lose Condition)
+
+Oyunun tek kaybetme koşulu: **Paranın bitmesi.**
+
+- Para 0₺'a düşerse belediyeden **uyarı** gelir (3 gün süre)
+- 3 gün içinde toparlamazsan → **apartman mühürlenir** → Oyun biter
+- Oyuncu yeni oyun başlatır veya son kayıttan devam eder
+
+**Sürekli gider baskısı:**
+- Çalışan maaşları (günlük)
+- Faturalar (haftalık)
+- Vergi (30 günde bir — büyük gider)
+- Anlık olay masrafları (su baskını, hasar vb.)
+- Kiracı yoksa gelir yok ama giderler devam eder
 
 ---
 
@@ -162,7 +175,7 @@ Oyun başında sakin, sonlara doğru kaotik. Bu hem öğrenme eğrisini yumuşat
 |--------------|-----------------|--------------|-------|
 | **Erken** (Gün 1-15) | 1-2 olay | 1-2 kiracı | Bir boru patlaması + bir kiracı isteği |
 | **Orta** (Gün 16-40) | 3-4 olay | 3-5 kiracı | Belediye denetimi + 2 kiracı talebi + komşu kavgası |
-| **Geç** (Gün 40+) | 5+ olay | 6+ kiracı | Gökdelen baskısı + 3 kiracı talebi + yangın + misafir istilası |
+| **Geç** (Gün 40+) | 5+ olay | 6+ kiracı | 3 kiracı talebi + yangın + vergi günü + misafir istilası |
 
 > Kaosun artması = komiğin artması. Oyuncu geç oyunda "ne yapacağımı bilemiyorum" hissini yaşamalı ama bu sinir bozucu değil, **eğlenceli** olmalı.
 
@@ -397,7 +410,7 @@ Her gün rastgele veya hikayeye bağlı olaylar tetiklenir. Olaylar **zincirleme
 | **Günlük küçük olaylar** | Küçük sorunlar, komik durumlar | Her gün 1-3 |
 | **Kiracı talepleri** | Kiracıların istekleri | Kiracı sayısına bağlı |
 | **Büyük olaylar** | Ciddi kararlar, zincirleme sonuçlar | Haftada 1-2 |
-| **Hikaye olayları** | Ana hikayeyi ilerletir (gökdelen baskısı vb.) | Belirli günlerde |
+| **Periyodik olaylar** | Vergi günü, belediye denetimi gibi tekrarlayan olaylar | Sabit aralıklarla (örn. 30 günde bir) |
 
 #### Zincirleme Olay Sistemi
 
@@ -425,7 +438,7 @@ Gün 12: Blob kiracı "evde parti yapmak istiyor" → İzin ver / Reddet
 - **Boru patlaması** → Tesisatçıyı çağır (pahalı, 1 gün) / Geçici çözüm (ucuz ama 3 gün sonra tekrar patlar)
 - **Kiracılar arası kavga** → Arabuluculuk yap / Taraf tut / Görmezden gel (zincirleme)
 - **Belediye denetimi** → 3 gün sonra denetim gelecek. O zamana kadar hazırlan (para harca) veya şansına bırak
-- **Gökdelen şirketi teklifi** → Her seferinde daha yüksek teklifle gelir. Reddetmek zorundayız (vasiyet) ama baskı artar (hikaye olayı)
+- **Vergi günü** → 30 günde bir vergi gelir. Ödenmezse belediye uyarısı → mühürlenme riski
 - **Yaratık büyüme krizi** → Sürekli büyüyen kiracı daireye sığmıyor. Büyük daireye taşı / Büyüme ilacı al / Tahliye et
 - **Gizemli paket** → Apartmana paket geldi. Aç / Açma / Kiracıya ver (sürpriz sonuçlar)
 
@@ -439,7 +452,7 @@ Oyun **sonsuz sandbox** yapıdadır. Net bir "oyun bitti" ekranı yoktur. Oyuncu
 
 - İlk 4-6 saatte tüm mekanikler açılır, tüm tier'lere erişilir, apartman büyütülür
 - Sonrasında oyuncu optimizasyon, farklı kiracı kombinasyonları, yeni olaylar ve bina geliştirmeye devam eder
-- Hikaye olayları (gökdelen baskısı vb.) bu süre içinde çözülür veya arka planda devam eder
+- Periyodik olaylar (vergi, belediye denetimi) sürekli gerilim yaratır
 
 ### İlk Giriş (Onboarding)
 
@@ -502,16 +515,162 @@ Sandbox yapı doğal tekrar oynanabilirlik sağlar, ek olarak:
 
 ---
 
-## 6. Görsel Yön
+## 6. Görsel & Ses Yönü
 
-- **Stil:** Cartoon / hand-drawn, sıcak ve samimi çizgiler.
-- **Kamera:** Binanın yan kesit görünümü — her oda/daire görünür (platformer kesiti).
-- **Renk paleti:** Sıcak tonlar (turuncu, sarı, krem) — gökdelenler soğuk gri/mavi tonlarla kontrast.
-- **Karakter tasarımı:** Abartılı, karikatürize kiracı tipleri.
+### Görsel Stil: Basit & Renkli Cartoon
+
+**Referanslar:** Adventure Time, Untitled Goose Game, Pikuniku tarzı — basit çizgiler, canlı renkler, abartılı ifadeler. Üretimi hızlı, komik tona çok uygun.
+
+| Alan | Yaklaşım |
+|------|----------|
+| **Çizgi stili** | Kalın, temiz outline'lar. Minimal detay, maksimum okunabilirlik |
+| **Renk paleti** | Sıcak ve canlı — turuncu, sarı, krem, açık yeşil. Her yaratık türü kendi renk tonunda |
+| **Kamera** | 2D yan kesit — apartmanın tüm katları ve daireleri görünür |
+| **Perspektif** | Binanın ortadan kesilmiş hali — duvarlar görünmez, iç mekanlar açık |
+| **Arka plan** | Basit mahalle silueti, gökyüzü (gece/gündüz değişimi olabilir) |
+
+### Karakter & Yaratık Tasarımı
+
+- **Basit silüetler:** Her yaratık uzaktan bile tanınabilir olmalı (farklı şekil, boyut, renk)
+- **Abartılı ifadeler:** Mutlu, kızgın, şaşkın yüz ifadeleri çok büyük ve okunabilir
+- **Minimum animasyon karesi:** Idle, mutlu, mutsuz, talep (4 temel durum). Basit ama etkili
+- **Komik kontrast:** Absürt yaratıklar normal ev eşyalarıyla etkileşirde (dev blob koltuğa oturmuş, ateş yaratığı terlik giymiş)
+
+### Apartman Görselliği
+
+- **Başlangıçta:** Soluk renkler, çatlak duvarlar, karanlık daireler
+- **Yükseltildikçe:** Renkler canlanır, detaylar eklenir, ışıklar yanar
+- **Görsel ilerleme hissi:** Oyuncunun yaptığı her yükseltme binada görsel olarak yansır (boya = duvar rengi değişir, bahçe = dışarıda çiçekler çıkar)
+
+### Müzik: Lo-fi & Chill
+
+Oyunun komik görselliğiyle kontrast oluşturan **rahat, modern, sakinleştirici** bir müzik tonu. Oyuncu kaotik olaylarla uğraşırken müzik onu sakin tutar — bu kontrast hem eğlenceli hem rahatlatıcıdır.
+
+| Durum | Müzik Tonu |
+|-------|-----------|
+| **Normal gameplay** | Lo-fi hip hop / chillhop — yumuşak beat, piyano/gitar loop'ları |
+| **Gün başı** | Kısa, neşeli jingle (yeni gün hissi) |
+| **Olay anı** | Hafif tempo artışı, ama hâlâ chill — panik değil merak |
+| **Gün sonu** | Yavaşlayan, dinlendirici melodi (gün bitti, rahatla) |
+| **Emlakçı / Dükkanlar** | Farklı lo-fi varyasyonlar (her mekanın kendi havası) |
+
+### Ses Efektleri
+
+- **UI sesleri:** Yumuşak tıklama, sayfa çevirme, para sesi (tatmin edici)
+- **Yaratık sesleri:** Her yaratık türünün basit, komik bir sesi (blob = "şlap", ateş yaratık = "cızz")
+- **Olay sesleri:** Boru patlaması, çekiç, boya fırçası — karikatürize ama abartılı değil
+- **Genel yaklaşım:** Sesler bilgi verir ve tatmin sağlar, ama dikkat dağıtmaz
 
 ---
 
-## 7. Teknik Özet
+## 7. UI/UX Tasarımı
+
+### Ana Görünüm: Mahalle
+
+Oyunun tek ana ekranı **mahalle görünümüdür.** 2D yan görünüm, sağa ve sola kaydırılabilir.
+
+```
+◄ SOL KAYDIR                                              SAĞ KAYDIR ►
+
+  ┌─────────┐   ┌─────────────────────┐   ┌─────────┐
+  │ Komşu   │   │                     │   │ Komşu   │
+  │ Apartman │   │   BİZİM APARTMAN   │   │ Apartman │
+  │         │   │  (ana oyun alanı)   │   │         │
+  │         │   │                     │   │         │
+  ├─────────┤   ├─────────────────────┤   ├─────────┤
+  │ BOYACI  │   │      GİRİŞ          │   │EMLAKÇI  │
+  └─────────┘   └─────────────────────┘   └─────────┘
+      ▲                                        ▲
+  Tıkla →                                 Tıkla →
+  Modal açılır                            Modal açılır
+```
+
+- **Merkezde:** Bizim apartman — katlar, daireler, kiracılar görünür
+- **Sol/sağda:** Komşu apartmanlar ve altlarında mahalle dükkanları
+- **Dükkanlar:** Fiziksel olarak oyun dünyasında var. Tıklayınca **modal** olarak açılır (ekran değişmez, içine girilmez)
+- **Kaydırma:** Mouse sürükleme veya ekran kenarlarına gelince otomatik kayma
+
+### Dükkan Modal'ları
+
+Her dükkan tıklandığında ekranın ortasına bir modal pencere açılır. Arka plan kararır. Modal içinde dükkanın hizmetleri listelenir.
+
+| Dükkan | Modal İçeriği |
+|--------|---------------|
+| **Emlakçı** | Kiracı aday listesi (profil kartları), kabul/red butonları |
+| **Boyacı** | Boya hizmetleri, fiyat, süre, "Sipariş Ver" butonu |
+| **Tesisatçı** | Tesisat hizmetleri listesi |
+| **Elektrikçi** | Elektrik/internet hizmetleri |
+| **Bahçıvan** | Bahçe hizmetleri |
+| **Mobilyacı** | Ortak alan mobilyaları |
+| **Taş Ustası** | Yeni kat ekleme seçeneği (fiyat, süre, gereksinimler) |
+
+### Apartman Etkileşimi
+
+Apartmanın kendi iç görünümü ana oyun alanıdır:
+
+- **Dairelere tıklama:** Kiracı profil kartı açılır (popup)
+- **Kiracı talepleri:** Dairenin üstünde ünlem (!) ikonu belirir → tıkla → talep kartı
+- **Yükseltme göstergeleri:** Devam eden işler binada görünür (boyacı, tesisatçı animasyonu)
+- **Boş daireler:** "Boş" etiketi → tıklayınca emlakçıya yönlendirme
+
+### HUD (Minimal)
+
+Ekranın üst kısmında sürekli görünen minimal bilgi çubuğu:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  ₺ 1.250    😊 72/100    ⭐ 55/100    │ GÜN 25 │ ⏭ Günü Bitir │
+└─────────────────────────────────────────────────────────┘
+```
+
+- **Sol:** Para, Mutluluk, Saygınlık (sayısal)
+- **Sağ:** Gün sayısı + "Günü Bitir" butonu
+- Mutluluk ve saygınlık çubukları renk değiştirir (yeşil → sarı → kırmızı)
+
+### Olay Gösterimi
+
+Olaylar **popup kartları** olarak gün başında ekranın ortasına gelir:
+
+- Kartın üstünde olay açıklaması (kısa, komik metin)
+- Altında 2-3 seçenek butonu
+- Oyuncu seçer → anlık veya zincirleme sonuç
+- Birden fazla olay varsa sırayla gösterilir (kart destesi gibi)
+
+### Gün Sonu Raporu
+
+"Günü Bitir" butonuna basıldığında kısa bir özet ekranı:
+
+```
+┌─────────────────────────────────┐
+│         GÜN 25 — ÖZET          │
+│                                 │
+│  Gelir:    +850₺  (kira)       │
+│  Gider:    -350₺  (boyacı, fatura) │
+│  Net:      +500₺               │
+│                                 │
+│  😊 Mutluluk:  72 → 68 (▼4)    │
+│  ⭐ Saygınlık: 55 → 58 (▲3)    │
+│                                 │
+│  [ Sonraki Güne Geç → ]        │
+└─────────────────────────────────┘
+```
+
+### Etkileşim Modeli
+
+| Eylem | Giriş |
+|-------|-------|
+| Mahallede gezinme | Mouse sürükleme (sağ-sol) |
+| Dükkan açma | Dükkana tıklama |
+| Kiracı bilgisi | Daireye / kiracıya tıklama |
+| Olay seçimi | Seçenek butonuna tıklama |
+| Günü bitirme | HUD'daki butona tıklama |
+| Modal kapatma | X butonu veya dışarı tıklama |
+
+> Tüm etkileşimler **sol mouse tıklama** ile yapılır. Sağ tık veya klavye kısayolu gerektirmez. Basit ve erişilebilir.
+
+---
+
+## 8. Teknik Özet
 
 | Alan | Detay |
 |------|-------|
@@ -519,35 +678,107 @@ Sandbox yapı doğal tekrar oynanabilirlik sağlar, ek olarak:
 | **Dil** | C# |
 | **Hedef çözünürlük** | 1920x1080 |
 | **Min. sistem** | Düşük sistem gereksinimleri (2D, hafif) |
-| **Kayıt sistemi** | Lokal save (JSON veya binary) |
+| **Kayıt sistemi** | Lokal save (JSON) |
+| **Hedef platform** | PC — Steam |
+| **Hedef FPS** | 60 FPS |
+
+### Ekip
+
+| Rol | Kişi | Sorumluluk |
+|-----|------|------------|
+| **Game Designer** | 1 | Oyun tasarımı, denge, içerik, olay yazımı |
+| **Senior Developer** | 1 | Mimari, core sistemler, araçlar |
+| **Junior Developer** | 1 | UI, dükkan sistemi, olay sistemi, save/load |
+| **Artist** | 1 | Tüm görseller — karakter, bina, UI, animasyon |
+
+### Temel Teknik Sistemler
+
+| Sistem | Açıklama |
+|--------|----------|
+| **Gün Döngüsü (Turn Manager)** | Gün başı → aksiyon → gün sonu akışını yöneten state machine |
+| **Kaynak Sistemi** | Para, mutluluk, saygınlık takibi + kaynak değişim olayları |
+| **Kiracı Sistemi** | Kiracı veritabanı, tier sistemi, talep üreteci, mutluluk hesaplayıcı |
+| **Yükseltme Sistemi** | Apartman yükseltme listesi, süre takibi, görsel güncelleme |
+| **Olay Sistemi** | Olay veritabanı, rastgele seçim, zincirleme olay takibi |
+| **Dükkan Sistemi** | Dükkan modal'ları, hizmet listesi, sipariş yönetimi |
+| **UI Sistemi** | HUD, modal'lar, popup kartlar, gün sonu raporu |
+| **Save/Load** | JSON tabanlı kayıt — tüm oyun durumu serialize edilir |
 
 ---
 
-## 8. Monetizasyon
+## 9. Monetizasyon
 
-- **Model:** Premium — tek seferlik satın alma (Steam).
-- **DLC potansiyeli:** Yeni hikaye bölümleri, yeni bina tipleri (gelecek planı).
-- **Oyun içi satın alım yok.**
-- **Reklam yok.**
+- **Model:** Premium — tek seferlik satın alma (Steam)
+- **DLC potansiyeli:** Yeni yaratık türleri, yeni mahalle dükkanları, ek olay paketleri
+- **Oyun içi satın alım yok**
+- **Reklam yok**
 
 ---
 
-## 9. MVP Kapsam
+## 10. MVP Kapsam
 
-### Must-Have (v1.0)
-- [ ] Apartman kesit görünümü (3-4 kat)
-- [ ] Gün bazlı tur sistemi
-- [ ] Kiracı kabul / tahliye mekaniği
-- [ ] Temel oda tamir / yenileme
-- [ ] Para, mutluluk, saygınlık kaynakları
-- [ ] 10-15 temel olay / karar
-- [ ] Basit hikaye akışı (başlangıç + son)
-- [ ] Kaydetme / yükleme
+### Yaklaşım: Tam Deneyim (Küçük)
 
-### Nice-to-Have (sonraki güncellemeler)
-- [ ] Yeni kat ekleme mekaniği
-- [ ] Kiracı ilişkileri / diyalog sistemi
+MVP'de tüm mekanikler mevcut olacak ama küçük ölçekte. Oyuncu kısa ama **tam bir oyun deneyimi** yaşayacak.
+
+### MVP İçerik Kapsamı
+
+| Alan | MVP Kapsamı |
+|------|-------------|
+| **Apartman** | 2 kat, toplam 4 daire |
+| **Kiracı türleri** | 6-8 farklı yaratık (Tier 1-3) |
+| **Dükkanlar** | 3 dükkan (Emlakçı + Boyacı + Tesisatçı) |
+| **Yükseltmeler** | 5-6 apartman yükseltmesi |
+| **Olaylar** | 10-15 olay (5 basit + 5 zincirleme + 2-3 periyodik) |
+| **Çalışanlar** | 1 çalışan türü (Kapıcı) |
+| **Kat ekleme** | 1 yeni kat eklenebilir (2→3 kat) |
+
+### Must-Have (MVP v1.0)
+
+**Core Loop:**
+- [ ] Mahalle görünümü (sağa-sola kayan 2D sahne)
+- [ ] Apartman kesit görünümü (2 kat, 4 daire)
+- [ ] Gün bazlı tur sistemi (gün başı → aksiyon → gün sonu)
+- [ ] "Günü Bitir" butonu + gün sonu raporu
+- [ ] Minimal HUD (para, mutluluk, saygınlık, gün sayısı)
+
+**Kiracı Sistemi:**
+- [ ] Kiracı profil kartları (tür, tier, artı/eksi, kira)
+- [ ] Emlakçı dükkanı — kiracı aday listesi, kabul/red
+- [ ] Kiracı talepleri (popup kartlar)
+- [ ] Kiracı tahliye mekaniği
+- [ ] Tier uyumsuzluğu → mutluluk etkisi
+
+**Kaynak & Ekonomi:**
+- [ ] Para (₺) sistemi — gelir/gider takibi
+- [ ] Mutluluk (😊) sistemi — ödeme düzeni etkisi
+- [ ] Saygınlık (⭐) sistemi — emlakçı kalitesi etkisi
+- [ ] Fatura + vergi sistemi (periyodik giderler)
+- [ ] Kaybetme koşulu: para = 0 → mühürlenme
+
+**Apartman Yükseltme:**
+- [ ] 3 dükkan modal sistemi (emlakçı, boyacı, tesisatçı)
+- [ ] Yükseltme satın alma + süre sistemi
+- [ ] Yükseltmelerin görsel yansıması
+
+**Olay Sistemi:**
+- [ ] 10-15 olay kartı (seçenekler + sonuçlar)
+- [ ] Basit zincirleme olaylar (en az 3-5 tane)
+- [ ] Vergi günü (30 günde bir)
+
+**Teknik:**
+- [ ] Kaydetme / yükleme (JSON)
+- [ ] Başlangıç sahnesi (kısa hikaye anlatımı)
+
+### Nice-to-Have (v1.0 sonrası güncellemeler)
+
+- [ ] Ek yaratık türleri (Tier 4 dahil)
+- [ ] Ek dükkanlar (elektrikçi, bahçıvan, mobilyacı, taş ustası)
+- [ ] Kat ekleme mekaniği (tam sürüm: 2→5 kat)
+- [ ] Çalışan sistemi (kapıcı, güvenlikçi, bahçıvan)
 - [ ] Mevsim sistemi (kış = kalorifer sorunu vb.)
 - [ ] Başarım (achievement) sistemi
-- [ ] Steam Workshop desteği (mod)
-- [ ] Çoklu bina yönetimi
+- [ ] Daha fazla olay içeriği (25-30 olay)
+- [ ] Steam entegrasyonu (bulut save, başarımlar)
+- [ ] Ses & müzik (lo-fi soundtrack)
+- [ ] Lokalizasyon (EN/TR)
