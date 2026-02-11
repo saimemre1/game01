@@ -167,7 +167,7 @@ Yaratıklar klasik fantezi ırkları (elf, ork) değil, **tuhaf, beklenmedik ve 
 ## 4. Mekanikler
 
 1. [Core Loop (Gün Döngüsü)](#41-core-loop-gün-döngüsü)
-2. [Kaynaklar (Para, Mutluluk, Saygınlık)](#42-kaynaklar)
+2. [Kaynaklar ve Göstergeler](#42-kaynaklar-ve-göstergeler)
 3. [Kiracı Sistemi (Profil, Tier, Talepler)](#43-kiracı-sistemi)
 4. [Yerleştirme & Komşuluk (Drag-Drop, Komşu Etkileri)](#44-yerleştirme--komşuluk)
 5. [Emlakçı](#45-emlakçı)
@@ -187,7 +187,7 @@ Oyun tur bazlıdır. Her tur bir gündür. Oyuncu istediği kadar düşünür, i
   ┌─────────────────────────────────────────┐
   │           GÜN BAŞI (Otomatik)           │
   │                                         │
-  │  • Kira gelirleri toplanır              │
+  │  • Kira gelirleri yatar (varsa)          │
   │  • Faturalar/giderler düşer (varsa)     │
   │  • Günün olayları belirir               │
   │  • Kiracı talepleri ortaya çıkar        │
@@ -228,6 +228,7 @@ Oyun tur bazlıdır. Her tur bir gündür. Oyuncu istediği kadar düşünür, i
 | Emlakçıya git | Yeni kiracı adaylarını incele | 4.5 |
 | Dükkanlara git | Apartman yükseltmesi satın al | 4.7 |
 | Çalışan yönet | Çalışan tut veya çıkar | 4.8 |
+| Banka ekranı | Gelir/gider takibi, ödeme geçmişi | 4.6 |
 | Günü Bitir | Aksiyonları kapat, gün sonuna geç | - |
 
 > Oyuncu bir günde bu aksiyonların hepsini yapmak zorunda değildir. Sadece o gün ne gerekiyorsa onunla ilgilenir.
@@ -242,104 +243,89 @@ Oyun sakin başlar, giderek kaotikleşir. Kaosun artması komiğin artmasıdır.
 | Orta (Gün 16-40) | 3-4 | 3-5 |
 | Geç (Gün 40+) | 5+ | 6+ |
 
-### 4.2 Kaynak Sistemi
+### 4.2 Kaynaklar ve Göstergeler
 
-Oyunda **3 ana kaynak** vardır. Fazlası yok — ama bu üçünün birbirine etkisi oyunun stratejik derinliğini yaratır.
+Oyunda 1 kaynak ve 2 gösterge var. Para kazanılıp harcanır. Mutluluk ve Saygınlık ise oyuncunun kararlarına göre yükselen veya düşen göstergelerdir, doğrudan harcanmazlar.
 
-#### Kaynaklar
+| | Tür | Aralık | Ne Yapar |
+|---|------|--------|----------|
+| **₺** | Kaynak | 0 - ∞ | Ana ekonomik kaynak. Kazanılır, harcanır. |
+| **😊** | Gösterge | 0 - 100 | Apartmanın genel memnuniyet skoru. Kiracıların ödeme düzenini etkiler. |
+| **⭐** | Gösterge | 0 - 100 | Apartmanın mahalle itibarı. Emlakçıdaki kiracı kalitesini belirler. |
 
-| Kaynak | Aralık | Açıklama |
-|--------|--------|----------|
-| **Para (₺)** | 0 — ∞ | Ana ekonomik kaynak. Her şeyin bedeli var. |
-| **Mutluluk (😊)** | 0 — 100 | Apartmanın genel memnuniyet skoru. Kiracıların ödeme düzenini etkiler. |
-| **Saygınlık (⭐)** | 0 — 100 | Apartmanın mahalle itibarı. Emlakçıdaki kiracı kalitesini belirler. |
+#### Para (₺) — Kaynak
 
-#### Para (₺) — Detay
-
-| Kazanım Yolları | Harcama Yolları |
-|------------------|-----------------|
-| Kira gelirleri (ana gelir) | Oda tamir/yenileme |
+| Giren | Çıkan |
+|-------|-------|
+| Kira gelirleri (15 günde bir, kiracı bazlı) | Apartman yükseltmeleri |
 | Olay ödülleri | Kiracı taleplerini karşılama |
-| Özel kiracı bonusları | Faturalar (sabit giderler) |
+| Özel kiracı bonusları | Faturalar ve belediye giderleri |
 | | Emlakçı komisyonu |
-| | Bina dış cephe/ortak alan |
+| | Çalışan maaşları |
 
-**Ekonomi dengesi:** Para her zaman kıt. Doğru kararlar verirsen idare edersin ama rahat rahat harcayamazsın. "Bunu mu yapsam şunu mu?" ikilemi sürekli var. Hatalar acı verir ama spiral değil — toparlanma mümkün.
+Para her zaman kıt. Doğru kararlar verirsen idare edersin ama rahat harcayamazsın. "Bunu mu yapsam şunu mu?" ikilemi sürekli var. Hatalar acı verir ama toparlanma mümkün.
 
-#### Mutluluk (😊) — Detay
+#### Mutluluk (😊) — Gösterge
 
-Apartmanın genel memnuniyet skoru. **Kiracıların kira ödeme düzenini doğrudan etkiler.**
+Apartmanın genel memnuniyet skoru. Kiracıların kira ödeme düzenini doğrudan etkiler.
 
-| Mutluluk | Ödeme Davranışı |
-|----------|-----------------|
-| 80-100 | Kiracılar gününde öder, bonus şansı |
+| Mutluluk | Etki |
+|----------|------|
+| 80-100 | Kiracılar zamanında öder, bonus şansı |
 | 50-79 | Normal ödeme, ara sıra gecikme |
 | 25-49 | Sık gecikme, kısmi ödeme, şikayet artışı |
-| 0-24 | Ödeme aksatma, taşınma tehditleri, kiracı kaybı riski |
+| 0-24 | Ödeme aksatma, taşınma tehditleri, kiracı kaybı |
 
 | Artıran | Azaltan |
 |---------|---------|
 | Kiracı taleplerini karşılamak | Talepleri görmezden gelmek |
-| Odalarda iyileştirme yapmak | Bozuk/hasar görmüş odalar |
-| Olaylarda kiracı lehine kararlar | Kiracı aleyhine kararlar |
-| Ortak alan iyileştirmeleri | Uzun süreli bakımsızlık |
+| Apartman yükseltmeleri | Bakımsızlık |
+| Kiracı lehine kararlar | Kiracı aleyhine kararlar |
+| İyi komşuluk yerleştirmesi | Uyumsuz komşu yerleştirmesi |
 
-#### Saygınlık (⭐) — Detay
+#### Saygınlık (⭐) — Gösterge
 
-Apartmanın mahalle itibarı. **Emlakçıdaki kiracı havuzunun kalitesini belirler.**
+Apartmanın mahalle itibarı. Emlakçıdaki kiracı havuzunun kalitesini belirler.
 
-| Saygınlık | Emlakçı Etkisi |
-|-----------|---------------|
-| 0-20 | Sadece Seviye 1 kiracılar (düşük kira, çok sorun) |
-| 21-50 | Seviye 1-2 kiracılar |
-| 51-80 | Seviye 1-3 kiracılar (iyi kiracılar mevcut) |
-| 81-100 | Seviye 1-4 kiracılar (nadir/özel yaratıklar açılır) |
+| Saygınlık | Açılan Kiracı Tier'i |
+|-----------|---------------------|
+| 0-20 | Sadece Tier 1 |
+| 21-50 | Tier 1-2 |
+| 51-80 | Tier 1-3 |
+| 81-100 | Tier 1-4 (nadir yaratıklar açılır) |
 
 | Artıran | Azaltan |
 |---------|---------|
 | Bina dış cephe bakımı | Bakımsız dış görünüm |
 | Yüksek mutluluk (dolaylı) | Skandallar, kavgalar |
 | Belediye denetimlerini geçmek | Denetimden kalmak |
-| Özel etkinlikler/iyileştirmeler | Kiracı şikayetlerinin yayılması |
+| Apartman yükseltmeleri | Kiracı şikayetlerinin yayılması |
 
-#### Kaynak İlişki Haritası
+#### Kaynak İlişki Döngüsü
 
 ```
-  Saygınlık ⭐ ──────► Kiracı Kalitesi (Emlakçı)
-       │                        │
-       │                        ▼
-       │               Yüksek Seviye Kiracı
-       │                        │
-       │                        ▼
-       │                 Yüksek Kira Geliri ──► Para ₺
-       │                                          │
-       │                                          ▼
-       │                                  Tamir & İyileştirme
-       │                                          │
-       ▲                                          ▼
-       └──────────────────────────────── Mutluluk 😊
-                                                  │
-                                                  ▼
-                                         Ödeme Düzeni
-                                                  │
-                                                  ▼
-                                            Para ₺ (tekrar)
+  Saygınlık ⭐ ───► Kiracı Kalitesi (Emlakçı)
+       │                      │
+       │                      ▼
+       │             Yüksek Tier Kiracı
+       │                      │
+       │                      ▼
+       │              Yüksek Kira ───► Para ₺
+       │                                  │
+       │                                  ▼
+       │                           Yükseltme & Bakım
+       │                                  │
+       ▲                                  ▼
+       └───────────────────────── Mutluluk 😊
+                                          │
+                                          ▼
+                                   Düzenli Ödeme
+                                          │
+                                          ▼
+                                      Para ₺ ↺
 ```
 
-**Döngü özeti:** Saygınlık → iyi kiracı → çok para → iyileştirme → mutluluk → düzenli ödeme → daha çok para → daha fazla iyileştirme → saygınlık artar. **Ama:** Her adımda kaynak harcamak gerekiyor ve olaylar bu döngüyü sürekli bozmaya çalışıyor.
-
-#### Kira Sistemi
-
-Kira miktarı **kiracı seviyesine** bağlıdır, daire kalitesine değil.
-
-| Kiracı Seviyesi | Kira Aralığı | Gerekli Saygınlık | Karakter |
-|-----------------|-------------|-------------------|----------|
-| **Seviye 1** | 100-200₺ | ⭐ 0+ | Sorunlu, ucuz, çok talep |
-| **Seviye 2** | 250-400₺ | ⭐ 21+ | Orta, dengeli |
-| **Seviye 3** | 450-650₺ | ⭐ 51+ | İyi, az sorun, iyi öder |
-| **Seviye 4** | 700-1000₺ | ⭐ 81+ | Nadir, özel yetenekli, yüksek kira |
-
-> **Not:** Kira rakamları yer tutucudur — oyun dengesi testlerinde ayarlanır. Önemli olan oran ve yapıdır.
+Saygınlık → iyi kiracı → yüksek kira → para → yükseltme → mutluluk → düzenli ödeme → daha çok para → daha fazla yükseltme → saygınlık artar. Olaylar bu döngüyü sürekli bozmaya çalışır.
 
 ### 4.3 Kiracı Yönetimi
 
