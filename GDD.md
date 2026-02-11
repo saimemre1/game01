@@ -166,18 +166,16 @@ Yaratıklar klasik fantezi ırkları (elf, ork) değil, **tuhaf, beklenmedik ve 
 
 ## 4. Mekanikler
 
-> **İçindekiler**
->
-> 4.1 Core Loop (Gün Döngüsü)
-> 4.2 Kaynaklar (Para, Mutluluk, Saygınlık)
-> 4.3 Kiracı Sistemi (Profil, Tier, Talepler)
-> 4.4 Yerleştirme & Komşuluk (Drag-Drop, Komşu Etkileri)
-> 4.5 Emlakçı
-> 4.6 Kira & Ödeme Sistemi
-> 4.7 Apartman Yükseltmeleri & Dükkanlar
-> 4.8 Çalışan Sistemi
-> 4.9 Olay & Karar Sistemi
-> 4.10 Kaybetme Koşulu
+1. [Core Loop (Gün Döngüsü)](#41-core-loop-gün-döngüsü)
+2. [Kaynaklar (Para, Mutluluk, Saygınlık)](#42-kaynaklar)
+3. [Kiracı Sistemi (Profil, Tier, Talepler)](#43-kiracı-sistemi)
+4. [Yerleştirme & Komşuluk (Drag-Drop, Komşu Etkileri)](#44-yerleştirme--komşuluk)
+5. [Emlakçı](#45-emlakçı)
+6. [Kira & Ödeme Sistemi](#46-kira--ödeme-sistemi)
+7. [Apartman Yükseltmeleri & Dükkanlar](#47-apartman-yükseltmeleri--dükkanlar)
+8. [Çalışan Sistemi](#48-çalışan-sistemi)
+9. [Olay & Karar Sistemi](#49-olay--karar-sistemi)
+10. [Kaybetme Koşulu](#410-kaybetme-koşulu)
 
 ---
 
