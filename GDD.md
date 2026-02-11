@@ -327,46 +327,49 @@ Apartmanın mahalle itibarı. Emlakçıdaki kiracı havuzunun kalitesini belirle
 
 Saygınlık → iyi kiracı → yüksek kira → para → yükseltme → mutluluk → düzenli ödeme → daha çok para → daha fazla yükseltme → saygınlık artar. Olaylar bu döngüyü sürekli bozmaya çalışır.
 
-### 4.3 Kiracı Yönetimi
+### 4.3 Kiracı Sistemi
 
-Kiracılar oyunun kalbidir. Her kiracı bir **yaratık** olup kendine özgü artıları, eksileri ve talepleri olan bir profildir.
+Her kiracı kendine özgü bir profile sahip bir yaratıktır. Artıları, eksileri, talepleri ve yerleştirme koşulları vardır.
 
-#### Kiracı Tier Sistemi
+#### Tier Sistemi
 
-Her kiracının bir **Tier seviyesi** vardır. Tier, kiracının kalitesini, kira miktarını ve apartmana etkisini belirler.
+Her kiracının bir Tier seviyesi (1-4) vardır. Tier, kiracının genel kalitesini ve kira miktarını belirler. Yüksek tier kiracılara erişmek için belli bir ⭐ gerekir.
 
-| Tier | Kira Aralığı | Gerekli ⭐ | Artılar | Eksiler |
-|------|-------------|-----------|---------|---------|
-| **Tier 1** | 100-200₺ | 0+ | Ucuz, kolay bulunur | Çok talep, düşük kira, üst tierleri mutsuz eder |
-| **Tier 2** | 250-400₺ | 21+ | Dengeli, makul kira | Ara sıra sorun çıkarır |
-| **Tier 3** | 450-650₺ | 51+ | İyi kira, az sorun | Beklentisi yüksek, istekleri pahalı |
-| **Tier 4** | 700-1000₺ | 81+ | Çok iyi kira, özel bonuslar | Çok seçici, kolay mutsuz olur |
+| Tier | Kira Aralığı | Gerekli ⭐ | Genel Profil |
+|------|-------------|-----------|--------------|
+| **Tier 1** | 100-200₺ | 0+ | Ucuz, kolay bulunur, çok talep, sorunlu |
+| **Tier 2** | 250-400₺ | 21+ | Dengeli, makul kira, ara sıra sorun |
+| **Tier 3** | 450-650₺ | 51+ | İyi kira, az sorun, beklentisi yüksek |
+| **Tier 4** | 700-1000₺ | 81+ | Çok iyi kira, özel bonuslar, çok seçici |
 
-#### Kiracı Profil Kartı
+> Kira rakamları yer tutucudur, oyun dengesi testlerinde ayarlanır.
+
+#### Profil Kartı
 
 Her kiracının emlakçıda ve apartmanda görünen bir profil kartı vardır:
 
-- **Tür:** Yaratık türü (görsel + isim)
-- **Tier:** 1-4 arası seviye
-- **Kira:** Tier'e göre belirlenen sabit miktar
-- **Artılar:** Apartmana pozitif etkiler (örn. "Gece güvenlik sağlar", "Komşularını neşelendirir")
-- **Eksiler:** Apartmana negatif etkiler (örn. "Gürültücü", "Mobilya kırar", "Koku yapar")
-- **Talepler:** Zaman zaman isteyecekleri şeyler (örn. "Daha sıcak oda istiyor", "Bahçede alan istiyor")
+| Alan | Açıklama |
+|------|----------|
+| **Tür** | Yaratık türü (görsel + isim) |
+| **Tier** | 1-4 arası seviye |
+| **Kira** | Tier'e göre belirlenen sabit miktar |
+| **Artılar** | Apartmana pozitif etkiler (örn. "Komşularını neşelendirir") |
+| **Eksiler** | Apartmana negatif etkiler (örn. "Gürültücü", "Koku yapar") |
+| **Koşullar** | Yerleştirme tercihleri ve hassasiyetleri (bkz. 4.4) |
+| **Talepler** | Zaman zaman isteyeceği şeyler |
 
-#### Kiracılar Arası Etkileşim
+#### Talepler
 
-- **Tier uyumsuzluğu:** Düşük tier kiracılar yüksek tier kiracıları mutsuz eder. Bir Tier 4 kiracının yanına Tier 1 kiracı koymak = mutluluk kaybı.
-- **Bu etki apartman genelinde hissedilir:** Tier karışımı, genel apartman mutluluğunu etkiler.
-- **Stratejik ikilem:** Erken oyunda Tier 1 kiracıları almak zorundasın (saygınlık düşük), ama ilerledikçe onları Tier 2-3 ile değiştirmen gerekir. Tahliye bedeli var.
+Kiracılar belirli aralıklarla talep oluşturur. Talepler gün başında belirir.
 
-#### Kiracı Talepleri
-
-Kiracılar belirli aralıklarla **talep** oluşturur. Talepler popup/kart olarak gün başında belirir.
-
-- Her talep karşılanırsa → mutluluk artar
-- Görmezden gelinirse → mutluluk düşer, tekrar talep + şikayet
+- Talep karşılanırsa → 😊 artar
+- Görmezden gelinirse → 😊 düşer, şikayet başlar
 - Üst üste karşılanmayan talepler → kiracı taşınma tehdidi
-- Bazı talepler apartman yükseltmeleriyle otomatik karşılanır (örn. fiber optik bağlattıysan "internet yavaş" talebi gelmez)
+- Bazı talepler apartman yükseltmeleriyle otomatik karşılanır (örn. fiber optik varsa "internet yavaş" talebi gelmez)
+
+#### Stratejik İkilem
+
+Erken oyunda sadece Tier 1 kiracılara erişilir (⭐ düşük). İlerledikçe daha iyi kiracılar açılır ama eski Tier 1 kiracıları tahliye etmek gerekir. Tahliye bedeli vardır.
 
 ### 4.4 Apartman Yükseltme Sistemi
 
