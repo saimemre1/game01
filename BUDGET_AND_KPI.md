@@ -1,6 +1,17 @@
 # Bütçe ve Başarı Metrikleri (KPI)
 ## Grandma Left Me a Building — İlk Oyun Projesi
 
+### İçindekiler
+1. [Bütçe](#1-bütçe)
+2. [Steam Gelir Modeli](#2-steam-gelir-modeli)
+3. [Sektör Gerçekleri](#3-sektör-gerçekleri--i̇lk-oyun-i̇statistikleri)
+4. [KPI Hedefleri](#4-kpi-hedefleri)
+5. [Başarı Senaryoları](#5-başarı-senaryoları)
+6. [Karşılaştırma Referansları](#6-karşılaştırma-referansları)
+7. [ROI Analizi](#7-yatırım-geri-dönüş-roi-analizi)
+8. [Kritik Başarı Faktörleri](#8-kritik-başarı-faktörleri)
+9. [Özet Karar Tablosu](#9-özet-karar-tablosu)
+
 | Alan | Detay |
 |------|-------|
 | **Versiyon** | 2.0 |
@@ -71,7 +82,7 @@
 | Pazarlama | $1,600 |
 | **TOPLAM** | **$3,018** |
 
-> **Ekip maaşı dahil değildir.** Bu bütçe yalnızca araç, abonelik ve pazarlama giderlerini kapsar. Ekip üyeleri maaş almıyorsa (tutkuyla/yan proje olarak geliştirme), toplam nakit çıkış budur. Ekip maaşı dahil edilecekse ayrı bir hesaplama yapılmalıdır.
+> **Ekip maaşları bu dokümana dahil değildir.** Bu bütçe yalnızca araç, abonelik ve pazarlama giderlerini kapsar. Maaşlar ayrı yönetilmektedir.
 
 ---
 
