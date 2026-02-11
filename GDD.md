@@ -373,7 +373,74 @@ Kiracılar belirli aralıklarla talep oluşturur. Talepler gün başında beliri
 
 Erken oyunda Tier 1 kiracılar yeterlidir, sakin ve kolaydır. Ama düşük kiralarla apartmanı geliştirmek zordur. Oyuncu yüksek tier kiracılara geçmek zorundadır, bu da daha çok gelir ama daha çok talep, daha çok olay ve daha çok kaos demektir. Eski kiracıları tahliye etmenin de bir bedeli vardır.
 
-### 4.4 Apartman Yükseltme Sistemi
+### 4.4 Yerleştirme & Komşuluk
+
+Oyuncu kiracıları daireler arasında sürükleyip bırakarak (drag-drop) yer değiştirebilir. Hangi kiracının hangi dairede oturduğu, komşuluk ilişkilerini ve mutluluğu doğrudan etkiler. Bu oyunun ana stratejik mekaniğidir.
+
+> Referans: "Is This Seat Taken?" oyunundaki stratejik yerleştirme mekaniği.
+
+#### Bina Yapısı
+
+Apartman dışarıdan görülür. Her katta 2 daire vardır (sol ve sağ). Başlangıçta 2 kat (4 daire), ilerleyen oyunda 3. kat eklenebilir (6 daire).
+
+```
+  ┌───────────┬───────────┐
+  │  Daire 5  │  Daire 6  │  3. Kat (sonradan eklenir)
+  ├───────────┼───────────┤
+  │  Daire 3  │  Daire 4  │  2. Kat
+  ├───────────┼───────────┤
+  │  Daire 1  │  Daire 2  │  1. Kat
+  └───────────┴───────────┘
+       Sol          Sağ
+```
+
+#### Drag-Drop Mekaniği
+
+- Oyuncu bir kiracıyı tıklayıp başka bir daireye sürükler
+- Hedef daire doluysa iki kiracı yer değiştirir
+- Hedef daire boşsa kiracı oraya taşınır
+- Her taşınmanın bir maliyeti vardır (₺)
+- Taşınma sonrası ilgili kiracıların mutluluğu yeniden hesaplanır
+
+#### Koşul Sistemi
+
+Her kiracının profil kartında **Koşullar** alanı vardır (bkz. 4.3). Bu koşullar yerleştirmeye göre 😊 bonusu veya cezası verir. Her yaratık türünün kendine özgü koşulları olabilir. Bu alan oyunun yaratıcı derinliğini sağlar.
+
+**Koşul Tipleri:**
+
+| Tip | Açıklama | Örnek |
+|-----|----------|-------|
+| **Kat tercihi** | Belli bir katta olmak ister/istemez | "3. kattan aşağıda oturursa mutsuz olur" |
+| **Komşu tercihi** | Belli türlerle yan yana olmak ister/istemez | "Goblin komşu istemez" |
+| **Yön tercihi** | Sol veya sağ daire tercihi | "Güneş gören tarafta olmak istiyor" |
+| **Tier uyumu** | Kendi tier'ine yakın komşu ister | "Tier 1 komşudan rahatsız olur" |
+| **Gürültü uyumu** | Gürültücü/sessiz komşu tercihi | "Gürültücü komşuyla iyi anlaşır" |
+| **Özel etkileşim** | Belirli tür kombinasyonları bonus/ceza verir | "Ateş + Buz yan yana = ikisi de mutsuz" |
+
+#### Örnek Koşullar
+
+| Yaratık | Koşul | Etki |
+|---------|-------|------|
+| Bulut Yaratığı | Üst katta olmak ister | Üst kat: +😊, alt kat: -😊 |
+| Goblin | Temiz komşu istemez | Temiz komşu: -😊, dağınık komşu: +😊 |
+| Işık Böceği | Güneş gören tarafta (sağ) olmak ister | Sağ daire: +😊, sol daire: -😊 |
+| Dev Kurbağa | Yer titretir | Alt kattaki komşu: -😊 |
+| Sessiz Mantar | Gürültücü komşudan nefret eder | Gürültücü komşu: -😊, ama kimseyi rahatsız etmez |
+| Parti Hayaleti | Gürültücü ama gürültüden hoşlanır | Gürültücü komşu: +😊, sessiz komşu: nötr |
+
+> Bu örnekler fikir vermek içindir. Her yaratık türüne özgü yaratıcı koşullar tasarlanacak.
+
+#### Mutluluk Hesabı
+
+Her kiracının bireysel mutluluğu koşullarına göre hesaplanır. Apartmanın genel 😊 göstergesi tüm kiracıların ortalamasıdır.
+
+- Koşul karşılanıyorsa → bireysel 😊 bonusu
+- Koşul ihlal ediliyorsa → bireysel 😊 cezası
+- Taşınma sonrası tüm etkilenen kiracıların 😊 değeri yeniden hesaplanır
+
+> **Developer notu:** Her koşul bir condition objesidir: tipi, hedefi ve 😊 etkisi (+ veya -) tanımlanır. Yeni koşullar data olarak eklenebilir olmalı, kod değişikliği gerektirmemeli.
+
+### 4.7 Apartman Yükseltme Sistemi
 
 > **Önemli:** Bu oyun daire yönetimi değil, **apartman yönetimidir.** Dairelerin içini yönetmiyoruz. Kiracıları dairelere yerleştiriyoruz ve **genel apartmanı** yükseltiyoruz.
 
