@@ -73,11 +73,13 @@ Oyunun tüm tasarım kararlarına yön veren temel ilkeler. Bir özellik hiçbir
 
 ### Hikaye (Minimal — Sadece Giriş & Arka Plan)
 
-Bir baltaya sap olamayan, babaannesini yıllardır aramayan, hayattan bir beklentisi kalmamış tembel ve karikatürize bir tip: **İlkkan.** Bir gün telefonla aranır. Arayan bir avukattır. Babaannesi vefat etmiştir. Vasiyet olarak İlkkan'a eski aile apartmanını bırakmıştır — apartmanı işletmesi ve **asla satmaması** şartıyla.
+Bir baltaya sap olamayan, hayattan beklentisi kalmamış tembel bir tip: **İlkkan.** Sıradan bir akşam, kapısı çalınır. Karşısında daha önce hiç görmediği garip bir yaratık durur. Yaratık tek bir cümle söyler: *"Babaannen seninle bir anlaşma yaptı. Sen daha doğmadan."*
 
-Bu sıcak ve eski apartmanı tekrar adam etmek çok zordur. İlkkan hayatında yeni bir amaç bulmuştur. Ama bir apartman yönetmek kolay görünse de, başına geleceklerden habersizdir...
+Anlaşmaya göre İlkkan yetişkinliğinde babaannesinin eski apartmanını devralacak ve ne olursa olsun bu binayı ayakta tutacaktır. Çünkü şehrin belediye başkanı bu binayı yıkmak istemektedir ve binayı koruyacak tek kişi İlkkan'dır. Babaannesi bunu yıllar önce görmüş ve torununun bu görevi üstlenmesi için bir anlaşma yapmıştır.
 
-> **Hikaye yaklaşımı:** Hikaye sadece oyunun başlangıcında kısa bir sahne olarak anlatılır. Sonrasında oyunda aktif bir hikaye akışı yoktur. Oyuncu kendi hikayesini gameplay ile yaratır. İlkkan oyun içinde görünür bir karakter değildir — **oyuncu = İlkkan.**
+İlkkan isteksizce kabul eder. Apartmana vardığında bina harap haldedir. Yaratıklar şehirde ev arayan ama kimsenin kabul etmediği garip, komik ve absürt varlıklardır. Babaannenin binası onlara her zaman kapılarını açmıştır. Şimdi sıra İlkkan'dadır.
+
+> **Hikaye yaklaşımı:** Hikaye oyunun başlangıcında kısa bir sahne olarak anlatılır. Belediye başkanı tehdidi arka planda kalır ve periyodik olaylarla (denetimler, yıkım uyarıları) kendini hissettirir. Ama hikaye oyunu domine etmez. Oyuncu kendi hikayesini gameplay ile yaratır. **Oyuncu = İlkkan.**
 
 ### Kaybetme Koşulu (Lose Condition)
 
