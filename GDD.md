@@ -1,4 +1,4 @@
-# Game Design Document — Apartman
+# Game Design Document — Grandma Left Me a Building
 
 **Versiyon:** 0.2
 **Tarih:** 2026-02-10
@@ -10,17 +10,17 @@
 
 ### Elevator Pitch
 
-> Babaannesinden miras kalan harap bir apartmanı komik, kaotik ve beklenmedik olaylarla dolu bir süreçte ayağa kaldırdığın 2D apartman yönetim simülasyonu. Kiracı bul, isteklerini karşıla, binayı geliştir, kaynaklarını yönet — ve mahallenin en saygın apartmanı ol.
+> Babaannesinden miras kalan harap bir apartmanı komik, kaotik ve beklenmedik olaylarla dolu bir süreçte ayağa kaldırdığın 2D apartman yönetim simülasyonu. Kiracı bul, isteklerini karşıla, binayı geliştir, kaynaklarını yönet — ve şehrin en saygın ve renkli apartmanını yarat!
 
 ### Oyun Kimliği
 
 | Alan | Detay |
 |------|-------|
-| **Oyun Adı** | Apartman (çalışma adı) |
+| **Oyun Adı** | Grandma Left Me a Building |
 | **Tür** | Apartman Yönetim Simülasyonu (Management Sim) |
 | **Platform** | PC (Steam) |
 | **Motor** | Unity 2D |
-| **Kamera** | 2D yan kesit görünüm (apartmanın iç kesiti görünür) |
+| **Kamera** | 2D dış cephe görünüm (apartman dışarıdan görünür — her katta sağlı sollu 2 daire, balkon ve pencereler ile kiracılar belli olur) |
 | **Kontrol** | Mouse — tıklama tabanlı (karakter hareketi yok) |
 | **Sanat Stili** | Cartoon / Hand-drawn |
 | **Gelir Modeli** | Premium (tek seferlik satın alma) |
@@ -28,13 +28,24 @@
 
 ### Oyuncu Fantezisi
 
-Oyuncu, dökülen bir binayı adım adım toparlamanın, garip ve komik kiracılarla uğraşmanın, sınırlı kaynaklarla en doğru kararları vermenin ve sonunda mahallenin en iyi apartmanını kurmanın **tatminini** yaşar.
+Oyuncu, dökülen bir binayı adım adım toparlamanın, garip ve absürt yaratık kiracılarla uğraşmanın, sınırlı kaynaklarla en doğru kararları vermenin ve sonunda şehrin en renkli apartmanını kurmanın **tatminini** yaşar.
 
-Temel çekim gücü: **Kaynak yönetimi ve inşa etme hissi.** Oyuncu her gün kısıtlı parayla neyi tamir edeceğine, hangi kiracıyı alacağına, hangi isteği karşılayacağına karar verir. Doğru kararlar verince bina gelişir, saygınlık artar, daha iyi kiracılar gelir — bu döngünün kendisi ödüldür. Komik olaylar ve absürt kiracılar bu süreci eğlenceli tutar.
+Temel çekim gücü: **Kaynak yönetimi ve inşa etme hissi.** Oyuncu her gün kısıtlı parayla binayı nasıl geliştireceğine, hangi yaratığı kiracı alacağına, hangi talebi karşılayacağına karar verir. Doğru kararlar verince bina gelişir, saygınlık artar, daha iyi kiracılar gelir — bu döngünün kendisi ödüldür. Buna ek olarak, kiracıları daireler arasında stratejik olarak konumlandırmak (drag-drop ile yer değiştirme) önemli bir katman ekler — kiracıların birbirine göre konumu mutluluğu doğrudan etkiler. Komik olaylar ve absürt yaratıklar bu süreci eğlenceli tutar.
 
 ### Benzersiz Satış Noktası (USP)
 
-**"Komik kaos içinde apartman yönetimi."** Piyasadaki apartman/bina yönetim oyunları ya ciddi-gerçekçi (The Tenants) ya da karanlık-politik (Beholder). Apartman, bu türe **komik ve kaotik bir ton** getirerek farklılaşır. Two Point Hospital'ın hastane yönetimine yaptığını, Apartman apartman yönetimine yapar.
+**"Her gün yeni bir kaos, her kaos yeni bir kahkaha."** Babaannenden kalan apartmanda bir gün bile sıkıcı geçmez. Balkonda uyuyan dev blob, kira gününde ortalıktan kaybolan parlak yaratık, yan yana koydukların kavga edince çöken mutluluk. Her şey kontrolden çıkmak üzereyken doğru hamleyi yapmanın verdiği tatmin, işte bu oyunu bırakılmaz kılan şey. Apartman yönetimi hiç bu kadar absürt, bu kadar kaotik ve bu kadar eğlenceli olmamıştı.
+
+### Design Pillars
+
+Oyunun tüm tasarım kararlarına yön veren temel ilkeler. Bir özellik hiçbir pillar'a hizmet etmiyorsa oyuna girmemeli.
+
+| # | Pillar | Açıklama |
+|---|--------|----------|
+| 1 | **Komik Kaos** | Her gün beklenmedik, absürt ve güldüren şeyler olur. Oyuncu stres değil eğlence yaşar. |
+| 2 | **Stratejik Yerleşim** | Kimi alacağın, nereye koyacağın, kimi çıkaracağın. Her kiracı kararı bir bulmaca. Kiracıların birbirine göre konumu mutluluğu doğrudan etkiler. (Referans: *Is This Seat Taken?* yerleştirme bulmacası, bizim oyunda canlı yönetim sim katmanıyla birleşiyor.) |
+| 3 | **Görsel Dönüşüm** | Bakımsız binayı adım adım şehrin en renkli apartmanına çevirmenin tatmini. Her yükseltme binada dışarıdan görünür. |
+| 4 | **Kıt Kaynakla Hayatta Kalma** | Para her zaman az. Her harcama bir fedakarlık. Doğru önceliklendirme ödüllendiriliyor. |
 
 ### Hedef Kitle
 
@@ -44,7 +55,7 @@ Temel çekim gücü: **Kaynak yönetimi ve inşa etme hissi.** Oyuncu her gün k
 | **Oyun profili** | Akşam 2-3 saat rahat oturup eğlenceli bir şey oynamak isteyen kişiler |
 | **Seven oldukları** | Kaynak yönetimi, bina/tesis geliştirme, komik karakterler, hızlı ilerleme hissi |
 | **Sevmedikleri** | Aşırı karmaşık sistemler, cezalandırıcı zorluk, yavaş ilerleme |
-| **Benzer oyunlar** | The Tenants, Two Point Hospital, Spiritfarer, House Flipper |
+| **Benzer oyunlar** | The Tenants, Two Point Hospital, Spiritfarer, House Flipper, Is This Seat Taken? |
 
 ### Referans Oyunlar & İlham Kaynakları
 
@@ -54,6 +65,7 @@ Temel çekim gücü: **Kaynak yönetimi ve inşa etme hissi.** Oyuncu her gün k
 | **Beholder** | Yan kesit apartman görünümü, kiracı gözlemi, olay sistemi | Karanlık politik ton, gözetleme mekaniği |
 | **Spiritfarer** | Sıcak atmosfer, karakter ilişkileri, görsel stil ilhamı | Hikaye ağırlıklı yapı, platformer hareket |
 | **Two Point Hospital** | Komik ton, absürt olaylar, erişilebilir yönetim mekaniği | 3D perspektif, hastane teması |
+| **Is This Seat Taken?** | Karakter yerleştirme bulmacası, komşuluk tercihleri, drag-drop mekaniği | Statik bulmaca yapısı (bizde canlı yönetim sim) |
 
 ---
 
