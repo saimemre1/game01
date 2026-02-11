@@ -335,14 +335,16 @@ Her kiracı kendine özgü bir profile sahip bir yaratıktır. Artıları, eksil
 
 Her kiracının bir Tier seviyesi (1-4) vardır. Tier, kiracının genel kalitesini ve kira miktarını belirler. Yüksek tier kiracılara erişmek için belli bir ⭐ gerekir.
 
-| Tier | Kira Aralığı | Gerekli ⭐ | Genel Profil |
-|------|-------------|-----------|--------------|
-| **Tier 1** | 100-200₺ | 0+ | Ucuz, kolay bulunur, çok talep, sorunlu |
-| **Tier 2** | 250-400₺ | 21+ | Dengeli, makul kira, ara sıra sorun |
-| **Tier 3** | 450-650₺ | 51+ | İyi kira, az sorun, beklentisi yüksek |
-| **Tier 4** | 700-1000₺ | 81+ | Çok iyi kira, özel bonuslar, çok seçici |
+| Tier | Kira Aralığı | Gerekli ⭐ | Talep | Genel Profil |
+|------|-------------|-----------|-------|--------------|
+| **Tier 1** | 100-200₺ | 0+ | Az | Ucuz, sessiz, idare eder. Geliri düşük. |
+| **Tier 2** | 250-400₺ | 21+ | Orta | Makul kira, ara sıra talep ve sorun. |
+| **Tier 3** | 450-650₺ | 51+ | Sık | İyi kira ama beklentisi yüksek, istekleri pahalı. |
+| **Tier 4** | 700-1000₺ | 81+ | Çok Sık | Çok iyi kira ve özel bonuslar ama sürekli ilgi ister, kolay mutsuz olur. |
 
 > Kira rakamları yer tutucudur, oyun dengesi testlerinde ayarlanır.
+
+**Temel mantık:** Daha iyi kiracı = daha çok gelir ama daha çok kaos. Oyuncu ilerledikçe yüksek tier kiracılara geçmek zorundadır (düşük kiralarla ayakta kalamaz) ama bu geçiş oyunu doğal olarak zorlaştırır.
 
 #### Profil Kartı
 
@@ -369,7 +371,7 @@ Kiracılar belirli aralıklarla talep oluşturur. Talepler gün başında beliri
 
 #### Stratejik İkilem
 
-Erken oyunda sadece Tier 1 kiracılara erişilir (⭐ düşük). İlerledikçe daha iyi kiracılar açılır ama eski Tier 1 kiracıları tahliye etmek gerekir. Tahliye bedeli vardır.
+Erken oyunda Tier 1 kiracılar yeterlidir, sakin ve kolaydır. Ama düşük kiralarla apartmanı geliştirmek zordur. Oyuncu yüksek tier kiracılara geçmek zorundadır, bu da daha çok gelir ama daha çok talep, daha çok olay ve daha çok kaos demektir. Eski kiracıları tahliye etmenin de bir bedeli vardır.
 
 ### 4.4 Apartman Yükseltme Sistemi
 
