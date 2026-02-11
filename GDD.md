@@ -47,9 +47,15 @@ Oyuncu, dökülen bir binayı adım adım toparlamanın, garip ve absürt yarat�
 
 Temel çekim gücü: **Kaynak yönetimi ve inşa etme hissi.** Oyuncu her gün kısıtlı parayla binayı nasıl geliştireceğine, hangi yaratığı kiracı alacağına, hangi talebi karşılayacağına karar verir. Doğru kararlar verince bina gelişir, saygınlık artar, daha iyi kiracılar gelir — bu döngünün kendisi ödüldür. Buna ek olarak, kiracıları daireler arasında stratejik olarak konumlandırmak (drag-drop ile yer değiştirme) önemli bir katman ekler — kiracıların birbirine göre konumu mutluluğu doğrudan etkiler. Komik olaylar ve absürt yaratıklar bu süreci eğlenceli tutar.
 
-### Benzersiz Satış Noktası (USP)
+### USP & Avantajlar
 
-**"Her gün yeni bir kaos, her kaos yeni bir kahkaha."** Babaannenden kalan apartmanda bir gün bile sıkıcı geçmez. Balkonda uyuyan dev blob, kira gününde ortalıktan kaybolan parlak yaratık, yan yana koydukların kavga edince çöken mutluluk. Her şey kontrolden çıkmak üzereyken doğru hamleyi yapmanın verdiği tatmin, işte bu oyunu bırakılmaz kılan şey. Apartman yönetimi hiç bu kadar absürt, bu kadar kaotik ve bu kadar eğlenceli olmamıştı.
+**Yenilik:** Apartman yönetim simülasyonu ile stratejik yerleştirme bulmacasını birleştiren bir oyun. Her kiracı kendine özgü koşulları olan bir bulmaca parçasıdır ve nereye yerleştirildiği sonucu doğrudan etkiler.
+
+**Avantajlar:**
+
+1. **Pazar boşluğu:** Benzer oyunlar gerçekçi insan teması ve karanlık ton üzerine yoğunlaşmış durumda (bkz. Evren & Tema Araştırması). Yakın zamandaki trendler fantezi evrenlere yöneliyor ve bu taraf boş. Burada net bir avantaj görüyoruz.
+2. **Teknik uygunluk:** Hem yapılabilirlik noktasında ekibin kapasitesine uygun gereksinimleri var hem de basit strateji/eğlence kategorisinde doygun ve yeterli bir fikir.
+3. **Şirket hedefleri:** İlk oyun olarak beklentilerimizi ve ölçmek istediklerimizi kapsıyor.
 
 ### Design Pillars
 
@@ -381,18 +387,24 @@ Oyuncu kiracıları daireler arasında sürükleyip bırakarak (drag-drop) yer d
 
 #### Bina Yapısı
 
-Apartman dışarıdan görülür. Her katta 2 daire vardır (sol ve sağ). Başlangıçta 2 kat (4 daire), ilerleyen oyunda 3. kat eklenebilir (6 daire).
+Apartman dışarıdan görülür. Her katta 2 daire vardır (sol ve sağ). Başlangıçta 2 kat (4 daire), oyuncu İnşaatçı dükkanından yeni kat satın alarak binayı 15 kata kadar büyütebilir (30 daire).
 
 ```
   ┌───────────┬───────────┐
-  │  Daire 5  │  Daire 6  │  3. Kat (sonradan eklenir)
+  │ Daire 29  │ Daire 30  │  15. Kat (maks)
+  ├───────────┼───────────┤
+  │    ...    │    ...    │
+  ├───────────┼───────────┤
+  │  Daire 5  │  Daire 6  │  3. Kat
   ├───────────┼───────────┤
   │  Daire 3  │  Daire 4  │  2. Kat
   ├───────────┼───────────┤
-  │  Daire 1  │  Daire 2  │  1. Kat
+  │  Daire 1  │  Daire 2  │  1. Kat (başlangıç)
   └───────────┴───────────┘
        Sol          Sağ
 ```
+
+> Kat satın alma İnşaatçı dükkanından yapılır (bkz. 4.7). Her yeni kat bir öncekinden daha pahalıdır.
 
 #### Drag-Drop Mekaniği
 
@@ -428,7 +440,7 @@ Her kiracının profil kartında **Koşullar** alanı vardır (bkz. 4.3). Bu ko�
 | Sessiz Mantar | Gürültücü komşudan nefret eder | Gürültücü komşu: -😊, ama kimseyi rahatsız etmez |
 | Parti Hayaleti | Gürültücü ama gürültüden hoşlanır | Gürültücü komşu: +😊, sessiz komşu: nötr |
 
-> Bu örnekler fikir vermek içindir. Her yaratık türüne özgü yaratıcı koşullar tasarlanacak.
+> Koşul tipleri buradakilerle sınırlı değildir. Tam listede 20+ koşul tipi olabilir. Her kiracı bunların hepsinden etkilenmez, sadece kendi profil kartında tanımlı koşullara tepki verir. Koşul çeşitliliği oyunun tekrar oynanabilirliğini ve stratejik derinliğini belirler, bu nedenle bu alan sürekli genişletilecek.
 
 #### Mutluluk Hesabı
 
@@ -439,6 +451,29 @@ Her kiracının bireysel mutluluğu koşullarına göre hesaplanır. Apartmanın
 - Taşınma sonrası tüm etkilenen kiracıların 😊 değeri yeniden hesaplanır
 
 > **Developer notu:** Her koşul bir condition objesidir: tipi, hedefi ve 😊 etkisi (+ veya -) tanımlanır. Yeni koşullar data olarak eklenebilir olmalı, kod değişikliği gerektirmemeli.
+
+### 4.5 Emlakçı
+
+Oyuncu mahalledeki Emlakçı dükkanına giderek yeni kiracı adaylarını görür. Emlakçı bir modal ekran olarak açılır.
+
+#### Nasıl Çalışır
+
+- Emlakçıda her zaman birkaç kiracı adayı listelenir
+- Her adayın profil kartı görünür (bkz. 4.3): tür, tier, kira, artılar, eksiler, koşullar
+- Oyuncu bir adayı seçip boş bir daireye yerleştirir
+- Aday listesi birkaç günde bir yenilenir
+- Emlakçı komisyon alır (₺)
+
+#### Saygınlık Etkisi
+
+Saygınlık (⭐) emlakçıdaki aday havuzunun kalitesini belirler.
+
+| ⭐ | Aday Sayısı | Açılan Tier'ler |
+|----|-------------|-----------------|
+| 0-20 | 1-2 aday | Tier 1 |
+| 21-50 | 3-4 aday | Tier 1-2 |
+| 51-80 | 4-5 aday | Tier 1-3 |
+| 81-100 | 5-6 aday | Tier 1-4 |
 
 ### 4.7 Apartman Yükseltme Sistemi
 
