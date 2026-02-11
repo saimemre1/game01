@@ -83,17 +83,22 @@ Anlaşmaya göre İlkkan yetişkinliğinde babaannesinin eski apartmanını devr
 
 ### Kaybetme Koşulu (Lose Condition)
 
-Oyunun tek kaybetme koşulu: **Paranın bitmesi.**
+Oyunun kaybetme koşulu: **Belediye giderlerini ödeyememek.**
 
-- Para 0₺'a düşerse belediyeden **uyarı** gelir (3 gün süre)
-- 3 gün içinde toparlamazsan → **apartman mühürlenir** → Oyun biter
+- Belediye giderleri (vergi/fatura) geldiğinde oyuncu **aktif olarak ödemeli**
+- Paran olsa bile ödemeyi unutursan veya atlarsan sonuç aynı
+- Ödenmezse belediye **3 gün süre** verir
+- 3 gün içinde ödenmezse → **apartman mühürlenir** → Oyun biter
 - Oyuncu yeni oyun başlatır veya son kayıttan devam eder
 
-**Sürekli gider baskısı:**
-- Çalışan maaşları (günlük)
-- Faturalar (haftalık)
-- Vergi (30 günde bir — büyük gider)
-- Anlık olay masrafları (su baskını, hasar vb.)
+**Sürekli giderler (15 günlük interval):**
+- Çalışan maaşları (her 15 günde bir)
+- Faturalar (her 15 günde bir)
+- Vergi (her 15 günde bir)
+- Bu giderler aynı güne denk gelmek zorunda değil, her birinin kendi 15 günlük döngüsü var
+
+**Anlık giderler:**
+- Olay masrafları (su baskını, hasar vb.) aynı gün ödenir
 - Kiracı yoksa gelir yok ama giderler devam eder
 
 ---
@@ -102,12 +107,12 @@ Oyunun tek kaybetme koşulu: **Paranın bitmesi.**
 
 ### Evren Kararı: Hibrit
 
-Oyun **hibrit bir evren** kullanır: İlkkan gerçek bir insandır, ama apartmana taşınan kiracılar **garip, absürt ve beklenmedik yaratıklardır.** İlkkan başta bunu bilmez — ilk kiracı geldiğinde hem oyuncu hem İlkkan şaşırır. Ama kısa sürede bu "normal" hale gelir ve oyun bunu sorgulamadan kabul eder.
+Oyun **hibrit bir evren** kullanır: İlkkan (oyuncu) gerçek bir insandır, ama apartmana başvuran kiracılar çoğunlukla **garip, absürt ve beklenmedik yaratıklar veya insan olmayan ilginç karakterlerdir.** Ara sıra insan kiracılar da gelebilir ama ağırlık yaratık tarafındadır.
 
 Bu hibrit yaklaşım şunları sağlar:
-- **Hikaye tarafı:** İlkkan'ın gerçekçi motivasyonu (miras, zorunluluk) oyuncuya bağlam verir
-- **Gameplay tarafı:** Yaratık çeşitliliği sayesinde mekanik farklılıklar yaratılabilir (bir ateş yaratığının oda ihtiyaçları bir buz yaratığından farklıdır)
-- **Ton tarafı:** Absürt yaratıklar + gerçekçi apartman problemleri = komik kontrast
+- **Hikaye tarafı:** İlkkan'ın insan olması oyuncuya empati noktası verir. Yaratıklarla dolu bir dünyada sıradan biri olmanın komik kontrastı
+- **Gameplay tarafı:** Yaratık çeşitliliği sayesinde mekanik farklılıklar yaratılabilir (bir ateş yaratığının ihtiyaçları bir buz yaratığından farklıdır)
+- **Ton tarafı:** Absürt yaratıklar + sıradan apartman problemleri = doğal komedi
 
 ### Yaratık Tasarım Felsefesi: Garip & Absürt
 
@@ -140,7 +145,7 @@ Yaratıklar klasik fantezi ırkları (elf, ork) değil, **tuhaf, beklenmedik ve 
 - İlkkan'ın dünyasında yaratıkların varlığı **normal karşılanır** — kimse "neden yaratıklar var?" diye sorgulamaz
 - Yaratıklar toplumda yaşar, çalışır, kira öder, şikayet eder — tıpkı insanlar gibi
 - Oyun bu durumu ciddiye almaz, komik kontrastı kucaklar
-- Babaannenin apartmanının eskiden de yaratık kiracıları olup olmadığı bir **hikaye sırrı** olarak kullanılabilir
+- Babaannenin bu yaratıklarla nasıl bir anlaşma yaptığı ve neden İlkkan'ı seçtiği arka planda bir **gizem** olarak kalır
 
 ---
 
