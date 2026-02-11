@@ -149,85 +149,85 @@ Yaratıklar klasik fantezi ırkları (elf, ork) değil, **tuhaf, beklenmedik ve 
 
 ---
 
-## 4. Temel Mekanikler
+## 4. Mekanikler
 
-### 4.1 Core Loop (Günlük Döngü)
+> **İçindekiler**
+>
+> 4.1 Core Loop (Gün Döngüsü)
+> 4.2 Kaynaklar (Para, Mutluluk, Saygınlık)
+> 4.3 Kiracı Sistemi (Profil, Tier, Talepler)
+> 4.4 Yerleştirme & Komşuluk (Drag-Drop, Komşu Etkileri)
+> 4.5 Emlakçı
+> 4.6 Kira & Ödeme Sistemi
+> 4.7 Apartman Yükseltmeleri & Dükkanlar
+> 4.8 Çalışan Sistemi
+> 4.9 Olay & Karar Sistemi
+> 4.10 Kaybetme Koşulu
 
-**Sistem:** Tam tur bazlı (turn-based). Oyuncu istediği kadar düşünür, aksiyonlarını yapar, hazır olunca "Günü Bitir" butonuna basar. Zaman baskısı yoktur.
+---
+
+### 4.1 Core Loop (Gün Döngüsü)
+
+Oyun tur bazlıdır. Her tur bir gündür. Oyuncu istediği kadar düşünür, istediği aksiyonları istediği sırada yapar. Hazır olunca "Günü Bitir" butonuna basar. Zaman baskısı yoktur.
 
 ```
-  ┌──────────────────────────────────────────────┐
-  │              1. GÜN BAŞI                      │
-  │  • Günün olayları gösterilir (popup/kart)     │
-  │  • Kiracı talepleri ortaya çıkar              │
-  │  • Kira gelirleri otomatik toplanır           │
-  │  • Varsa faturalar/giderler düşer             │
-  └──────────────┬───────────────────────────────┘
-                 ▼
-  ┌──────────────────────────────────────────────┐
-  │           2. AKSİYON FAZI (Serbest)           │
-  │  Oyuncu istediği sırada:                      │
-  │  • Olaylarda karar verir                      │
-  │  • Kiracı taleplerini çözer                   │
-  │  • Tamir / yenileme başlatır                  │
-  │  • Emlakçıya gider, yeni kiracı seçer         │
-  │  • Binayı gezer, durumu kontrol eder          │
-  │  Hazır olunca → "Günü Bitir" butonuna basar   │
-  └──────────────┬───────────────────────────────┘
-                 ▼
-  ┌──────────────────────────────────────────────┐
-  │              3. GÜN SONU                      │
-  │  • Kaynaklar güncellenir (₺, 😊, ⭐)          │
-  │  • Tamir/yenileme ilerlemesi güncellenir      │
-  │  • Günün özet raporu gösterilir               │
-  │  • Sonraki güne geçilir                       │
-  └──────────────┬───────────────────────────────┘
-                 │
-                 └──────────► Yeni güne dön
+  ┌─────────────────────────────────────────┐
+  │           GÜN BAŞI (Otomatik)           │
+  │                                         │
+  │  • Kira gelirleri toplanır              │
+  │  • Faturalar/giderler düşer (varsa)     │
+  │  • Günün olayları belirir               │
+  │  • Kiracı talepleri ortaya çıkar        │
+  └───────────────┬─────────────────────────┘
+                  ▼
+  ┌─────────────────────────────────────────┐
+  │        AKSİYON FAZI (Serbest)           │
+  │                                         │
+  │  Oyuncu istediği sırada:                │
+  │                                         │
+  │  ► Olaylara karar verir                 │
+  │  ► Kiracı taleplerini karşılar          │
+  │  ► Kiracıları sürükleyip yer değiştirir │
+  │  ► Emlakçıdan yeni kiracı seçer         │
+  │  ► Dükkanlara gidip apartmanı yükseltir │
+  │                                         │
+  │  Hazır olunca → "Günü Bitir"            │
+  └───────────────┬─────────────────────────┘
+                  ▼
+  ┌─────────────────────────────────────────┐
+  │           GÜN SONU (Otomatik)           │
+  │                                         │
+  │  • Kaynaklar güncellenir (₺, 😊, ⭐)   │
+  │  • Devam eden işler ilerler             │
+  │  • Günün özet raporu gösterilir         │
+  │                                         │
+  │           ↓ Yeni güne dön               │
+  └─────────────────────────────────────────┘
 ```
 
-#### Tempo: Zamanla Artan Kaos
+#### Oyuncunun Bir Günde Yapabileceği Aksiyonlar
 
-Oyun başında sakin, sonlara doğru kaotik. Bu hem öğrenme eğrisini yumuşatır hem de oyunun komik tonunu destekler.
+| Aksiyon | Ne Yapar | Detay |
+|---------|----------|-------|
+| Olaylara karar ver | Gelen olay kartlarında seçim yap | 4.9 |
+| Kiracı taleplerini karşıla | Talepleri çöz veya reddet | 4.3 |
+| Kiracıları yerleştir / taşı | Drag-drop ile daire değiştir | 4.4 |
+| Emlakçıya git | Yeni kiracı adaylarını incele | 4.5 |
+| Dükkanlara git | Apartman yükseltmesi satın al | 4.7 |
+| Çalışan yönet | Çalışan tut veya çıkar | 4.8 |
+| Günü Bitir | Aksiyonları kapat, gün sonuna geç | - |
 
-| Oyun Aşaması | Gün Başına Olay | Aktif Kiracı | Örnek |
-|--------------|-----------------|--------------|-------|
-| **Erken** (Gün 1-15) | 1-2 olay | 1-2 kiracı | Bir boru patlaması + bir kiracı isteği |
-| **Orta** (Gün 16-40) | 3-4 olay | 3-5 kiracı | Belediye denetimi + 2 kiracı talebi + komşu kavgası |
-| **Geç** (Gün 40+) | 5+ olay | 6+ kiracı | 3 kiracı talebi + yangın + vergi günü + misafir istilası |
+> Oyuncu bir günde bu aksiyonların hepsini yapmak zorunda değildir. Sadece o gün ne gerekiyorsa onunla ilgilenir.
 
-> Kaosun artması = komiğin artması. Oyuncu geç oyunda "ne yapacağımı bilemiyorum" hissini yaşamalı ama bu sinir bozucu değil, **eğlenceli** olmalı.
+#### Tempo
 
-#### Örnek Bir Gün (Orta Oyun — Gün 25)
+Oyun sakin başlar, giderek kaotikleşir. Kaosun artması komiğin artmasıdır.
 
-1. **Gün Başı:** Kira geliri +850₺. Fatura -200₺. 3 olay belirir:
-   - Blob kiracı gece yine mobilyayı yemiş (şikayet)
-   - 2. kattaki parlayan yaratık komşusunu rahatsız ediyor
-   - Belediyeden denetim haberi geldi (3 gün sonra)
-2. **Aksiyon Fazı:** Oyuncu serbest:
-   - Blob için yeni mobilya alır (-150₺) veya uyarı verir (mutluluk düşer)
-   - Parlayan yaratığı üst kata taşır (taşınma masrafı) veya komşuya perde alır
-   - Belediye denetimine hazırlanmak için bina dışını boyatmaya karar verir (-300₺)
-   - Emlakçıya gidip 3. kat için yeni kiracı adaylarına bakar
-   - "Günü Bitir" butonuna basar
-3. **Gün Sonu:** Para: 1200₺ → 550₺. Mutluluk: %72 → %68. Saygınlık: %55 → %58. Boya işi %50 tamamlandı.
-
-#### Emlakçı Sistemi
-
-Oyuncu **aktif olarak** emlakçıya gider (apartman dışında bir UI paneli veya ayrı bir ekran).
-
-- Emlakçıda her zaman birkaç kiracı adayı listelenir
-- Her adayın **profil kartı** vardır: tür, kira ödeme gücü, özel ihtiyaçlar, potansiyel sorunlar
-- Saygınlık arttıkça emlakçıdaki aday havuzu genişler ve kalitesi artar
-- Aday listesi birkaç günde bir yenilenir (oyuncu "bu turda beğenmedim" diyebilir)
-- Bazı özel/nadir yaratıklar sadece yüksek saygınlıkta açılır
-
-| Saygınlık | Emlakçı Aday Kalitesi |
-|-----------|----------------------|
-| ⭐ 0-20 | 1-2 aday, düşük kiralı, sorunlu tipler |
-| ⭐ 21-50 | 3-4 aday, karma kalite |
-| ⭐ 51-80 | 4-5 aday, iyi kiracılar mevcut |
-| ⭐ 81-100 | 5-6 aday, nadir/özel yaratıklar açılır |
+| Aşama | Olay/Gün | Aktif Kiracı |
+|-------|----------|--------------|
+| Erken (Gün 1-15) | 1-2 | 1-2 |
+| Orta (Gün 16-40) | 3-4 | 3-5 |
+| Geç (Gün 40+) | 5+ | 6+ |
 
 ### 4.2 Kaynak Sistemi
 

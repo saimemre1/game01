@@ -8,9 +8,8 @@
 4. [KPI Hedefleri](#4-kpi-hedefleri)
 5. [Başarı Senaryoları](#5-başarı-senaryoları)
 6. [Karşılaştırma Referansları](#6-karşılaştırma-referansları)
-7. [ROI Analizi](#7-yatırım-geri-dönüş-roi-analizi)
-8. [Kritik Başarı Faktörleri](#8-kritik-başarı-faktörleri)
-9. [Özet Karar Tablosu](#9-özet-karar-tablosu)
+7. [Kritik Başarı Faktörleri](#7-kritik-başarı-faktörleri)
+8. [Özet Karar Tablosu](#8-özet-karar-tablosu)
 
 | Alan | Detay |
 |------|-------|
@@ -199,16 +198,16 @@ Bu projenin pazarlama takvimi sıkışıktır:
 | **Rating** | %75+ (Mostly Positive) | %80+ (Very Positive) | %85+ (Very Positive) |
 | **Net gelir (geliştirici payı)** | $4.4K-$8.8K | $11K-$26K | $33K-$66K |
 | **Wishlist biriken (kullanılmamış)** | 2,000+ | 5,000+ | 15,000+ |
-| **Haftalık aktif oyuncu** | 100-300 | 300-1,000 | 1,000-5,000 |
-| **Medyan oynama süresi** | 5+ saat | 8+ saat | 12+ saat |
+| **Haftalık aktif oyuncu** | 50-150 | 150-500 | 500-2,000 |
+| **Medyan oynama süresi** | 3+ saat | 4+ saat | 6+ saat |
 | **DLC / güncelleme sonrası satış artışı** | %10-20 | %20-40 | %40-80 |
 
 ---
 
 ## 5. Başarı Senaryoları
 
-### Senaryo A: Mütevazi Başarı (Medyan Üstü)
-> *"Bütçeyi karşıladık, deneyim kazandık, ikinci oyuna yatırım yapabiliriz."*
+### Senaryo A: Temel Hedef (Medyan Üstü)
+> *"Temel hedefleri tutturduk, deneyim ve knowhow kazandık."*
 
 | Metrik | Değer |
 |--------|-------|
@@ -217,16 +216,15 @@ Bu projenin pazarlama takvimi sıkışıktır:
 | Net gelir | ~$4,400-$8,800 |
 | Review sayısı | 40-80 |
 | Rating | %75-79 (Mostly Positive) |
-| ROI | **%46-%192** (bütçeye göre) |
 
 **Bu seviyede ne olur:**
-- Bütçe karşılanır
-- Steam'de "var olan" bir oyun olur (görünürlük kazanır)
-- İkinci oyun için deneyim + portföy oluşur
-- Ekip motivasyonu korunur
+- Temel hedefler tutturulur — oyun Steam'de var ve oynanıyor
+- Ekip gerçek bir ürün yayınlama deneyimi kazanır (bu ilk oyun için en değerli çıktı)
+- İkinci oyun için portföy, bilgi birikimi ve süreç tecrübesi oluşur
+- Finansal olarak beklentilerin altında kalınır ama proje başarısız sayılmaz
 
-### Senaryo B: Gerçekçi Başarı (Üst %25)
-> *"Niş bir başarı, küçük ama sadık bir topluluk."*
+### Senaryo B: Gerçekçi Başarı Hedefi (Üst %25)
+> *"Asıl hedefimiz — niş bir başarı, küçük ama sadık bir topluluk."*
 
 | Metrik | Değer |
 |--------|-------|
@@ -235,9 +233,9 @@ Bu projenin pazarlama takvimi sıkışıktır:
 | Net gelir | ~$11,000-$26,400 |
 | Review sayısı | 100-350 |
 | Rating | %80-85 (Very Positive) |
-| ROI | **%264-%775** |
 
 **Bu seviyede ne olur:**
+- Proje finansal olarak kendini karşılar
 - DLC veya devam oyunu ekonomik olarak mantıklı hale gelir
 - Küçük bir topluluk oluşur (Discord, Steam Forum)
 - Yayıncılar / küçük YouTuber'lar organik olarak oyunu keşfedebilir
@@ -253,7 +251,6 @@ Bu projenin pazarlama takvimi sıkışıktır:
 | Net gelir | ~$33,000-$66,000 |
 | Review sayısı | 500-1,000 |
 | Rating | %85+ (Very Positive) |
-| ROI | **%993-%2,087** |
 
 **Bu seviyede ne olur:**
 - Yayıncı teklifleri gelebilir
@@ -293,28 +290,7 @@ Bu projeyle benzer ölçek ve fiyat aralığındaki oyunların performansları:
 
 ---
 
-## 7. Yatırım Geri Dönüş (ROI) Analizi
-
-### Başabaş Noktası
-
-| Bütçe Senaryosu | Toplam Harcama | Başabaş İçin Gereken Satış | Hesaplama |
-|-----------------|----------------|---------------------------|-----------|
-| Toplam bütçe | $3,018 | ~1,372 kopya | $2.20/kopya ağırlıklı ortalama ile |
-
-> **Başabaş noktası ~1,400 kopya satıştır** (yaklaşık 35-40 review'a tekabül eder). $5.99 fiyat noktasının dürtüsel satın alma avantajı ve düşük iade oranı ile ulaşılabilir bir hedeftir. Projenin finansal riski düşüktür.
-
-### Senaryo Bazlı ROI
-
-| Senaryo | Satış | Net Gelir | ROI |
-|---------|-------|-----------|-----|
-| Başabaş | ~1,400 | ~$3,080 | %0 |
-| Mütevazi (3K satış) | 3,000 | ~$6,600 | ~%119 |
-| Gerçekçi (8K satış) | 8,000 | ~$17,600 | ~%483 |
-| İyimser (20K satış) | 20,000 | ~$44,000 | ~%1,358 |
-
----
-
-## 8. Kritik Başarı Faktörleri
+## 7. Kritik Başarı Faktörleri
 
 ### Takvim Kısıtları ve Strateji
 
@@ -351,7 +327,7 @@ Bu projenin takvimi standart indie pazarlama önerilerinden farklıdır:
 
 ---
 
-## 9. Özet Karar Tablosu
+## 8. Özet Karar Tablosu
 
 | Metrik | Minimum Kabul | Birincil Hedef | Uzatmalı Hedef |
 |--------|--------------|----------------|----------------|
@@ -361,9 +337,7 @@ Bu projenin takvimi standart indie pazarlama önerilerinden farklıdır:
 | **Review (12 ay)** | 40 | 100-350 | 500+ |
 | **Rating** | %75+ | %80+ | %85+ |
 | **Net gelir (12 ay)** | $4,400 | $11,000-$26,000 | $50,000+ |
-| **Medyan oynama süresi** | 3 saat | 5-8 saat | 10+ saat |
-| **Toplam bütçe** | $3,018 | $3,018 | — |
-| **Başabaş satış** | ~1,400 kopya | — | — |
+| **Medyan oynama süresi** | 2 saat | 3-4 saat | 6+ saat |
 
 ---
 
