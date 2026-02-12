@@ -905,8 +905,9 @@ Gün başında olay kartları ekranın ortasına gelir:
 
 ## 9. Monetizasyon
 
-- **Model:** Premium — tek seferlik satın alma (Steam)
-- **DLC potansiyeli:** Yeni yaratık türleri, yeni mahalle dükkanları, ek olay paketleri
+- **Model:** Premium, tek seferlik satın alma (Steam)
+- **Fiyat:** $5.99
+- **DLC potansiyeli:** Yeni yaratık türleri, ek olay paketleri, yeni yükseltmeler
 - **Oyun içi satın alım yok**
 - **Reklam yok**
 
@@ -916,66 +917,71 @@ Gün başında olay kartları ekranın ortasına gelir:
 
 ### Yaklaşım: Tam Deneyim (Küçük)
 
-MVP'de tüm mekanikler mevcut olacak ama küçük ölçekte. Oyuncu kısa ama **tam bir oyun deneyimi** yaşayacak.
+MVP'de tüm mekanikler mevcut olacak ama küçük ölçekte. Oyuncu kısa ama tam bir oyun deneyimi yaşayacak.
 
 ### MVP İçerik Kapsamı
 
 | Alan | MVP Kapsamı |
 |------|-------------|
-| **Apartman** | 2 kat, toplam 4 daire |
+| **Apartman** | 2 kat başlangıç, 3. kat eklenebilir |
 | **Kiracı türleri** | 6-8 farklı yaratık (Tier 1-3) |
-| **Dükkanlar** | 3 dükkan (Emlakçı + Boyacı + Tesisatçı) |
-| **Yükseltmeler** | 5-6 apartman yükseltmesi |
-| **Olaylar** | 10-15 olay (5 basit + 5 zincirleme + 2-3 periyodik) |
-| **Çalışanlar** | 1 çalışan türü (Kapıcı) |
-| **Kat ekleme** | 1 yeni kat eklenebilir (2→3 kat) |
+| **Dükkanlar** | 2 dükkan (Emlakçı + Yapı Ustası) |
+| **Yükseltmeler** | 5-6 apartman yükseltmesi (kademeli) |
+| **Olaylar** | 10-15 olay kartı (basit + zincirleme + periyodik) |
+| **Çalışanlar** | 1-2 çalışan türü (Kapıcı, Temizlikçi) |
+| **Koşullar** | 8-10 koşul tipi |
 
-### Must-Have (MVP v1.0)
+### Must-Have (v1.0)
 
 **Core Loop:**
 - [ ] Mahalle görünümü (sağa-sola kayan 2D sahne)
-- [ ] Apartman kesit görünümü (2 kat, 4 daire)
-- [ ] Gün bazlı tur sistemi (gün başı → aksiyon → gün sonu)
+- [ ] Apartman dış görünümü (2 kat, 4 daire, balkonlar)
+- [ ] Gün bazlı tur sistemi (gün başı, aksiyon, gün sonu)
 - [ ] "Günü Bitir" butonu + gün sonu raporu
-- [ ] Minimal HUD (para, mutluluk, saygınlık, gün sayısı)
+- [ ] Minimal HUD (₺, 😊, ⭐, gün sayısı)
 
-**Kiracı Sistemi:**
-- [ ] Kiracı profil kartları (tür, tier, artı/eksi, kira)
-- [ ] Emlakçı dükkanı — kiracı aday listesi, kabul/red
-- [ ] Kiracı talepleri (popup kartlar)
+**Kiracı & Yerleştirme:**
+- [ ] Kiracı profil kartları (tür, tier, artı/eksi, koşullar, kira)
+- [ ] Emlakçı modalı (aday listesi, kontrat imzala, komisyon, taşınma süresi)
+- [ ] Taşınma arabası mekaniği (drag-drop ile daireye yerleştirme)
+- [ ] Kiracılar arası drag-drop yer değiştirme
+- [ ] Koşul motoru (kat tercihi, komşu tercihi, gürültü uyumu vb.)
+- [ ] Kiracı talepleri (olay kartları)
 - [ ] Kiracı tahliye mekaniği
-- [ ] Tier uyumsuzluğu → mutluluk etkisi
 
 **Kaynak & Ekonomi:**
-- [ ] Para (₺) sistemi — gelir/gider takibi
-- [ ] Mutluluk (😊) sistemi — ödeme düzeni etkisi
-- [ ] Saygınlık (⭐) sistemi — emlakçı kalitesi etkisi
-- [ ] Fatura + vergi sistemi (periyodik giderler)
-- [ ] Kaybetme koşulu: para = 0 → mühürlenme
+- [ ] Para (₺) sistemi, gelir/gider takibi
+- [ ] 😊 ve ⭐ gösterge hesaplaması
+- [ ] Para yönetimi ekranı (banka, ödeme logları, "Öde" butonu)
+- [ ] 15 günlük periyodik giderler (vergi, fatura, maaş)
+- [ ] Kira döngüsü (kiracı bazlı 15 günlük)
+- [ ] Kaybetme koşulu (belediye borcu, 3 gün süre, mühürlenme)
 
-**Apartman Yükseltme:**
-- [ ] 3 dükkan modal sistemi (emlakçı, boyacı, tesisatçı)
+**Yapı Ustası:**
+- [ ] Yapı Ustası modalı (kategorili yükseltme listesi)
 - [ ] Yükseltme satın alma + süre sistemi
-- [ ] Yükseltmelerin görsel yansıması
+- [ ] Yükseltme kademeleri ve dayanıklılık
+- [ ] Yükseltmelerin dış cephede görsel yansıması
+- [ ] Kat ekleme (3. kat)
 
 **Olay Sistemi:**
 - [ ] 10-15 olay kartı (seçenekler + sonuçlar)
-- [ ] Basit zincirleme olaylar (en az 3-5 tane)
-- [ ] Vergi günü (30 günde bir)
+- [ ] Zincirleme olaylar (en az 3-5)
+- [ ] Periyodik olaylar (belediye denetimi vb.)
 
 **Teknik:**
-- [ ] Kaydetme / yükleme (JSON)
-- [ ] Başlangıç sahnesi (kısa hikaye anlatımı)
+- [ ] Save/Load (JSON)
+- [ ] Onboarding sahnesi
 
-### Nice-to-Have (v1.0 sonrası güncellemeler)
+### Nice-to-Have (v1.0 sonrası)
 
 - [ ] Ek yaratık türleri (Tier 4 dahil)
-- [ ] Ek dükkanlar (elektrikçi, bahçıvan, mobilyacı, taş ustası)
-- [ ] Kat ekleme mekaniği (tam sürüm: 2→5 kat)
-- [ ] Çalışan sistemi (kapıcı, güvenlikçi, bahçıvan)
-- [ ] Mevsim sistemi (kış = kalorifer sorunu vb.)
-- [ ] Başarım (achievement) sistemi
-- [ ] Daha fazla olay içeriği (25-30 olay)
+- [ ] Daha fazla koşul tipi (20+)
+- [ ] Kat ekleme genişletme (15 kata kadar)
+- [ ] Ek çalışanlar (Güvenlikçi, Gece Bekçisi, Avukat)
+- [ ] Kontrat mekaniği (farklı kontrat tipleri)
+- [ ] Mevsim sistemi
+- [ ] Achievement sistemi
+- [ ] Daha fazla olay içeriği (25-30)
 - [ ] Steam entegrasyonu (bulut save, başarımlar)
-- [ ] Ses & müzik (lo-fi soundtrack)
 - [ ] Lokalizasyon (EN/TR)
