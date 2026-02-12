@@ -531,42 +531,78 @@ Oyuncu istediği zaman bir kiracıyı tahliye edebilir. Tahliye bedeli tier'e g�
 
 > **Not (kontrat mekaniği):** İleride farklı kontrat tipleri eklenebilir. Emlakçıda "Kontrat İmzala" aşamasında kontrat seçimi olur. Basit kontrat (ucuz, oyuncuyu az korur) veya gelişmiş kontrat (pahalı, oyuncuyu daha çok korur, tahliye bedeli düşer). Gelişmiş kontratlara erişim için avukata veya emlakçıya ekstra ödeme gerekebilir. Bu alan genişletilmeye açıktır.
 
-### 4.7 Apartman Yükseltme Sistemi
+### 4.7 Apartman Yükseltmeleri & Dükkanlar
 
-> **Önemli:** Bu oyun daire yönetimi değil, **apartman yönetimidir.** Dairelerin içini yönetmiyoruz. Kiracıları dairelere yerleştiriyoruz ve **genel apartmanı** yükseltiyoruz.
-
-#### Yükseltme Kategorileri
-
-| Kategori | Örnek Yükseltmeler | Etki |
-|----------|---------------------|------|
-| **Dış Cephe** | Boya, cephe kaplama, tabela | ⭐ Saygınlık artışı |
-| **Altyapı** | Tesisat yenileme, elektrik, kalorifer | 😊 Mutluluk + daha az arıza olayı |
-| **Güvenlik** | Kamera, güvenlik kapısı, yangın alarm | ⭐ Saygınlık + olay koruması |
-| **Konfor** | Asansör, fiber optik internet, klima | 😊 Mutluluk + talep azaltma |
-| **Ortak Alan** | Bahçe düzenleme, otopark, çamaşırhane | ⭐ + 😊 karma etki |
+Bu oyun daire yönetimi değil, **apartman yönetimidir.** Dairelerin içini yönetmiyoruz. Kiracıları dairelere yerleştiriyoruz ve genel apartmanı yükseltiyoruz. Yükseltmeler oyuncunun ilerleme hissinin ana kaynağıdır.
 
 #### Mahalle Dükkanları
 
-Yükseltmeler **mahalle dükkanlarından** satın alınır. Oyuncu apartmandan çıkıp (UI olarak farklı bir ekran/panel) mahalledeki dükkanlara gider.
+Ana ekranda apartmanın sağında ve solunda komşu binalar yer alır. Bu binaların altında dükkanlar bulunur. Oyuncu bir dükkana tıkladığında modal olarak açılır ve o dükkanın hizmetlerini görür.
 
-| Dükkan | Hizmetler | Örnek |
-|--------|-----------|-------|
-| **Boyacı** | Boya, cephe işleri | "Apartmanı boyat" — 3 gün, 500₺ |
-| **Tesisatçı** | Boru, kalorifer, sıhhi tesisat | "Tesisat yenile" — 2 gün, 400₺ |
-| **Elektrikçi** | Elektrik, internet, güvenlik sistemi | "Fiber optik bağlat" — 1 gün, 300₺ |
-| **Bahçıvan** | Bahçe, çiçek, dış alan | "Bahçe düzenle" — 4 gün, 350₺ |
-| **Mobilyacı** | Ortak alan mobilyaları | "Giriş mobilyası al" — anında, 200₺ |
+| Dükkan | Hizmetler |
+|--------|-----------|
+| **Boyacı** | Boya, cephe kaplama, tabela |
+| **Tesisatçı** | Boru, kalorifer, sıhhi tesisat |
+| **Elektrikçi** | Elektrik, internet, güvenlik sistemi |
+| **Bahçıvan** | Bahçe, çiçek, dış alan düzenleme |
+| **Mobilyacı** | Ortak alan mobilyaları |
+| **İnşaatçı** | Kat ekleme (bkz. aşağıda) |
 
-> Dükkanlar oyun ilerledikçe artabilir veya yeni hizmetler açılabilir.
+> Dükkanlar oyun ilerledikçe artabilir veya mevcut dükkanlara yeni hizmetler açılabilir.
+
+#### Yükseltme Kademeleri
+
+Her yükseltmenin birden fazla kalite kademesi vardır. Kademe arttıkça fiyat, etki ve dayanıklılık artar.
+
+**Örnek: Boya**
+
+| Kademe | İsim | Fiyat | Süre | Dayanıklılık | Etki |
+|--------|------|-------|------|-------------|------|
+| 1 | Ucuz Boya | 200₺ | 2 gün | 20 gün | ⭐ +3 |
+| 2 | Standart Boya | 500₺ | 3 gün | 40 gün | ⭐ +6 |
+| 3 | Kaliteli Boya | 900₺ | 4 gün | 80 gün | ⭐ +10 |
+
+- Dayanıklılık süresi dolduğunda boya yıpranır ve binada görsel olarak bozulma görünür
+- Bozulmuş boya ⭐ cezası verir
+- Oyuncunun tekrar boyatması gerekir
+
+> Bu kalite/dayanıklılık yapısı diğer yükseltmelere de uygulanabilir (tesisat, güvenlik vb.). Tüm rakamlar yer tutucudur.
+
+#### Yükseltme Kategorileri
+
+| Kategori | Etki | Örnek |
+|----------|------|-------|
+| **Dış Cephe** | ⭐ Saygınlık | Boya, cephe kaplama, tabela |
+| **Altyapı** | 😊 Mutluluk + daha az arıza olayı | Tesisat, elektrik, kalorifer |
+| **Güvenlik** | ⭐ Saygınlık + olay koruması | Kamera, güvenlik kapısı, yangın alarm |
+| **Konfor** | 😊 Mutluluk + talep azaltma | Asansör, fiber optik, klima |
+| **Ortak Alan** | ⭐ + 😊 karma | Bahçe, otopark, çamaşırhane |
 
 #### Yükseltme Süresi
 
-Yükseltmeler **anında tamamlanmaz.** Her işin bir süresi vardır (gün bazlı).
+Yükseltmeler anında tamamlanmaz. Her işin bir süresi vardır (gün bazlı).
 
-- Boyacı çağırdın → 3 gün sonra biter
-- Bu sürede boyacı apartmanda görünür (görsel geri bildirim)
-- Süre boyunca ilgili alan kullanılamaz veya gürültü olur (mutluluk etkisi)
+- "Satın Al" butonuna basılınca para anında düşer
+- Süre boyunca işçi/usta apartmanda görünür (görsel geri bildirim)
+- Süre boyunca gürültü olabilir (😊 etkisi)
+- Süre bitince yükseltme aktif olur ve binada dışarıdan görünür
 - Birden fazla iş aynı anda yürütülebilir (para yeterse)
+
+#### İnşaatçı (Kat Ekleme)
+
+İnşaatçı dükkanından yeni kat satın alınır. Modalda seçenekler listelenir:
+
+| Seçenek | Fiyat | Süre | Sonuç |
+|---------|-------|------|-------|
+| 2 daireli kat ekle | Yüksek | Uzun | +2 daire kapasitesi |
+| 1 daireli kat ekle | Orta | Orta | +1 daire kapasitesi |
+
+- Para anında düşer, inşaat süresi başlar
+- Süre bitince yeni kat otomatik olarak eklenir
+- Her yeni kat bir öncekinden daha pahalıdır
+- Maksimum 15 kat (bkz. 4.4)
+
+> Fiyat ve süre değerleri yer tutucudur, denge testlerinde ayarlanır. Erken oyunda kat ekleme pahalı olacak şekilde ekonomi ayarlanır (görünmez kilit).
 
 ### 4.5 Çalışan Sistemi
 
