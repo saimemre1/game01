@@ -931,57 +931,40 @@ MVP'de tüm mekanikler mevcut olacak ama küçük ölçekte. Oyuncu kısa ama ta
 | **Çalışanlar** | 1-2 çalışan türü (Kapıcı, Temizlikçi) |
 | **Koşullar** | 8-10 koşul tipi |
 
-### Must-Have (v1.0)
+### Özellik Öncelik Tablosu
 
-**Core Loop:**
-- [ ] Mahalle görünümü (sağa-sola kayan 2D sahne)
-- [ ] Apartman dış görünümü (2 kat, 4 daire, balkonlar)
-- [ ] Gün bazlı tur sistemi (gün başı, aksiyon, gün sonu)
-- [ ] "Günü Bitir" butonu + gün sonu raporu
-- [ ] Minimal HUD (₺, 😊, ⭐, gün sayısı)
+5 = olmazsa olmaz, 1 = ilk kesilecek. Proje yetişmezse tabloyu aşağıdan yukarı doğru kes.
 
-**Kiracı & Yerleştirme:**
-- [ ] Kiracı profil kartları (tür, tier, artı/eksi, koşullar, kira)
-- [ ] Emlakçı modalı (aday listesi, kontrat imzala, komisyon, taşınma süresi)
-- [ ] Taşınma arabası mekaniği (drag-drop ile daireye yerleştirme)
-- [ ] Kiracılar arası drag-drop yer değiştirme
-- [ ] Koşul motoru (kat tercihi, komşu tercihi, gürültü uyumu vb.)
-- [ ] Kiracı talepleri (olay kartları)
-- [ ] Kiracı tahliye mekaniği
-
-**Kaynak & Ekonomi:**
-- [ ] Para (₺) sistemi, gelir/gider takibi
-- [ ] 😊 ve ⭐ gösterge hesaplaması
-- [ ] Para yönetimi ekranı (banka, ödeme logları, "Öde" butonu)
-- [ ] 15 günlük periyodik giderler (vergi, fatura, maaş)
-- [ ] Kira döngüsü (kiracı bazlı 15 günlük)
-- [ ] Kaybetme koşulu (belediye borcu, 3 gün süre, mühürlenme)
-
-**Yapı Ustası:**
-- [ ] Yapı Ustası modalı (kategorili yükseltme listesi)
-- [ ] Yükseltme satın alma + süre sistemi
-- [ ] Yükseltme kademeleri ve dayanıklılık
-- [ ] Yükseltmelerin dış cephede görsel yansıması
-- [ ] Kat ekleme (3. kat)
-
-**Olay Sistemi:**
-- [ ] 10-15 olay kartı (seçenekler + sonuçlar)
-- [ ] Zincirleme olaylar (en az 3-5)
-- [ ] Periyodik olaylar (belediye denetimi vb.)
-
-**Teknik:**
-- [ ] Save/Load (JSON)
-- [ ] Onboarding sahnesi
-
-### Nice-to-Have (v1.0 sonrası)
-
-- [ ] Ek yaratık türleri (Tier 4 dahil)
-- [ ] Daha fazla koşul tipi (20+)
-- [ ] Kat ekleme genişletme (15 kata kadar)
-- [ ] Ek çalışanlar (Güvenlikçi, Gece Bekçisi, Avukat)
-- [ ] Kontrat mekaniği (farklı kontrat tipleri)
-- [ ] Mevsim sistemi
-- [ ] Achievement sistemi
-- [ ] Daha fazla olay içeriği (25-30)
-- [ ] Steam entegrasyonu (bulut save, başarımlar)
-- [ ] Lokalizasyon (EN/TR)
+| Özellik | Öncelik | Açıklama |
+|---------|:-------:|----------|
+| Gün döngüsü (turn system) | 5 | Gün başı, aksiyon fazı, gün sonu. Oyunun iskeleti. |
+| Apartman dış görünüm | 5 | 2 kat, 4 daire, balkonlar, pencereler. Ana ekran. |
+| Kiracı sistemi (profil kartları, tier) | 5 | Kiracı veritabanı, tier 1-3, profil kartı. |
+| Emlakçı (kiracı bulma) | 5 | Aday listesi, kontrat imzala, komisyon. |
+| Para (₺) sistemi | 5 | Gelir/gider takibi. Oyun ekonomisinin temeli. |
+| Drag-drop yerleştirme | 5 | Kiracıları daireler arası sürükle-bırak. Ana mekanik. |
+| Koşul motoru (en az 5-6 tip) | 5 | Kat tercihi, komşu tercihi, gürültü uyumu vb. Ana mekanik. |
+| Olay kartları (en az 8-10) | 5 | Basit olay kartları, 2-3 seçenek, sonuçlar. |
+| HUD + Günü Bitir | 5 | ₺, 😊, ⭐, gün sayısı, günü bitir butonu. |
+| Mahalle görünümü | 5 | Sağa-sola kayan 2D sahne, dükkanlar görünür. |
+| 😊 Mutluluk göstergesi | 4 | Kiracı davranışını etkileyen gösterge. |
+| ⭐ Saygınlık göstergesi | 4 | Emlakçı kalitesini belirleyen gösterge. |
+| Yapı Ustası (temel yükseltmeler) | 4 | Modal, yükseltme listesi, satın al + süre. |
+| Kira döngüsü (15 günlük) | 4 | Kiracı bazlı otomatik kira ödemesi. |
+| Kiracı talepleri | 4 | Gün başında talep kartları, karşıla veya reddet. |
+| Gün sonu raporu | 4 | Günün gelir/gider ve gösterge özeti. |
+| Yükseltmelerin görsel yansıması | 4 | Boya, cephe değişimi dışarıdan görünür. |
+| Kat ekleme (3. kat) | 3 | Yapı Ustasından satın al, inşaat süresi. |
+| Yükseltme kademeleri (ucuz/standart/kaliteli) | 3 | Farklı fiyat, süre, etki. |
+| Zincirleme olaylar (3-5 tane) | 3 | Kararların günler sonra geri dönmesi. |
+| Para yönetimi ekranı (banka) | 3 | Gelir/gider logları, öde butonu. |
+| Periyodik giderler (vergi, fatura) | 3 | 15 günlük döngü, öde butonu. |
+| Kaybetme koşulu (mühürlenme) | 3 | Belediye borcu, 3 gün süre, oyun biter. |
+| Taşınma arabası mekaniği | 3 | Kontrat sonrası araba gelir, drag-drop ile yerleştir. |
+| Kiracı tahliye mekaniği | 2 | Tier bazlı tahliye bedeli. |
+| Çalışan sistemi (Kapıcı, Temizlikçi) | 2 | Maaş, otomatik etki. |
+| Yükseltme dayanıklılık/yıpranma | 2 | Boya bozulur, tekrar boyatma gerekir. |
+| Save/Load | 2 | JSON tabanlı kayıt sistemi. |
+| Onboarding sahnesi | 1 | Giriş hikayesi, tutorial. |
+| Faiz sistemi | 1 | Ödenmemiş borçlara günlük faiz. |
+| Kontrat detayları | 1 | Farklı kontrat tipleri, avukat erişimi. |
