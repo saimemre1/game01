@@ -12,7 +12,7 @@
 2. [Konsept ve Hikaye](#2-konsept-ve-hikaye)
 3. [Evren & Tema](#3-evren--tema)
 4. [Mekanikler](#4-mekanikler)
-5. [İçerik & İlerleme Sistemi](#5-i̇çerik--i̇lerleme-sistemi)
+5. [İçerik & İlerleme Sistemi](#5-içerik--ilerleme-sistemi)
 6. [Görsel & Ses Yönü](#6-görsel--ses-yönü)
 7. [UI/UX Tasarımı](#7-uiux-tasarımı)
 8. [Teknik Özet](#8-teknik-özet)
