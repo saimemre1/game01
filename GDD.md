@@ -676,72 +676,35 @@ Oyunun tek kaybetme koşulu: **Belediye giderlerini ödeyememek.**
 
 ## 5. İçerik & İlerleme Sistemi
 
-### Oyun Yapısı: Sonsuz Sandbox
+### Oyun Yapısı
 
-Oyun **sonsuz sandbox** yapıdadır. Net bir "oyun bitti" ekranı yoktur. Oyuncu istediği kadar devam eder. Ancak ilerleme döngüsü ~**4-6 saatlik** bir "ana döngü" etrafında tasarlanır:
+Sonsuz sandbox. "Oyun bitti" ekranı yoktur, oyuncu istediği kadar devam eder. İlerleme döngüsü 4-6 saatlik bir ana yay etrafında tasarlanır. Sonrasında oyuncu optimizasyon, farklı kiracı kombinasyonları ve bina geliştirmeye devam eder.
 
-- İlk 4-6 saatte tüm mekanikler açılır, tüm tier'lere erişilir, apartman büyütülür
-- Sonrasında oyuncu optimizasyon, farklı kiracı kombinasyonları, yeni olaylar ve bina geliştirmeye devam eder
-- Periyodik olaylar (vergi, belediye denetimi) sürekli gerilim yaratır
+### Onboarding
 
-### İlk Giriş (Onboarding)
-
-1. Avukat telefon sahnesi — kısa, hızlı, hikayeyi kurar
-2. Apartmana ilk varış — bina harap, 2 kat, boş daireler
-3. İlk mahalle turu — dükkanlar tanıtılır (boyacı, tesisatçı vb.)
-4. Emlakçıya ilk ziyaret — ilk kiracıyı seç (tutorial)
-5. İlk gün döngüsü — oyuncu serbest bırakılır
+1. Gizemli yaratık kapıya gelir, hikayeyi kurar (kısa sahne)
+2. Apartmana ilk bakış: bina harap, 2 kat, boş daireler
+3. Mahalle tanıtımı: Emlakçı ve Yapı Ustası gösterilir
+4. Emlakçıya ilk ziyaret: ilk kiracıyı seç (tutorial)
+5. İlk gün döngüsü: oyuncu serbest bırakılır
 
 ### İlerleme Aşamaları
 
-| Aşama | Süre | Kat | Kiracı | Açılan Mekanikler |
-|-------|------|-----|--------|-------------------|
-| **Başlangıç** | Gün 1-10 (~1 saat) | 2 kat | 1-2 kiracı | Temel döngü, emlakçı, ilk dükkanlar |
-| **Erken Oyun** | Gün 11-25 (~1.5 saat) | 2 kat | 3-4 kiracı | Tüm dükkanlar, ilk çalışan, yükseltmeler |
-| **Orta Oyun** | Gün 26-50 (~1.5 saat) | 3 kat (ilk kat ekleme) | 5-7 kiracı | Tier 3 kiracılar, zincirleme olaylar, inşaatçı |
-| **Geç Oyun** | Gün 50+ (~1+ saat) | 4-5 kat | 8+ kiracı | Tier 4 kiracılar, büyük olaylar, tam kaos |
-| **Serbest Oyun** | Sınırsız | Max kat | Sınırsız | Her şey açık, sandbox devam |
+| Aşama | Gün | Kat | Kiracı | Ne Açılır |
+|-------|-----|-----|--------|-----------|
+| **Başlangıç** | 1-10 | 2 | 1-2 | Temel döngü, emlakçı, yapı ustası |
+| **Erken** | 11-25 | 2-3 | 3-4 | İlk yükseltmeler, ilk çalışan, kat ekleme |
+| **Orta** | 26-50 | 3-5 | 5-8 | Tier 3 kiracılar, zincirleme olaylar |
+| **Geç** | 50+ | 5+ | 8+ | Tier 4 kiracılar, büyük olaylar, tam kaos |
+| **Sandbox** | Sınırsız | Maks 15 | Sınırsız | Her şey açık |
 
-### Kat Ekleme Mekaniği
+> Gün sayıları tahminidir, denge testlerinde ayarlanır. Önemli olan sıralama ve akış hissidir.
 
-Yeni katlar **inşaatçı dükkanından** (taş ustası) yaptırılır. Bu pahalı bir yatırımdır ve oyunun en büyük milestone'larından biridir.
+### Tekrar Oynanabilirlik
 
-| Kat | Maliyet | Süre | Gerekli ⭐ | Yeni Daire Sayısı |
-|-----|---------|------|-----------|-------------------|
-| **3. Kat** | 2000₺ | 5 gün | ⭐ 40+ | +2 daire |
-| **4. Kat** | 4000₺ | 7 gün | ⭐ 60+ | +2 daire |
-| **5. Kat** | 7000₺ | 10 gün | ⭐ 80+ | +2 daire |
-
-> **İnşaat süresinde:** Gürültü olur (mutluluk düşer), para harcanır ama tamamlandığında büyük saygınlık ve gelir artışı.
-
-**İnşaatçı dükkanı** mahalle dükkanlarına eklenir:
-
-| Dükkan | Hizmetler |
-|--------|-----------|
-| **Taş Ustası / İnşaatçı** | Yeni kat ekleme, yapısal tamir, çatı onarımı |
-
-### Kilit Açma Sırası (Unlock Sequence)
-
-```
-Gün 1:   Emlakçı + Boyacı + Tesisatçı açık
-Gün 5:   Elektrikçi açılır
-Gün 10:  İlk çalışan tutma hakkı (kapıcı)
-Gün 15:  Bahçıvan dükkanı + Mobilyacı açılır
-Gün 20:  Güvenlikçi tutma hakkı
-Gün 25:  İnşaatçı dükkanı açılır (3. kat mümkün)
-Gün 35:  Tier 3 kiracılar emlakçıda görünür (⭐ yeterliyse)
-Gün 50:  4. kat mümkün + Tier 4 kiracılar
-Gün 65+: 5. kat mümkün + nadir yaratıklar
-```
-
-> **Not:** Gün sayıları tahminidir, oyun dengesi testlerinde ayarlanır. Önemli olan sıralama ve akış hissidir.
-
-### Tekrar Oynanabilirlik (Replayability)
-
-Sandbox yapı doğal tekrar oynanabilirlik sağlar, ek olarak:
-- **Farklı kiracı kombinasyonları:** Her oyunda farklı yaratıklar deneyebilirsin
-- **Rastgele olay sistemi:** Olaylar her oyunda farklı sırada/kombinasyonda gelir
-- **Farklı strateji denemeleri:** Hızlı büyüme vs yavaş kalite, düşük tier çok kiracı vs yüksek tier az kiracı
+- Her oyunda farklı kiracı kombinasyonları
+- Rastgele olay sistemi (farklı sıra/kombinasyon)
+- Farklı stratejiler denenebilir (hızlı büyüme vs yavaş kalite, çok kiracı vs az ama iyi kiracı)
 
 ---
 
