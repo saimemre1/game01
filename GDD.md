@@ -102,25 +102,9 @@ Anlaşmaya göre İlkkan yetişkinliğinde babaannesinin eski apartmanını devr
 
 > **Hikaye yaklaşımı:** Hikaye oyunun başlangıcında kısa bir sahne olarak anlatılır. Belediye başkanı tehdidi arka planda kalır ve periyodik olaylarla (denetimler, yıkım uyarıları) kendini hissettirir. Ama hikaye oyunu domine etmez. Oyuncu kendi hikayesini gameplay ile yaratır. **Oyuncu = İlkkan.**
 
-### Kaybetme Koşulu (Lose Condition)
+### Kaybetme Koşulu
 
-Oyunun kaybetme koşulu: **Belediye giderlerini ödeyememek.**
-
-- Belediye giderleri (vergi/fatura) geldiğinde oyuncu **aktif olarak ödemeli**
-- Paran olsa bile ödemeyi unutursan veya atlarsan sonuç aynı
-- Ödenmezse belediye **3 gün süre** verir
-- 3 gün içinde ödenmezse → **apartman mühürlenir** → Oyun biter
-- Oyuncu yeni oyun başlatır veya son kayıttan devam eder
-
-**Sürekli giderler (15 günlük interval):**
-- Çalışan maaşları (her 15 günde bir)
-- Faturalar (her 15 günde bir)
-- Vergi (her 15 günde bir)
-- Bu giderler aynı güne denk gelmek zorunda değil, her birinin kendi 15 günlük döngüsü var
-
-**Anlık giderler:**
-- Olay masrafları (su baskını, hasar vb.) aynı gün ödenir
-- Kiracı yoksa gelir yok ama giderler devam eder
+Belediye giderlerini ödeyememek. Detaylar için bkz. 4.10.
 
 ---
 
@@ -665,6 +649,28 @@ Gün 12: Blob kiracı "evde parti yapmak istiyor"
 - **Gizemli paket** → Aç / Açma / Kiracıya ver (sürpriz sonuçlar)
 
 > Olay listesi ayrıca detaylandırılacak. Olaylar data olarak tanımlanmalı, yeni olaylar kod değişikliği gerektirmeden eklenebilmeli.
+
+### 4.10 Kaybetme Koşulu
+
+Oyunun tek kaybetme koşulu: **Belediye giderlerini ödeyememek.**
+
+#### Nasıl Çalışır
+
+1. Belediye vergisi 15 günde bir gelir (bkz. 4.6)
+2. Oyuncu para yönetimi ekranından aktif olarak "Öde" butonuna basmalı
+3. Parası olsa bile ödemeyi unutursa veya atlarsa sonuç aynı
+4. Ödenmezse belediye **3 gün süre** verir (uyarı kartı belirir)
+5. 3 gün içinde ödenmezse → **apartman mühürlenir** → oyun biter
+6. Oyuncu yeni oyun başlatır veya son kayıttan devam eder
+
+#### Neden Bu Koşul
+
+- Oyuncuyu para yönetimi ekranını aktif takip etmeye zorlar
+- "Param var ama ödemeyi unuttum" durumu kasıtlı bir gerilim yaratır
+- Belediye başkanı zaten antagonist, mühürleme tehdidi hikayeyle uyumlu
+- Basit ve anlaşılır: tek bir koşul, net sonuç
+
+> Kaybetme koşulu dışındaki olumsuz sonuçlar (kiracı kaybı, düşük 😊, düşük ⭐) oyunu zorlaştırır ama bitirmez. Oyuncu her zaman toparlanabilir, tek ölümcül hata belediye borcunu ödememektir.
 
 ---
 
