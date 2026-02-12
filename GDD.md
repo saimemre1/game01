@@ -603,17 +603,19 @@ Yapı Ustası'nın "Yeni Kat" kategorisinden satın alınır:
 
 > Fiyat ve süre değerleri yer tutucudur, denge testlerinde ayarlanır. Erken oyunda kat ekleme pahalı olacak şekilde ekonomi ayarlanır (görünmez kilit).
 
-### 4.5 Çalışan Sistemi
+### 4.8 Çalışan Sistemi
 
-Apartmana kalıcı veya geçici **çalışanlar** tutulabilir.
+Apartmana çalışan tutulabilir. Çalışanlar opsiyoneldir. Maaşları 15 günde bir ödenir (bkz. 4.6). Uzun vadeli yatırımdır: düzenli maaş ödersin ama olayları ve talepleri azaltır.
 
-| Çalışan | Maaş (günlük) | Etki |
-|---------|---------------|------|
-| **Kapıcı** | 50₺/gün | Küçük arızaları otomatik tamir eder, temizlik = mutluluk bonusu |
-| **Güvenlikçi** | 75₺/gün | Hırsızlık/vandalizm olaylarını önler, saygınlık bonusu |
-| **Bahçıvan** | 40₺/gün | Bahçe bakımı otomatik, dış görünüm bonusu |
+| Çalışan | Maaş (15 gün) | Ne Yapar |
+|---------|---------------|----------|
+| **Kapıcı** | 300₺ | Küçük arızaları otomatik tamir eder, temizlik yapar. 😊 bonusu. |
+| **Güvenlikçi** | 450₺ | Hırsızlık ve vandalizm olaylarını önler. ⭐ bonusu. |
+| **Gece Bekçisi** | 250₺ | Gece olaylarını engeller. Güvenlikçiden ucuz ama kapsamı dar. |
+| **Avukat** | 500₺ | Tahliye bedelini düşürür, belediye sorunlarında yardım eder, kontrat avantajı sağlar. |
+| **Temizlikçi** | 200₺ | Ortak alanları temiz tutar. 😊 bonusu. |
 
-> Çalışanlar opsiyoneldir. Para biriktirip çalışan tutmak uzun vadeli yatırımdır — günlük maaş ödersin ama olayları ve talepleri azaltır.
+> Maaş rakamları yer tutucudur, denge testlerinde ayarlanır.
 
 ### 4.6 Olay / Karar Sistemi
 
