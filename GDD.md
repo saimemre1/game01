@@ -873,7 +873,7 @@ Gün başında olay kartları ekranın ortasına gelir:
 | **Hedef çözünürlük** | 1920x1080 |
 | **Min. sistem** | Düşük sistem gereksinimleri (2D, hafif) |
 | **Kayıt sistemi** | Lokal save (JSON) |
-| **Hedef platform** | PC — Steam |
+| **Hedef platform** | PC, Steam |
 | **Hedef FPS** | 60 FPS |
 
 ### Ekip
@@ -882,21 +882,24 @@ Gün başında olay kartları ekranın ortasına gelir:
 |-----|------|------------|
 | **Game Designer** | 1 | Oyun tasarımı, denge, içerik, olay yazımı |
 | **Senior Developer** | 1 | Mimari, core sistemler, araçlar |
-| **Junior Developer** | 1 | UI, dükkan sistemi, olay sistemi, save/load |
-| **Artist** | 1 | Tüm görseller — karakter, bina, UI, animasyon |
+| **Junior Developer** | 1 | UI, dükkan modalları, olay sistemi, save/load |
+| **Artist** | 1 | Tüm görseller: karakter, bina, UI, animasyon |
 
 ### Temel Teknik Sistemler
 
 | Sistem | Açıklama |
 |--------|----------|
-| **Gün Döngüsü (Turn Manager)** | Gün başı → aksiyon → gün sonu akışını yöneten state machine |
-| **Kaynak Sistemi** | Para, mutluluk, saygınlık takibi + kaynak değişim olayları |
-| **Kiracı Sistemi** | Kiracı veritabanı, tier sistemi, talep üreteci, mutluluk hesaplayıcı |
-| **Yükseltme Sistemi** | Apartman yükseltme listesi, süre takibi, görsel güncelleme |
-| **Olay Sistemi** | Olay veritabanı, rastgele seçim, zincirleme olay takibi |
-| **Dükkan Sistemi** | Dükkan modal'ları, hizmet listesi, sipariş yönetimi |
-| **UI Sistemi** | HUD, modal'lar, popup kartlar, gün sonu raporu |
-| **Save/Load** | JSON tabanlı kayıt — tüm oyun durumu serialize edilir |
+| **Turn Manager** | Gün başı, aksiyon fazı, gün sonu akışını yöneten state machine |
+| **Kaynak & Gösterge** | Para (₺) takibi, 😊 ve ⭐ hesaplama, değişim olayları |
+| **Kiracı Sistemi** | Kiracı veritabanı, tier, profil kartı, talep üreteci |
+| **Koşul Motoru** | Data-driven condition sistemi, yerleştirmeye göre 😊 hesaplama (bkz. 4.4) |
+| **Kira & Ödeme** | 15 günlük döngüler, banka ekranı, faiz hesaplama, ödeme takibi |
+| **Yükseltme Sistemi** | Kademe bazlı yükseltmeler, süre takibi, dayanıklılık, görsel güncelleme |
+| **Olay Sistemi** | Kart bazlı olay veritabanı, rastgele seçim, zincirleme olay takibi |
+| **Dükkan Modalları** | Emlakçı (kontrat, aday listesi) + Yapı Ustası (kategorili yükseltme listesi) |
+| **Çalışan Sistemi** | Çalışan tutma/çıkarma, maaş döngüsü, otomatik etki hesaplama |
+| **UI Sistemi** | HUD, modallar, olay kartları, gün sonu raporu, para yönetimi ekranı |
+| **Save/Load** | JSON tabanlı kayıt, tüm oyun durumu serialize edilir |
 
 ---
 
