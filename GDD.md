@@ -477,6 +477,60 @@ Oyuncu mahalledeki Emlakçı dükkanına giderek yeni kiracı adaylarını gör�
 | 51-80 | 2-5 aday | Tier 1-3 |
 | 81-100 | 3-6 aday | Tier 1-4 |
 
+### 4.6 Kira & Ödeme Sistemi
+
+Oyundaki tüm para giriş/çıkışları bu sistemden geçer. Oyuncu para yönetimi ekranından ödemeleri takip eder ve aktif olarak yapar.
+
+#### Kira Geliri
+
+Her kiracı kendi giriş tarihinden itibaren 15 günde bir kira öder. Kira kiracının hesabından otomatik olarak yatar.
+
+| 😊 Durumu | Ödeme Davranışı |
+|-----------|-----------------|
+| Yüksek | Zamanında öder, bonus şansı |
+| Orta | Normal ödeme, ara sıra gecikme |
+| Düşük | Sık gecikme, kısmi ödeme |
+| Çok düşük | Ödeme durur (tier'e göre farklı tepki, aşağıya bkz.) |
+
+**Mutluluk çok düşükse:**
+
+| Tier | Davranış |
+|------|----------|
+| Tier 1 | Gitmez ama kira ödemeyi keser. Oyuncunun tahliye etmesi gerekir. |
+| Tier 2-3-4 | Basıp gider (kendi taşınır, kira kaybı + 😊 etkisi). |
+
+#### Para Yönetimi Ekranı
+
+Oyuncu bu ekrandan tüm mali durumunu görür ve ödemelerini yapar. Modal olarak açılır.
+
+**Ekranda görünenler:**
+
+- Güncel bakiye
+- Gelir geçmişi (kira ödemeleri, olay ödülleri)
+- Gider geçmişi (yükseltmeler, komisyonlar, tahliyeler)
+- Bekleyen ödemeler (fatura, vergi, çalışan maaşları)
+- Her ödemenin yanında son ödeme tarihi ve "Öde" butonu
+
+#### Periyodik Giderler
+
+Tüm periyodik giderler 15 günlük döngülerle gelir (birbirleriyle senkron değil).
+
+| Gider | Periyot | Açıklama |
+|-------|---------|----------|
+| Belediye vergisi | 15 gün | Ödenmezse mühürlenme süreci başlar (bkz. 4.10) |
+| Faturalar (elektrik, su vb.) | 15 gün | Ödenmezse faiz biner |
+| Çalışan maaşları | 15 gün | Ödenmezse çalışan işi bırakır |
+
+- Oyuncu "Öde" butonuna basarak ödeme yapar
+- Ödenmezse her geçen gün faiz biner
+- Belli bir süre içinde ödenmezse sonuçları tetiklenir (çalışan ayrılır, hizmet kesilir, mühürlenme vb.)
+
+#### Tahliye
+
+Oyuncu istediği zaman bir kiracıyı tahliye edebilir. Tahliye bedeli tier'e göre değişir (yüksek tier = yüksek bedel).
+
+> **Not (kontrat mekaniği):** İleride farklı kontrat tipleri eklenebilir. Emlakçıda "Kontrat İmzala" aşamasında kontrat seçimi olur. Basit kontrat (ucuz, oyuncuyu az korur) veya gelişmiş kontrat (pahalı, oyuncuyu daha çok korur, tahliye bedeli düşer). Gelişmiş kontratlara erişim için avukata veya emlakçıya ekstra ödeme gerekebilir. Bu alan genişletilmeye açıktır.
+
 ### 4.7 Apartman Yükseltme Sistemi
 
 > **Önemli:** Bu oyun daire yönetimi değil, **apartman yönetimidir.** Dairelerin içini yönetmiyoruz. Kiracıları dairelere yerleştiriyoruz ve **genel apartmanı** yükseltiyoruz.
