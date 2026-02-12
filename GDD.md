@@ -454,26 +454,28 @@ Her kiracının bireysel mutluluğu koşullarına göre hesaplanır. Apartmanın
 
 ### 4.5 Emlakçı
 
-Oyuncu mahalledeki Emlakçı dükkanına giderek yeni kiracı adaylarını görür. Emlakçı bir modal ekran olarak açılır.
+Oyuncu mahalledeki Emlakçı dükkanına giderek yeni kiracı adaylarını görür. Modal ekran olarak açılır.
 
 #### Nasıl Çalışır
 
-- Emlakçıda her zaman birkaç kiracı adayı listelenir
-- Her adayın profil kartı görünür (bkz. 4.3): tür, tier, kira, artılar, eksiler, koşullar
-- Oyuncu bir adayı seçip boş bir daireye yerleştirir
-- Aday listesi birkaç günde bir yenilenir
-- Emlakçı komisyon alır (₺)
+1. Oyuncu emlakçıyı açar. Bekleyen kiracı adayları listelenir (bazen hiç aday olmayabilir, özellikle erken oyunda)
+2. Her adayın profil kartı görünür (bkz. 4.3): tür, tier, kira, artılar, eksiler, koşullar
+3. Profil kartında **taşınma süresi** (örn. 1-3 gün) ve **komisyon** (genelde 1-2 kira tutarı) yazar
+4. Oyuncu "Kontrat İmzala" butonuna basar. Komisyon anında anaparadan düşer
+5. Taşınma süresi başlar. Süre dolduğunda apartman önüne taşınma arabası gelir
+6. Oyuncu arabaya tıklayıp kiracıyı boş bir daireye sürükleyip bırakır
+7. Aday listesi birkaç günde bir yenilenir
 
 #### Saygınlık Etkisi
 
-Saygınlık (⭐) emlakçıdaki aday havuzunun kalitesini belirler.
+⭐ emlakçıdaki aday havuzunun kalitesini ve sayısını belirler.
 
 | ⭐ | Aday Sayısı | Açılan Tier'ler |
 |----|-------------|-----------------|
-| 0-20 | 1-2 aday | Tier 1 |
-| 21-50 | 3-4 aday | Tier 1-2 |
-| 51-80 | 4-5 aday | Tier 1-3 |
-| 81-100 | 5-6 aday | Tier 1-4 |
+| 0-20 | 0-2 aday | Tier 1 |
+| 21-50 | 1-4 aday | Tier 1-2 |
+| 51-80 | 2-5 aday | Tier 1-3 |
+| 81-100 | 3-6 aday | Tier 1-4 |
 
 ### 4.7 Apartman Yükseltme Sistemi
 
