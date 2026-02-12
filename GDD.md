@@ -617,48 +617,54 @@ Apartmana çalışan tutulabilir. Çalışanlar opsiyoneldir. Maaşları 15 gün
 
 > Maaş rakamları yer tutucudur, denge testlerinde ayarlanır.
 
-### 4.6 Olay / Karar Sistemi
+### 4.9 Olay & Karar Sistemi
 
-Her gün rastgele veya hikayeye bağlı olaylar tetiklenir. Olaylar **zincirleme** çalışır — bazı kararların sonuçları günler sonra ortaya çıkar.
+Her gün rastgele veya hikayeye bağlı olaylar tetiklenir. Olaylar **kart** olarak sunulur: gün başında olay kartları belirir, oyuncu kartı açıp seçeneklerden birini seçer. Sistem basit tutulacak.
 
 #### Olay Tipleri
 
 | Tip | Açıklama | Sıklık |
 |-----|----------|--------|
-| **Günlük küçük olaylar** | Küçük sorunlar, komik durumlar | Her gün 1-3 |
-| **Kiracı talepleri** | Kiracıların istekleri | Kiracı sayısına bağlı |
+| **Günlük olaylar** | Küçük sorunlar, komik durumlar | Her gün 1-3 (temoya göre artar) |
 | **Büyük olaylar** | Ciddi kararlar, zincirleme sonuçlar | Haftada 1-2 |
-| **Periyodik olaylar** | Vergi günü, belediye denetimi gibi tekrarlayan olaylar | Sabit aralıklarla (örn. 30 günde bir) |
+| **Periyodik olaylar** | Belediye denetimi gibi tekrarlayan olaylar | 15 günde bir |
 
-#### Zincirleme Olay Sistemi
+#### Kart Yapısı
 
-Bazı kararlar hemen sonuç verir, bazıları **birkaç gün sonra** etki eder. Bu, oyuncunun geçmiş kararlarının geri dönmesini sağlar.
+Her olay kartında:
 
-**Örnek zincirleme olay:**
+- **Başlık:** Olayın kısa adı
+- **Açıklama:** Ne olduğu (1-2 cümle, komik ton)
+- **Seçenekler:** 2-3 seçenek, her birinin sonucu farklı (₺, 😊, ⭐ etkileri)
+
+#### Zincirleme Olaylar
+
+Bazı kararlar hemen sonuç verir, bazıları birkaç gün sonra yeni bir olay kartı tetikler.
 
 ```
-Gün 12: Blob kiracı "evde parti yapmak istiyor" → İzin ver / Reddet
+Gün 12: Blob kiracı "evde parti yapmak istiyor"
+         → İzin ver / Reddet
 
-  ├─ İzin ver →
-  │   Gün 12: Mutluluk +5 (blob mutlu)
-  │   Gün 13: Komşu şikayeti "gece gürültü oldu" → Özür dile / Görmezden gel
-  │   │  ├─ Özür dile → -50₺ tazminat, komşu mutluluğu korunur
-  │   │  └─ Görmezden gel → Komşu mutluluğu -10, şikayet devam eder
-  │   Gün 15: Belediyeden gürültü uyarısı (saygınlık -3)
-  │
-  └─ Reddet →
-      Gün 12: Blob mutluluğu -5
-      Gün 14: Blob gizlice parti yapar → Daha büyük sorun (mutluluk -8, hasar)
+  İzin ver →
+      Gün 12: 😊 +5 (blob mutlu)
+      Gün 13: Yeni kart: "Komşu şikayeti: gece gürültü"
+              → Özür dile (-50₺) / Görmezden gel (😊 -10)
+      Gün 15: Yeni kart: "Belediyeden gürültü uyarısı" (⭐ -3)
+
+  Reddet →
+      Gün 12: 😊 -5 (blob mutsuz)
+      Gün 14: Yeni kart: "Blob gizlice parti yaptı" (😊 -8, hasar)
 ```
 
-#### Örnek Olaylar (Hibrit evren uyumlu)
+#### Örnek Olaylar
 
-- **Boru patlaması** → Tesisatçıyı çağır (pahalı, 1 gün) / Geçici çözüm (ucuz ama 3 gün sonra tekrar patlar)
-- **Kiracılar arası kavga** → Arabuluculuk yap / Taraf tut / Görmezden gel (zincirleme)
-- **Belediye denetimi** → 3 gün sonra denetim gelecek. O zamana kadar hazırlan (para harca) veya şansına bırak
-- **Vergi günü** → 30 günde bir vergi gelir. Ödenmezse belediye uyarısı → mühürlenme riski
-- **Yaratık büyüme krizi** → Sürekli büyüyen kiracı daireye sığmıyor. Büyük daireye taşı / Büyüme ilacı al / Tahliye et
-- **Gizemli paket** → Apartmana paket geldi. Aç / Açma / Kiracıya ver (sürpriz sonuçlar)
+- **Boru patlaması** → Yapı Ustasını çağır (pahalı, 1 gün) / Geçici çözüm (ucuz ama tekrar patlar)
+- **Kiracılar arası kavga** → Arabuluculuk yap / Taraf tut / Görmezden gel
+- **Belediye denetimi** → 3 gün sonra denetim gelecek. Hazırlan veya şansına bırak
+- **Yaratık büyüme krizi** → Büyük daireye taşı / Büyüme ilacı al / Tahliye et
+- **Gizemli paket** → Aç / Açma / Kiracıya ver (sürpriz sonuçlar)
+
+> Olay listesi ayrıca detaylandırılacak. Olaylar data olarak tanımlanmalı, yeni olaylar kod değişikliği gerektirmeden eklenebilmeli.
 
 ---
 
