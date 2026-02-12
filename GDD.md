@@ -387,7 +387,7 @@ Oyuncu kiracıları daireler arasında sürükleyip bırakarak (drag-drop) yer d
 
 #### Bina Yapısı
 
-Apartman dışarıdan görülür. Her katta 2 daire vardır (sol ve sağ). Başlangıçta 2 kat (4 daire), oyuncu İnşaatçı dükkanından yeni kat satın alarak binayı 15 kata kadar büyütebilir (30 daire).
+Apartman dışarıdan görülür. Her katta 2 daire vardır (sol ve sağ). Başlangıçta 2 kat (4 daire), oyuncu Yapı Ustası dükkanından yeni kat satın alarak binayı 15 kata kadar büyütebilir (30 daire).
 
 ```
   ┌───────────┬───────────┐
@@ -404,7 +404,7 @@ Apartman dışarıdan görülür. Her katta 2 daire vardır (sol ve sağ). Başl
        Sol          Sağ
 ```
 
-> Kat satın alma İnşaatçı dükkanından yapılır (bkz. 4.7). Her yeni kat bir öncekinden daha pahalıdır.
+> Kat satın alma Yapı Ustası dükkanından yapılır (bkz. 4.7). Her yeni kat bir öncekinden daha pahalıdır.
 
 #### Drag-Drop Mekaniği
 
@@ -537,18 +537,12 @@ Bu oyun daire yönetimi değil, **apartman yönetimidir.** Dairelerin içini yö
 
 #### Mahalle Dükkanları
 
-Ana ekranda apartmanın sağında ve solunda komşu binalar yer alır. Bu binaların altında dükkanlar bulunur. Oyuncu bir dükkana tıkladığında modal olarak açılır ve o dükkanın hizmetlerini görür.
+Ana ekranda apartmanın sağında ve solunda komşu binalar yer alır. Mahallede 2 dükkan vardır. Oyuncu bir dükkana tıkladığında modal olarak açılır.
 
-| Dükkan | Hizmetler |
-|--------|-----------|
-| **Boyacı** | Boya, cephe kaplama, tabela |
-| **Tesisatçı** | Boru, kalorifer, sıhhi tesisat |
-| **Elektrikçi** | Elektrik, internet, güvenlik sistemi |
-| **Bahçıvan** | Bahçe, çiçek, dış alan düzenleme |
-| **Mobilyacı** | Ortak alan mobilyaları |
-| **İnşaatçı** | Kat ekleme (bkz. aşağıda) |
-
-> Dükkanlar oyun ilerledikçe artabilir veya mevcut dükkanlara yeni hizmetler açılabilir.
+| Dükkan | Ne Yapar |
+|--------|----------|
+| **Emlakçı** | Yeni kiracı bulma (bkz. 4.5) |
+| **Yapı Ustası** | Tüm apartman yükseltmeleri ve kat ekleme |
 
 #### Yükseltme Kademeleri
 
@@ -568,15 +562,20 @@ Her yükseltmenin birden fazla kalite kademesi vardır. Kademe arttıkça fiyat,
 
 > Bu kalite/dayanıklılık yapısı diğer yükseltmelere de uygulanabilir (tesisat, güvenlik vb.). Tüm rakamlar yer tutucudur.
 
-#### Yükseltme Kategorileri
+#### Yapı Ustası
 
-| Kategori | Etki | Örnek |
-|----------|------|-------|
-| **Dış Cephe** | ⭐ Saygınlık | Boya, cephe kaplama, tabela |
-| **Altyapı** | 😊 Mutluluk + daha az arıza olayı | Tesisat, elektrik, kalorifer |
+Yapı Ustası dükkanı tüm apartman yükseltmelerini ve kat eklemeyi kapsar. Modalda kategorilere ayrılmış şekilde listelenir.
+
+| Kategori | Etki | Örnekler |
+|----------|------|----------|
+| **Yeni Kat** | Daire kapasitesi artışı | 2 daireli kat, 1 daireli kat |
+| **Boya & Cephe** | ⭐ Saygınlık | Boya (kademeli), cephe kaplama, tabela |
+| **Dış Süsleme** | ⭐ Saygınlık | Çiçeklik, süs, aydınlatma (detaylandırılacak) |
+| **Altyapı** | 😊 Mutluluk + daha az arıza | Daha iyi su boruları, jeneratör, kalorifer |
+| **Konfor** | 😊 Mutluluk + talep azaltma | Fiber internet, asansör, klima |
 | **Güvenlik** | ⭐ Saygınlık + olay koruması | Kamera, güvenlik kapısı, yangın alarm |
-| **Konfor** | 😊 Mutluluk + talep azaltma | Asansör, fiber optik, klima |
-| **Ortak Alan** | ⭐ + 😊 karma | Bahçe, otopark, çamaşırhane |
+
+> Her kategorideki yükseltmelerin tam listesi ayrıca detaylandırılacak.
 
 #### Yükseltme Süresi
 
@@ -588,9 +587,9 @@ Yükseltmeler anında tamamlanmaz. Her işin bir süresi vardır (gün bazlı).
 - Süre bitince yükseltme aktif olur ve binada dışarıdan görünür
 - Birden fazla iş aynı anda yürütülebilir (para yeterse)
 
-#### İnşaatçı (Kat Ekleme)
+#### Kat Ekleme
 
-İnşaatçı dükkanından yeni kat satın alınır. Modalda seçenekler listelenir:
+Yapı Ustası'nın "Yeni Kat" kategorisinden satın alınır:
 
 | Seçenek | Fiyat | Süre | Sonuç |
 |---------|-------|------|-------|
