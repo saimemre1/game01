@@ -710,49 +710,51 @@ Sonsuz sandbox. "Oyun bitti" ekranı yoktur, oyuncu istediği kadar devam eder. 
 
 ## 6. Görsel & Ses Yönü
 
-### Görsel Stil: Basit & Renkli Cartoon
+### Görsel Stil
 
-**Referanslar:** Adventure Time, Untitled Goose Game, Pikuniku tarzı — basit çizgiler, canlı renkler, abartılı ifadeler. Üretimi hızlı, komik tona çok uygun.
+Basit ve renkli cartoon. Üretimi hızlı, komik tona çok uygun.
+
+**Referanslar:** Adventure Time, Untitled Goose Game, Pikuniku
 
 | Alan | Yaklaşım |
 |------|----------|
-| **Çizgi stili** | Kalın, temiz outline'lar. Minimal detay, maksimum okunabilirlik |
-| **Renk paleti** | Sıcak ve canlı — turuncu, sarı, krem, açık yeşil. Her yaratık türü kendi renk tonunda |
-| **Kamera** | 2D yan kesit — apartmanın tüm katları ve daireleri görünür |
-| **Perspektif** | Binanın ortadan kesilmiş hali — duvarlar görünmez, iç mekanlar açık |
-| **Arka plan** | Basit mahalle silueti, gökyüzü (gece/gündüz değişimi olabilir) |
+| **Çizgi stili** | Kalın, temiz outline'lar. Minimal detay, maksimum okunabilirlik. |
+| **Renk paleti** | Sıcak ve canlı: turuncu, sarı, krem, açık yeşil. Her yaratık türü kendi renk tonunda. |
+| **Kamera** | 2D dış görünüm. Apartman dışarıdan görülür, balkonlar ve pencereler görünür. |
+| **Arka plan** | Mahalle silueti, gökyüzü (gece/gündüz değişimi olabilir). |
 
 ### Karakter & Yaratık Tasarımı
 
 - **Basit silüetler:** Her yaratık uzaktan bile tanınabilir olmalı (farklı şekil, boyut, renk)
-- **Abartılı ifadeler:** Mutlu, kızgın, şaşkın yüz ifadeleri çok büyük ve okunabilir
-- **Minimum animasyon karesi:** Idle, mutlu, mutsuz, talep (4 temel durum). Basit ama etkili
-- **Komik kontrast:** Absürt yaratıklar normal ev eşyalarıyla etkileşirde (dev blob koltuğa oturmuş, ateş yaratığı terlik giymiş)
+- **Abartılı ifadeler:** Mutlu, kızgın, şaşkın yüz ifadeleri büyük ve okunabilir
+- **Minimum animasyon:** Idle, mutlu, mutsuz, talep (4 temel durum)
+- **Balkon kimliği:** Her kiracının balkonunda kendine özgü objeler görünür (kimliğini dışarıdan belli eder)
 
 ### Apartman Görselliği
 
-- **Başlangıçta:** Soluk renkler, çatlak duvarlar, karanlık daireler
+- **Başlangıç:** Soluk renkler, çatlak duvarlar, karanlık pencereler
 - **Yükseltildikçe:** Renkler canlanır, detaylar eklenir, ışıklar yanar
-- **Görsel ilerleme hissi:** Oyuncunun yaptığı her yükseltme binada görsel olarak yansır (boya = duvar rengi değişir, bahçe = dışarıda çiçekler çıkar)
+- **Her yükseltme görünür:** Boya = cephe rengi değişir, dış süsleme = çiçeklikler/aydınlatma eklenir, yıpranma = boya dökülür
+- **Yeni kat eklendiğinde** bina yukarı doğru büyür
 
-### Müzik: Lo-fi & Chill
+### Müzik
 
-Oyunun komik görselliğiyle kontrast oluşturan **rahat, modern, sakinleştirici** bir müzik tonu. Oyuncu kaotik olaylarla uğraşırken müzik onu sakin tutar — bu kontrast hem eğlenceli hem rahatlatıcıdır.
+Lo-fi & chill. Kaotik gameplay ile kontrast oluşturan rahat, sakinleştirici ton. Oyuncu kaosla uğraşırken müzik onu sakin tutar.
 
-| Durum | Müzik Tonu |
-|-------|-----------|
-| **Normal gameplay** | Lo-fi hip hop / chillhop — yumuşak beat, piyano/gitar loop'ları |
-| **Gün başı** | Kısa, neşeli jingle (yeni gün hissi) |
-| **Olay anı** | Hafif tempo artışı, ama hâlâ chill — panik değil merak |
-| **Gün sonu** | Yavaşlayan, dinlendirici melodi (gün bitti, rahatla) |
-| **Emlakçı / Dükkanlar** | Farklı lo-fi varyasyonlar (her mekanın kendi havası) |
+| Durum | Ton |
+|-------|-----|
+| **Normal gameplay** | Lo-fi hip hop, yumuşak beat, piyano/gitar loop'ları |
+| **Gün başı** | Kısa neşeli jingle |
+| **Olay anı** | Hafif tempo artışı, panik değil merak |
+| **Gün sonu** | Yavaşlayan, dinlendirici melodi |
+| **Dükkanlar** | Farklı lo-fi varyasyonlar (her mekanın kendi havası) |
 
 ### Ses Efektleri
 
-- **UI sesleri:** Yumuşak tıklama, sayfa çevirme, para sesi (tatmin edici)
-- **Yaratık sesleri:** Her yaratık türünün basit, komik bir sesi (blob = "şlap", ateş yaratık = "cızz")
-- **Olay sesleri:** Boru patlaması, çekiç, boya fırçası — karikatürize ama abartılı değil
-- **Genel yaklaşım:** Sesler bilgi verir ve tatmin sağlar, ama dikkat dağıtmaz
+- **UI:** Yumuşak tıklama, sayfa çevirme, para sesi (tatmin edici)
+- **Yaratıklar:** Her türün basit, komik bir sesi (blob = "şlap", ateş yaratık = "cızz")
+- **Olaylar:** Boru patlaması, çekiç, boya fırçası (karikatürize)
+- **Genel:** Sesler bilgi verir ve tatmin sağlar, dikkat dağıtmaz
 
 ---
 
@@ -760,91 +762,88 @@ Oyunun komik görselliğiyle kontrast oluşturan **rahat, modern, sakinleştiric
 
 ### Ana Görünüm: Mahalle
 
-Oyunun tek ana ekranı **mahalle görünümüdür.** 2D yan görünüm, sağa ve sola kaydırılabilir.
+Oyunun tek ana ekranı mahalle görünümüdür. 2D yan görünüm, sağa ve sola kaydırılabilir.
 
 ```
-◄ SOL KAYDIR                                              SAĞ KAYDIR ►
+◄ SOL                                                    SAĞ ►
 
-  ┌─────────┐   ┌─────────────────────┐   ┌─────────┐
-  │ Komşu   │   │                     │   │ Komşu   │
-  │ Apartman │   │   BİZİM APARTMAN   │   │ Apartman │
-  │         │   │  (ana oyun alanı)   │   │         │
-  │         │   │                     │   │         │
-  ├─────────┤   ├─────────────────────┤   ├─────────┤
-  │ BOYACI  │   │      GİRİŞ          │   │EMLAKÇI  │
-  └─────────┘   └─────────────────────┘   └─────────┘
-      ▲                                        ▲
-  Tıkla →                                 Tıkla →
-  Modal açılır                            Modal açılır
+  ┌──────────┐   ┌───────────────────┐   ┌──────────┐
+  │  Komşu   │   │                   │   │  Komşu   │
+  │  Bina    │   │  BİZİM APARTMAN   │   │  Bina    │
+  │          │   │  (ana oyun alanı)  │   │          │
+  ├──────────┤   │                   │   ├──────────┤
+  │ EMLAKÇI  │   │                   │   │YAPI USTA │
+  └──────────┘   └───────────────────┘   └──────────┘
+       ▲                                       ▲
+   Tıkla →                                Tıkla →
+   Modal açılır                           Modal açılır
 ```
 
-- **Merkezde:** Bizim apartman — katlar, daireler, kiracılar görünür
-- **Sol/sağda:** Komşu apartmanlar ve altlarında mahalle dükkanları
-- **Dükkanlar:** Fiziksel olarak oyun dünyasında var. Tıklayınca **modal** olarak açılır (ekran değişmez, içine girilmez)
+- **Merkezde:** Bizim apartman (dış görünüm, katlar, balkonlar, pencereler)
+- **Sol/sağda:** Komşu binalar ve altlarında dükkanlar (Emlakçı, Yapı Ustası)
+- **Dükkanlar:** Tıklayınca modal açılır (ekran değişmez)
 - **Kaydırma:** Mouse sürükleme veya ekran kenarlarına gelince otomatik kayma
 
-### Dükkan Modal'ları
+### Dükkan Modalları
 
-Her dükkan tıklandığında ekranın ortasına bir modal pencere açılır. Arka plan kararır. Modal içinde dükkanın hizmetleri listelenir.
+Tıklandığında ekranın ortasına modal pencere açılır. Arka plan kararır.
 
 | Dükkan | Modal İçeriği |
 |--------|---------------|
-| **Emlakçı** | Kiracı aday listesi (profil kartları), kabul/red butonları |
-| **Boyacı** | Boya hizmetleri, fiyat, süre, "Sipariş Ver" butonu |
-| **Tesisatçı** | Tesisat hizmetleri listesi |
-| **Elektrikçi** | Elektrik/internet hizmetleri |
-| **Bahçıvan** | Bahçe hizmetleri |
-| **Mobilyacı** | Ortak alan mobilyaları |
-| **Taş Ustası** | Yeni kat ekleme seçeneği (fiyat, süre, gereksinimler) |
+| **Emlakçı** | Kiracı aday listesi (profil kartları), kontrat imzala butonu, komisyon ve taşınma süresi bilgisi |
+| **Yapı Ustası** | Kategorilere ayrılmış yükseltme listesi (boya, altyapı, konfor, güvenlik, dış süsleme, yeni kat). Fiyat, süre, kademe bilgisi. |
 
 ### Apartman Etkileşimi
 
-Apartmanın kendi iç görünümü ana oyun alanıdır:
+Apartman dış görünümü ana oyun alanıdır:
 
-- **Dairelere tıklama:** Kiracı profil kartı açılır (popup)
-- **Kiracı talepleri:** Dairenin üstünde ünlem (!) ikonu belirir → tıkla → talep kartı
-- **Yükseltme göstergeleri:** Devam eden işler binada görünür (boyacı, tesisatçı animasyonu)
-- **Boş daireler:** "Boş" etiketi → tıklayınca emlakçıya yönlendirme
+- **Balkon/pencereye tıklama:** Kiracı profil kartı açılır (popup)
+- **Kiracı talepleri:** Dairenin üstünde ünlem (!) ikonu belirir, tıkla, talep kartı açılır
+- **Drag-drop:** Kiracıyı sürükleyip başka daireye bırak (yer değiştirme)
+- **Taşınma arabası:** Yeni kiracı geldiğinde apartman önünde belirir, tıkla ve boş daireye sürükle
+- **Devam eden işler:** Yapı ustası çalışırken binada görünür (görsel geri bildirim)
+- **Boş daireler:** "Boş" etiketi görünür
 
 ### HUD (Minimal)
 
-Ekranın üst kısmında sürekli görünen minimal bilgi çubuğu:
+Ekranın üst kısmında sürekli görünen bilgi çubuğu:
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  ₺ 1.250    😊 72/100    ⭐ 55/100    │ GÜN 25 │ ⏭ Günü Bitir │
-└─────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│  ₺ 1.250   😊 72/100   ⭐ 55/100   │ GÜN 25 │ Günü Bitir │
+└──────────────────────────────────────────────────────────┘
 ```
 
-- **Sol:** Para, Mutluluk, Saygınlık (sayısal)
+- **Sol:** Para, Mutluluk, Saygınlık
 - **Sağ:** Gün sayısı + "Günü Bitir" butonu
-- Mutluluk ve saygınlık çubukları renk değiştirir (yeşil → sarı → kırmızı)
+- 😊 ve ⭐ çubukları renk değiştirir (yeşil, sarı, kırmızı)
+- ₺ tıklanınca para yönetimi ekranı açılır (bkz. 4.6)
 
-### Olay Gösterimi
+### Olay Kartları
 
-Olaylar **popup kartları** olarak gün başında ekranın ortasına gelir:
+Gün başında olay kartları ekranın ortasına gelir:
 
 - Kartın üstünde olay açıklaması (kısa, komik metin)
 - Altında 2-3 seçenek butonu
-- Oyuncu seçer → anlık veya zincirleme sonuç
-- Birden fazla olay varsa sırayla gösterilir (kart destesi gibi)
+- Oyuncu seçer, sonuç uygulanır
+- Birden fazla olay varsa sırayla gösterilir (kart destesi)
 
 ### Gün Sonu Raporu
 
-"Günü Bitir" butonuna basıldığında kısa bir özet ekranı:
+"Günü Bitir" butonuna basıldığında özet ekranı:
 
 ```
 ┌─────────────────────────────────┐
-│         GÜN 25 — ÖZET          │
+│         GÜN 25 ÖZET            │
 │                                 │
 │  Gelir:    +850₺  (kira)       │
-│  Gider:    -350₺  (boyacı, fatura) │
+│  Gider:    -350₺  (fatura)     │
 │  Net:      +500₺               │
 │                                 │
-│  😊 Mutluluk:  72 → 68 (▼4)    │
-│  ⭐ Saygınlık: 55 → 58 (▲3)    │
+│  😊 72 → 68 (▼4)               │
+│  ⭐ 55 → 58 (▲3)               │
 │                                 │
-│  [ Sonraki Güne Geç → ]        │
+│     [ Sonraki Güne Geç ]       │
 └─────────────────────────────────┘
 ```
 
@@ -854,12 +853,14 @@ Olaylar **popup kartları** olarak gün başında ekranın ortasına gelir:
 |-------|-------|
 | Mahallede gezinme | Mouse sürükleme (sağ-sol) |
 | Dükkan açma | Dükkana tıklama |
-| Kiracı bilgisi | Daireye / kiracıya tıklama |
+| Kiracı bilgisi | Balkon/pencereye tıklama |
+| Kiracı taşıma | Drag-drop |
 | Olay seçimi | Seçenek butonuna tıklama |
+| Para yönetimi | HUD'daki ₺'ye tıklama |
 | Günü bitirme | HUD'daki butona tıklama |
 | Modal kapatma | X butonu veya dışarı tıklama |
 
-> Tüm etkileşimler **sol mouse tıklama** ile yapılır. Sağ tık veya klavye kısayolu gerektirmez. Basit ve erişilebilir.
+> Tüm etkileşimler sol mouse tıklama ve sürükle-bırak ile yapılır. Basit ve erişilebilir.
 
 ---
 
